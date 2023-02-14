@@ -141,6 +141,7 @@ apps.tk-multi-snapshot.location:
   # type: dev
   # path: ~/Projects/swc/tk-multi-snapshot
 
+
 # shotgun folders
 apps.tk-shotgun-folders.location:
   ### App Store
