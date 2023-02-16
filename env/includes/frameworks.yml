@@ -67,8 +67,8 @@ frameworks:
       #version:
   tk-swc-framework-shotgunutils_v5.x.x:
     location:
-      #type: dev
-      #path: "S:/Projects/ShotgunConfig/tk-swc-framework-shotgunutils"
+      # type: dev
+      # path: "S:/Projects/ShotgunConfig/tk-swc-framework-shotgunutils"
       #type: git_branch
       #branch: swc_main_ai
       #path: https://github.com/alaa-e-ibrahim/tk-swc-framework-shotgunutils
