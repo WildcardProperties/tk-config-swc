@@ -195,7 +195,7 @@ apps.tk-multi-perforce.location:
   type: git_branch
   branch: swc_main_ai
   path: https://gitlab.com/nexodus/consulting/swc/tk-multi-perforce.git
-  version: cb45d72
+  version: f8bc9cc
   #type: git_branch
   #branch: swc_main_ai_v2
   #path: https://gitlab.com/nexodus/consulting/swc/tk-multi-perforce.git
