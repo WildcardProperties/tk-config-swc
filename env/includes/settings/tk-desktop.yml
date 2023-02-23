@@ -21,6 +21,7 @@ includes:
 # - ./tk-multi-loader2.yml
 - ./tk-swc-perforce-sync.yml
 - ./tk-copyfromplaylist.yml
+- ./tk-multi-shotgunpanel.yml
 # - ./tk-multi-starterapp.yml
 
 ################################################################################
@@ -28,7 +29,12 @@ includes:
 # site
 settings.tk-desktop.site:
   apps:
+    tk-multi-shotgunpanel:
+      location: "@apps.tk-multi-shotgunpanel.location"
   location: "@engines.tk-desktop.location"
+  run_at_startup:
+  - {app_instance: '', name: Apps}
+  - {app_instance: tk-multi-shotgunpanel, name: ''}
 
 # asset
 settings.tk-desktop.asset:
