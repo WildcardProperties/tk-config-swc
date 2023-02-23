@@ -67,8 +67,8 @@ frameworks:
       #version:
   tk-swc-framework-shotgunutils_v5.x.x:
     location:
-      #type: dev
-      #path: "S:/Projects/ShotgunConfig/tk-swc-framework-shotgunutils"
+      # type: dev
+      # path: "S:/Projects/ShotgunConfig/tk-swc-framework-shotgunutils"
       #type: git_branch
       #branch: swc_main_ai
       #path: https://github.com/alaa-e-ibrahim/tk-swc-framework-shotgunutils
@@ -124,10 +124,14 @@ frameworks:
       #type: dev
       #path: "S:/Projects/ShotgunConfig/tk-framework-perforce"
       # Github
+      #type: git_branch
+      #branch: swc_beta_rb_ai
+      #path: https://gitlab.com/nexodus/consulting/swc/tk-framework-perforce.git
+      #version: 2d86011
       type: git_branch
       branch: swc_beta_rb_ai
       path: https://gitlab.com/nexodus/consulting/swc/tk-framework-perforce.git
-      version: 2d86011
+      version: 4bffa0cf
 
   # SWC - Custom utilities
   tk-framework-swc_v0.x.x:

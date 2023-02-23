@@ -175,9 +175,13 @@ apps.tk-multi-workfiles2.location:
   # version: v0.12.6.1
   ### Git Branch
   type: git_branch
-  branch: beta-ai
+  branch: master
   path: https://github.com/studiowildcard/tk-multi-workfiles2.git
-  version: 747e223
+  version: 6079952270e5fab7ff36ccf6558c888d75a7f355
+  #type: git_branch
+  #branch: beta-ai
+  #path: https://github.com/studiowildcard/tk-multi-workfiles2.git
+  #version: 747e223
   # ## Dev
   # name: tk-multi-workfiles2
   #type: dev
@@ -195,7 +199,8 @@ apps.tk-multi-perforce.location:
   type: git_branch
   branch: swc_main_ai
   path: https://gitlab.com/nexodus/consulting/swc/tk-multi-perforce.git
-  version: 93f8915
+  version: 3bcb713
+
   #type: git_branch
   #branch: swc_main_ai_v2
   #path: https://gitlab.com/nexodus/consulting/swc/tk-multi-perforce.git
