@@ -65,7 +65,7 @@ apps.tk-swc-perforce-sync.location:
   type: git_branch
   branch: swc_main_ai
   path: https://github.com/WildcardProperties/tk-swc-perforce-sync
-  version: 5f28d46
+  version: 1cfc49d
 
 # publish2
 apps.tk-multi-publish2.location:

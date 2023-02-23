@@ -131,7 +131,7 @@ frameworks:
       type: git_branch
       branch: swc_beta_rb_ai
       path: https://gitlab.com/nexodus/consulting/swc/tk-framework-perforce.git
-      version: 4bffa0cf
+      version: ac30e1b
 
   # SWC - Custom utilities
   tk-framework-swc_v0.x.x:
