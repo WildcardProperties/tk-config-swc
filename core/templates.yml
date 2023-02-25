@@ -380,8 +380,8 @@ paths:
     #
     # These don't require the standard formatting (with definition and root_name) because they
     # will be set within each template that uses the alias.
-    asset_root: '{asset_type}/{asset_category}/{Asset}'
-    asset_child_root: '{asset_type_parent}/{asset_category_parent}/{asset_parent}/{asset_category}/{folder_name}'
+    asset_root: '{asset_type}/{Asset}'
+    asset_child_root: '{asset_type_parent}/{asset_parent}/{Asset}'
     sequence_root: '{seq_asset_library}/Sequences/{Sequence}'
     shot_root: '{shot_asset_library_parent}/Sequences/{Sequence}/{Shot}'
     seq_asset_root: '{seq_asset_library_parent}/Sequences/{seq_asset_parent}/{asset_type}/{asset_category}/{Asset}'    
@@ -413,7 +413,7 @@ paths:
     seq_asset_work_area: '@seq_asset_root/{Step}/{Task}' 
     seq_asset_filename: '@seq_asset_work_area/{asset_name}[_{name}][_{Task}]'
 
-    anim_asset_work_area: '{asset_type_parent}/{asset_category_parent}/{asset_parent}/{asset_type}/{asset_category}/{folder_name}'
+    anim_asset_work_area: '{asset_type_parent}/{asset_parent}/{asset_type}/{Asset}'
     anim_asset_filename: '@anim_asset_work_area/[{asset_name}_]{Task}[_{name}]'
     anim_asset_snapshot_filename: '@anim_asset_work_area/snapshots/[{asset_name}_]{Task}[_{name}].{timestamp}'     
 
