@@ -13,6 +13,5 @@ name: "{sg_asset_parent.Asset.sg_asset_type}/{sg_asset_parent.Asset.sg_asset_cat
 # (this is std shotgun API syntax)
 # any values starting with $ are resolved into path objects
 filters:
-    - { "path": "sg_asset_library", "relation": "is", "values": [ "$asset_library" ] }
     - { "path": "sg_asset_parent", "relation": "is_not", "values": [ null ] }
     - { "path": "sg_asset_type", "relation": "is", "values": [ "Animations" ] }        
