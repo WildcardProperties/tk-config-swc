@@ -64,8 +64,8 @@ apps.tk-swc-perforce-sync.location:
   #version: 67aff26
   type: git_branch
   branch: swc_main_ai
-  path: https://github.com/WildcardProperties/tk-swc-perforce-sync
-  version: 5f28d46
+  path: https://github.com/StudioWildcard/tk-swc-perforce-sync
+  version: f2d7fa7
 
 # publish2
 apps.tk-multi-publish2.location:
@@ -76,7 +76,7 @@ apps.tk-multi-publish2.location:
   #path: S:\Projects\ShotgunConfig\tk-multi-publish2
   type: git_branch
   branch: beta-ai
-  path: https://github.com/WildcardProperties/tk-multi-publish2
+  path: https://github.com/StudioWildcard/tk-multi-publish2
   version: d0ca605
 
 # screeningroom
@@ -99,9 +99,15 @@ apps.tk-multi-reviewsubmission.location:
 
 # shotgun panel
 apps.tk-multi-shotgunpanel.location:
-  type: app_store
-  name: tk-multi-shotgunpanel
-  version: v1.8.4
+  # type: app_store
+  # name: tk-multi-shotgunpanel
+  # version: v1.8.4
+  # type: dev
+  # path: S:\Projects\ShotgunConfig\tk-multi-shotgunpanel
+  type: git_branch
+  branch: master
+  path: https://github.com/StudioWildcard/tk-multi-shotgunpanel
+  version: 575cd5604c723b12787ffe7467b8521b862237f3
 
 # dev utils
 apps.tk-multi-devutils.location:
@@ -201,13 +207,6 @@ apps.tk-multi-perforce.location:
   path: https://gitlab.com/nexodus/consulting/swc/tk-multi-perforce.git
   version: 3bcb713
 
-  #type: git_branch
-  #branch: swc_main_ai_v2
-  #path: https://gitlab.com/nexodus/consulting/swc/tk-multi-perforce.git
-  #version:
-
-
-
 ################################################################################
 # reference all of the common frameworks
 frameworks: '@frameworks'
@@ -219,11 +218,6 @@ apps.tk-shotgun-launchfolder.location:
 
 # Copy from Playlist
 apps.tk-copyfromplaylist.location:
-  # # Dev
-  # type: dev
-  # path: 'S:/Projects/ShotgunConfig/tk-copyfromplaylist'
-  #type: dev
-  #path: 'C:/Users/AlaaIbrahim/Documents/Shotgrid/Configurations/tk-copyfromplaylist/tk-copyfromplaylist'
   # Github
   #type: git
   #path: https://github.com/studiowildcard/tk-copyfromplaylist.git

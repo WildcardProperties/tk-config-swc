@@ -43,7 +43,7 @@ frameworks:
       #type: dev
       #path: "S:/Projects/ShotgunConfig/tk-framework-qtwidgets"
       type: git
-      path: https://github.com/WildcardProperties/tk-framework-qtwidgets.git
+      path: https://github.com/StudioWildcard/tk-framework-qtwidgets.git
       version: v1.0
 
   # shotgunutils v4 - Shotgun Related Utilities
@@ -69,13 +69,9 @@ frameworks:
     location:
       # type: dev
       # path: "S:/Projects/ShotgunConfig/tk-swc-framework-shotgunutils"
-      #type: git_branch
-      #branch: swc_main_ai
-      #path: https://github.com/alaa-e-ibrahim/tk-swc-framework-shotgunutils
-      #version: a3681fc
       type: git_branch
       branch: swc_main_ai
-      path: https://github.com/WildcardProperties/tk-swc-framework-shotgunutils
+      path: https://github.com/StudioWildcard/tk-swc-framework-shotgunutils
       version: b304395
 
   # widget v0 - QT Widget Framework for Tank Apps (qtwidgets fw predecessor)
@@ -131,7 +127,7 @@ frameworks:
       type: git_branch
       branch: swc_beta_rb_ai
       path: https://gitlab.com/nexodus/consulting/swc/tk-framework-perforce.git
-      version: 4bffa0cf
+      version: ac30e1b
 
   # SWC - Custom utilities
   tk-framework-swc_v0.x.x:
