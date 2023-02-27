@@ -65,7 +65,7 @@ apps.tk-swc-perforce-sync.location:
   type: git_branch
   branch: swc_main_ai
   path: https://github.com/StudioWildcard/tk-swc-perforce-sync
-  version: f2d7fa7
+  version: 73f756d
 
 # publish2
 apps.tk-multi-publish2.location:
@@ -77,7 +77,7 @@ apps.tk-multi-publish2.location:
   type: git_branch
   branch: beta-ai
   path: https://github.com/StudioWildcard/tk-multi-publish2
-  version: d0ca605
+  version: 5e2a280
 
 # screeningroom
 apps.tk-multi-screeningroom.location:
