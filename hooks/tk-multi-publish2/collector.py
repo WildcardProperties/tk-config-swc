@@ -19,6 +19,8 @@ HookBaseClass = sgtk.get_hook_baseclass()
 TK_FRAMEWORK_PERFORCE_NAME = "tk-framework-perforce_v0.x.x"
 TK_FRAMEWORK_SWC_NAME = "tk-framework-swc_v0.x.x"
 
+logger = sgtk.platform.get_logger(__name__)
+
 # import ptvsd
 
 # # Allow other computers to attach to ptvsd at this IP address and port.
@@ -355,10 +357,12 @@ class BasicSceneCollector(HookBaseClass):
                             if custom_info:
                                 item_info.update(custom_info)
                             collectedFile = self._collect_file(parent_item, item_info)
+                            logger.debug("collectedFile: {}".format(collectedFile))
                             if not collectedFile:
                                 return None
 
                             reviews = os.path.join(os.path.dirname(path),"review")
+                            logger.debug("reviews: {}".format(reviews))
                             if(os.path.exists(reviews)):
                                 file.scan(reviews)
                                 self._collect_folder(parent_item, file)

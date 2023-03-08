@@ -18,7 +18,7 @@ includes:
 - ./tk-multi-publish2.yml
 - ./tk-multi-workfiles2.yml
 - ./tk-multi-perforce.yml
-# - ./tk-multi-loader2.yml
+#- ./tk-multi-loader2.yml
 - ./tk-swc-perforce-sync.yml
 - ./tk-copyfromplaylist.yml
 - ./tk-multi-shotgunpanel.yml
