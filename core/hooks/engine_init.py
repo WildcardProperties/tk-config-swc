@@ -13,7 +13,7 @@ Hook that gets executed every time an engine has been fully initialized.
 """
 
 from tank import Hook
-
+import sentry_sdk
 
 class EngineInit(Hook):
     def execute(self, engine, **kwargs):
@@ -28,6 +28,16 @@ class EngineInit(Hook):
         :param engine: Engine that has been initialized.
         :type engine: :class:`~sgtk.platform.Engine`
         """
+
+        sentry_sdk.init(
+            dsn="https://ead63d02fd9544c091baf83427e649da@o339527.ingest.sentry.io/4504868950179840",
+
+            # Set traces_sample_rate to 1.0 to capture 100%
+            # of transactions for performance monitoring.
+            # We recommend adjusting this value in production.
+            traces_sample_rate=1.0
+        )
+
         if engine.name == "tk-maya":
             self.logger.info("Custom Maya Init Hook")
             import maya.cmds as cmds
