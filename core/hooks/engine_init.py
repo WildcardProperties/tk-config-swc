@@ -36,7 +36,7 @@ class EngineInit(Hook):
             # of transactions for performance monitoring.
             # We recommend adjusting this value in production.
             traces_sample_rate=1.0,
-            release=str(engine.sgtk.configuration_descriptor).replace(" ","@")
+            release=str(engine.sgtk.configuration_descriptor).split()[-1]
         )
 
         # Give a bunch of tags to Sentry
