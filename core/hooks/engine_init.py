@@ -35,8 +35,17 @@ class EngineInit(Hook):
             # Set traces_sample_rate to 1.0 to capture 100%
             # of transactions for performance monitoring.
             # We recommend adjusting this value in production.
-            traces_sample_rate=1.0
+            traces_sample_rate=1.0,
+            release=str(engine.sgtk.configuration_descriptor).replace(" ","@")
         )
+
+        # Give a bunch of tags to Sentry
+        engine_metrics = engine.get_metrics_properties()
+
+        sentry_sdk.set_tag("engine", engine_metrics['Engine'])
+        sentry_sdk.set_tag("engine.version", engine_metrics['Engine Version'])
+        sentry_sdk.set_tag("engine.host_app", engine_metrics['Host App'])
+        sentry_sdk.set_tag("engine.host_app_version", engine_metrics['Host App Version'])
 
         if engine.name == "tk-maya":
             self.logger.info("Custom Maya Init Hook")

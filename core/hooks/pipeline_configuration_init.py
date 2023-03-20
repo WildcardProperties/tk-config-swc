@@ -23,14 +23,11 @@ class PipelineConfigurationInit(Hook):
         The default implementation does nothing.
         """
 
-        sys.path.append(os.path.join(os.path.dirname(os.path.dirname(self.disk_location)), "resources", "python", "core"))
-        # extra_modules_path = os.path.join(os.path.dirname(os.path.dirname(self.disk_location)), "resources", "python")
-        # self.add_module_folders(extra_modules_path)
+        sg_core_python_path = os.path.join(os.path.dirname(os.path.dirname(self.disk_location)), "resources", "python", "core")
+        self.add_module_folders(sg_core_python_path)
 
         pass
 
-    # def add_module_folders(self, path):
-    #     for entry in os.listdir(path):
-    #         dir_path = os.path.join(path, entry)
-    #         if os.path.isdir(dir_path) and dir_path not in sys.path:
-    #             sys.path.append(dir_path)
+    def add_module_folders(self, path):
+        if os.path.isdir(path) and path not in sys.path:
+            sys.path.append(path)

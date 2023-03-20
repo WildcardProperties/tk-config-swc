@@ -63,9 +63,16 @@ class BeforeAppLaunch(tank.Hook):
 
         if app_tools_path:
             tools_path = os.path.abspath(os.path.join(self.sgtk.project_path, os.pardir, app_tools_path))
-            sgtk.util.append_path_to_env_var("PYTHONPATH", tools_path)
+            sg_core_python_path = os.path.join(os.path.dirname(os.path.dirname(self.disk_location)), "resources", "python", "core")     
 
-            if engine_name == 'tk-maya':
+            sgtk.util.append_path_to_env_var("PYTHONPATH", tools_path)
+            sgtk.util.append_path_to_env_var("PYTHONPATH", sg_core_python_path)
+
+            if engine_name == 'tk-maya':   
+                sg_maya_python_path = os.path.join(os.path.dirname(os.path.dirname(self.disk_location)), "resources", "python", "tk-maya")  
+
+                sgtk.util.append_path_to_env_var("PYTHONPATH", sg_maya_python_path)              
+                
                 # Create and point to the desired Maya.env file
                 maya_env = {
                     'dir': '',
