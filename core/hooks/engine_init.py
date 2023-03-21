@@ -13,7 +13,7 @@ Hook that gets executed every time an engine has been fully initialized.
 """
 
 from tank import Hook
-
+import sentry_sdk, sgtk
 
 class EngineInit(Hook):
     def execute(self, engine, **kwargs):
@@ -28,6 +28,34 @@ class EngineInit(Hook):
         :param engine: Engine that has been initialized.
         :type engine: :class:`~sgtk.platform.Engine`
         """
+
+        config_release = f'{self.sgtk.configuration_descriptor.system_name}@{self.sgtk.configuration_descriptor.version}'
+        if self.sgtk.configuration_descriptor.is_dev():
+            config_env = "dev"
+        else:
+            config_env = "production"
+
+        sentry_sdk.init(
+            dsn="https://ead63d02fd9544c091baf83427e649da@o339527.ingest.sentry.io/4504868950179840",
+
+            # Set traces_sample_rate to 1.0 to capture 100%
+            # of transactions for performance monitoring.
+            # We recommend adjusting this value in production.
+            traces_sample_rate=1.0,
+            release=config_release,
+            environment=config_env
+        )
+
+        sentry_sdk.set_user({"email": sgtk.get_authenticated_user().login})
+
+        # Give a bunch of tags to Sentry
+        engine_metrics = engine.get_metrics_properties()
+
+        sentry_sdk.set_tag("engine", engine_metrics['Engine'])
+        sentry_sdk.set_tag("engine.version", engine_metrics['Engine Version'])
+        sentry_sdk.set_tag("engine.host_app", engine_metrics['Host App'])
+        sentry_sdk.set_tag("engine.host_app_version", engine_metrics['Host App Version'])
+
         if engine.name == "tk-maya":
             self.logger.info("Custom Maya Init Hook")
             import maya.cmds as cmds
