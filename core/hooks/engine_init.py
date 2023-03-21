@@ -13,7 +13,7 @@ Hook that gets executed every time an engine has been fully initialized.
 """
 
 from tank import Hook
-import sentry_sdk
+import sentry_sdk, sgtk
 
 class EngineInit(Hook):
     def execute(self, engine, **kwargs):
@@ -46,7 +46,7 @@ class EngineInit(Hook):
             environment=config_env
         )
 
-        sentry_sdk.set_user({"email": self.sgtk.get_authenticated_user()})
+        sentry_sdk.set_user({"email": sgtk.get_authenticated_user().login})
 
         # Give a bunch of tags to Sentry
         engine_metrics = engine.get_metrics_properties()
