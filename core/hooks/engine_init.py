@@ -29,6 +29,12 @@ class EngineInit(Hook):
         :type engine: :class:`~sgtk.platform.Engine`
         """
 
+        config_release = f'{self.sgtk.configuration_descriptor.system_name}@{self.sgtk.configuration_descriptor.version}'
+        if self.sgtk.configuration_descriptor.is_dev():
+            config_env = "dev"
+        else:
+            config_env = "production"
+
         sentry_sdk.init(
             dsn="https://ead63d02fd9544c091baf83427e649da@o339527.ingest.sentry.io/4504868950179840",
 
@@ -36,8 +42,11 @@ class EngineInit(Hook):
             # of transactions for performance monitoring.
             # We recommend adjusting this value in production.
             traces_sample_rate=1.0,
-            release=str(engine.sgtk.configuration_descriptor).split()[-1]
+            release=config_release,
+            environment=config_env
         )
+
+        sentry_sdk.set_user({"email": "self.sgtk.get_authenticated_user()"})
 
         # Give a bunch of tags to Sentry
         engine_metrics = engine.get_metrics_properties()
