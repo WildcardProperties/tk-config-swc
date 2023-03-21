@@ -35,7 +35,7 @@ entity_browser_settings: &entity_browser_settings
   - caption: Content
     entity_type: Asset
     step_filter_on: Asset
-    hierarchy: [sg_asset_library, sg_asset_type, sg_asset_category, code]
+    hierarchy: [sg_asset_library, sg_asset_type, code]
     filters:
       - [sg_asset_parent, is, [ null ]]
     sub_hierarchy:
@@ -46,7 +46,7 @@ entity_browser_settings: &entity_browser_settings
   - caption: Children
     entity_type: Asset
     step_filter_on: Asset    
-    hierarchy: [sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.sg_asset_category, sg_asset_parent.Asset.code, sg_asset_category, sg_folder_name]
+    hierarchy: [sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.code, sg_folder_name]
     filters: 
       - [sg_asset_parent, is_not, [ null ]]  
       - [sg_asset_type, is_not, [ "Animations" ]]      
@@ -57,7 +57,7 @@ entity_browser_settings: &entity_browser_settings
       hierarchy: [step]
   - caption: Environment
     entity_type: CustomEntity01
-    hierarchy: [sg_asset_library, sg_asset_type, sg_biome, sg_asset_category, sg_asset_class, sg_folder_name]
+    hierarchy: [sg_asset_library, sg_asset_type, sg_biome, sg_asset_class, sg_folder_name]
     filters: 
     sub_hierarchy:
       entity_type: Task
@@ -66,7 +66,7 @@ entity_browser_settings: &entity_browser_settings
       hierarchy: [entity,step]       
   - caption: Animation
     entity_type: Asset
-    hierarchy: [sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.sg_asset_category, sg_asset_parent.Asset.code, sg_asset_category, code]
+    hierarchy: [sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.code, code]
     filters:
       - [sg_asset_parent, is_not, [ null ]]
       - [sg_asset_type, is, [ "Animations" ]]
@@ -100,7 +100,7 @@ entity_browser_settings: &env_entity_browser_settings
   entities:
   - caption: Environment
     entity_type: CustomEntity01
-    hierarchy: [sg_asset_library, sg_asset_type, sg_biome, sg_asset_category, sg_folder_name]
+    hierarchy: [sg_asset_library, sg_asset_type, sg_biome, sg_folder_name]
     filters:
     sub_hierarchy:
       entity_type: Task
@@ -113,7 +113,7 @@ entity_browser_settings: &anim_entity_browser_settings
   entities:
   - caption: Animation
     entity_type: Asset
-    hierarchy: [sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.sg_asset_category, sg_asset_parent.Asset.code, sg_asset_category, code]
+    hierarchy: [sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.code, code]
     filters:
       - [sg_asset_parent, is_not, [ null ]]
       - [sg_asset_type, is, [ "Animations" ]]
@@ -844,7 +844,7 @@ settings.tk-multi-workfiles2.unreal.asset_step:
       - caption: Content
         entity_type: Asset
         step_filter_on: Asset
-        hierarchy: [ sg_asset_library, sg_asset_type, sg_asset_category, code ]
+        hierarchy: [ sg_asset_library, sg_asset_type, code ]
         #hierarchy: [step]
         #hierarchy: []
         filters:
@@ -858,7 +858,7 @@ settings.tk-multi-workfiles2.unreal.asset_step:
       - caption: Children
         entity_type: Asset
         step_filter_on: Asset
-        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.sg_asset_category, sg_asset_parent.Asset.code, sg_asset_category, sg_folder_name ]
+        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.code, sg_folder_name ]
         #hierarchy: []
         filters:
           - [ sg_asset_parent, is_not, [ null ] ]
@@ -871,7 +871,7 @@ settings.tk-multi-workfiles2.unreal.asset_step:
           #hierarchy: []
       - caption: Environment
         entity_type: CustomEntity01
-        hierarchy: [ sg_asset_library, sg_asset_type, sg_biome, sg_asset_category, sg_asset_class, sg_folder_name ]
+        hierarchy: [ sg_asset_library, sg_asset_type, sg_biome, sg_asset_class, sg_folder_name ]
         filters:
         sub_hierarchy:
           entity_type: Task
@@ -881,7 +881,7 @@ settings.tk-multi-workfiles2.unreal.asset_step:
           #hierarchy: []
       - caption: Animation
         entity_type: Asset
-        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.sg_asset_category, sg_asset_parent.Asset.code, sg_asset_category, code ]
+        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.code, code ]
         filters:
           - [ sg_asset_parent, is_not, [ null ] ]
           - [ sg_asset_type, is, [ "Animations" ] ]
@@ -924,7 +924,7 @@ settings.tk-multi-workfiles2.unreal.sequence:
     entities:
       - caption: Animation
         entity_type: Asset
-        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.sg_asset_category, sg_asset_parent.Asset.code, sg_asset_category, code ]
+        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.code, code ]
         filters:
           - [ sg_asset_parent, is_not, [ null ] ]
           - [ sg_asset_type, is, [ "Animations" ] ]
@@ -964,7 +964,7 @@ settings.tk-multi-workfiles2.unreal.sequence_step:
     entities:
       - caption: Animation
         entity_type: Asset
-        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.sg_asset_category, sg_asset_parent.Asset.code, sg_asset_category, code ]
+        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.code, code ]
         filters:
           - [ sg_asset_parent, is_not, [ null ] ]
           - [ sg_asset_type, is, [ "Animations" ] ]
@@ -1004,7 +1004,7 @@ settings.tk-multi-workfiles2.unreal.shot:
     entities:
       - caption: Animation
         entity_type: Asset
-        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.sg_asset_category, sg_asset_parent.Asset.code, sg_asset_category, code ]
+        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.code, code ]
         filters:
           - [ sg_asset_parent, is_not, [ null ] ]
           - [ sg_asset_type, is, [ "Animations" ] ]
@@ -1043,7 +1043,7 @@ settings.tk-multi-workfiles2.unreal.shot_step:
     entities:
       - caption: Animation
         entity_type: Asset
-        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.sg_asset_category, sg_asset_parent.Asset.code, sg_asset_category, code ]
+        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.code, code ]
         filters:
           - [ sg_asset_parent, is_not, [ null ] ]
           - [ sg_asset_type, is, [ "Animations" ] ]
@@ -1084,7 +1084,7 @@ settings.tk-multi-workfiles2.unreal.asset_child_step:
       - caption: Content
         entity_type: Asset
         step_filter_on: Asset
-        hierarchy: [ sg_asset_library, sg_asset_type, sg_asset_category, code ]
+        hierarchy: [ sg_asset_library, sg_asset_type, code ]
         filters:
           - [ sg_asset_parent, is, [ null ] ]
         sub_hierarchy:
@@ -1095,7 +1095,7 @@ settings.tk-multi-workfiles2.unreal.asset_child_step:
       - caption: Children
         entity_type: Asset
         step_filter_on: Asset
-        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.sg_asset_category, sg_asset_parent.Asset.code, sg_asset_category, sg_folder_name ]
+        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.code, sg_folder_name ]
         filters:
           - [ sg_asset_parent, is_not, [ null ] ]
           - [ sg_asset_type, is_not, [ "Animations" ] ]
@@ -1106,7 +1106,7 @@ settings.tk-multi-workfiles2.unreal.asset_child_step:
           #hierarchy: [ step ]
       - caption: Environment
         entity_type: CustomEntity01
-        hierarchy: [ sg_asset_library, sg_asset_type, sg_biome, sg_asset_category, sg_asset_class, sg_folder_name ]
+        hierarchy: [ sg_asset_library, sg_asset_type, sg_biome, sg_asset_class, sg_folder_name ]
         filters:
         sub_hierarchy:
           entity_type: Task
@@ -1155,7 +1155,7 @@ settings.tk-multi-workfiles2.unreal.seq_asset_step:
     entities:
       - caption: Animation
         entity_type: Asset
-        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.sg_asset_category, sg_asset_parent.Asset.code, sg_asset_category, code ]
+        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.code, code ]
         filters:
           - [ sg_asset_parent, is_not, [ null ] ]
           - [ sg_asset_type, is, [ "Animations" ] ]
@@ -1195,7 +1195,7 @@ settings.tk-multi-workfiles2.unreal.anim_asset_step:
     entities:
       - caption: Animation
         entity_type: Asset
-        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.sg_asset_category, sg_asset_parent.Asset.code, sg_asset_category, code ]
+        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.code, code ]
         filters:
           - [ sg_asset_parent, is_not, [ null ] ]
           - [ sg_asset_type, is, [ "Animations" ] ]
@@ -1299,7 +1299,7 @@ settings.tk-multi-workfiles2.unreal.project:
     entities:
       - caption: Animation
         entity_type: Asset
-        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.sg_asset_category, sg_asset_parent.Asset.code, sg_asset_category, code ]
+        hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.code, code ]
         filters:
           - [ sg_asset_parent, is_not, [ null ] ]
           - [ sg_asset_type, is, [ "Animations" ] ]
