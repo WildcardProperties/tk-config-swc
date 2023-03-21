@@ -46,7 +46,7 @@ class EngineInit(Hook):
             environment=config_env
         )
 
-        sentry_sdk.set_user({"email": "self.sgtk.get_authenticated_user()"})
+        sentry_sdk.set_user({"email": self.sgtk.get_authenticated_user()})
 
         # Give a bunch of tags to Sentry
         engine_metrics = engine.get_metrics_properties()
