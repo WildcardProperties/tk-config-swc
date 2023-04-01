@@ -123,6 +123,24 @@ settings.tk-multi-publish2.3dsmax.env_asset_step:
   collector_settings:
       Work Template: env_asset_max_workfile
 
+# env_asset_simple_step
+settings.tk-multi-publish2.3dsmax.env_asset_simple_step: 
+  <<: *settings_publish_plugins_tk-multi-publish2_3dsmax
+  collector_settings:
+      Work Template: env_asset_simple_max_workfile
+
+# env_asset_ext_step
+settings.tk-multi-publish2.3dsmax.env_asset_ext_step: 
+  <<: *settings_publish_plugins_tk-multi-publish2_3dsmax
+  collector_settings:
+      Work Template: env_asset_ext_max_workfile      
+      
+# weapon_step
+settings.tk-multi-publish2.3dsmax.weapon_step: 
+  <<: *settings_publish_plugins_tk-multi-publish2_3dsmax
+  collector_settings:
+      Work Template: weapon_max_workfile      
+
 ################################################################################
 
 # ---- Houdini
@@ -209,6 +227,24 @@ settings.tk-multi-publish2.houdini.env_asset_step:
   <<: *settings_publish_plugins_tk-multi-publish2_houdini
   collector_settings:
       Work Template: env_asset_houdini_workfile
+
+# env_asset_simple_step
+settings.tk-multi-publish2.houdini.env_asset_simple_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_houdini
+  collector_settings:
+      Work Template: env_asset_simple_houdini_workfile
+
+# env_asset_ext_step
+settings.tk-multi-publish2.houdini.env_asset_ext_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_houdini
+  collector_settings:
+      Work Template: env_asset_ext_houdini_workfile      
+
+# weapon_step
+settings.tk-multi-publish2.houdini.weapon_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_houdini
+  collector_settings:
+      Work Template: weapon_houdini_workfile   
 
 ################################################################################
 
@@ -297,6 +333,24 @@ settings.tk-multi-publish2.maya.env_asset_step:
   collector_settings:
       Work Template: env_asset_maya_workfile
 
+# env_asset_simple_step
+settings.tk-multi-publish2.maya.env_asset_simple_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_maya
+  collector_settings:
+      Work Template: env_asset_simple_maya_workfile
+
+# env_asset_ext_step
+settings.tk-multi-publish2.maya.env_asset_ext_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_maya
+  collector_settings:
+      Work Template: env_asset_ext_maya_workfile
+
+# weapon_step
+settings.tk-multi-publish2.maya.weapon_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_maya
+  collector_settings:
+      Work Template: weapon_maya_workfile
+
 ################################################################################
 
 # ---- Photoshop
@@ -359,6 +413,27 @@ settings.tk-multi-publish2.photoshop.env_asset_step:
   collector_settings:
       Work Template: env_asset_photoshop_workfile
       Work Area: env_asset_root
+
+# env_asset_simple_step
+settings.tk-multi-publish2.photoshop.env_asset_simple_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_photoshop
+  collector_settings:
+      Work Template: env_asset_simple_photoshop_workfile
+      Work Area: env_asset_simple_root
+
+# env_asset_ext_step
+settings.tk-multi-publish2.photoshop.env_asset_ext_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_photoshop
+  collector_settings:
+      Work Template: env_asset_ext_photoshop_workfile
+      Work Area: env_asset_ext_root
+
+# weapon_step
+settings.tk-multi-publish2.photoshop.weapon_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_photoshop
+  collector_settings:
+      Work Template: weapon_photoshop_workfile
+      Work Area: weapon_root
 
 ################################################################################
 
@@ -455,6 +530,24 @@ settings.tk-multi-publish2.substancepainter.env_asset_step:
   collector_settings:
       Work Template: env_asset_substancepainter_workfile
 
+# env_asset_simple_step
+settings.tk-multi-publish2.substancepainter.env_asset_simple_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_substancepainter
+  collector_settings:
+      Work Template: env_asset_simple_substancepainter_workfile
+
+# env_asset_ext_step
+settings.tk-multi-publish2.substancepainter.env_asset_ext_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_substancepainter
+  collector_settings:
+      Work Template: env_asset_ext_substancepainter_workfile            
+
+# weapon_step
+settings.tk-multi-publish2.substancepainter.weapon_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_substancepainter
+  collector_settings:
+      Work Template: weapon_substancepainter_workfile            
+
 ################################################################################
 
 # ---- Substance Designer
@@ -548,6 +641,24 @@ settings.tk-multi-publish2.substancedesigner.env_asset_step:
   <<: *settings_publish_plugins_tk-multi-publish2_substancedesigner
   collector_settings:
       Work Template: env_asset_substancedesigner_workfile
+
+# env_asset_simple_step
+settings.tk-multi-publish2.substancedesigner.env_asset_simple_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_substancedesigner
+  collector_settings:
+      Work Template: env_asset_simple_substancedesigner_workfile
+
+# env_asset_ext_step
+settings.tk-multi-publish2.substancedesigner.env_asset_ext_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_substancedesigner
+  collector_settings:
+      Work Template: env_asset_ext_substancedesigner_workfile            
+
+# weapon_step
+settings.tk-multi-publish2.substancedesigner.weapon_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_substancedesigner
+  collector_settings:
+      Work Template: weapon_substancedesigner_workfile            
 
 ################################################################################
 

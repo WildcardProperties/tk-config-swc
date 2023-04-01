@@ -16,4 +16,4 @@ filters:
     - { "path": "sg_asset_parent", "relation": "is_not", "values": [ null ] }
     - { "path": "sg_asset_parent", "relation": "type_is", "values": [ "Asset" ] }
     - { "path": "sg_asset_type", "relation": "not_in", "values": [ "Animations", "Audio" ] }    
-    - { "path": "project", "relation": "is", "values": [ "$project" ] }        
+    - { "path": "sg_asset_library", "relation": "is", "values": [ "$asset_library" ] }   

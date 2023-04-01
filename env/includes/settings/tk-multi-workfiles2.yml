@@ -324,6 +324,39 @@ settings.tk-multi-workfiles2.3dsmax.env_asset_step:
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
 
+# env_asset_simple_step
+settings.tk-multi-workfiles2.3dsmax.env_asset_simple_step:
+  template_publish: env_asset_simple_max_workfile
+  template_publish_area: pub_asset_root
+  template_work: env_asset_simple_max_workfile
+  template_work_area: env_asset_simple_root
+  <<: *common_workfiles_settings
+  my_tasks_extra_display_fields: []    
+  <<: *env_entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
+
+# env_asset_ext_step
+settings.tk-multi-workfiles2.3dsmax.env_asset_ext_step:
+  template_publish: env_asset_ext_max_workfile
+  template_publish_area: pub_asset_root
+  template_work: env_asset_ext_max_workfile
+  template_work_area: env_asset_ext_root
+  <<: *common_workfiles_settings
+  my_tasks_extra_display_fields: []    
+  <<: *env_entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
+
+# weapon_step
+settings.tk-multi-workfiles2.3dsmax.weapon_step:
+  template_publish: weapon_max_workfile
+  template_publish_area: pub_asset_root
+  template_work: weapon_max_workfile
+  template_work_area: weapon_root
+  <<: *common_workfiles_settings
+  my_tasks_extra_display_fields: []    
+  <<: *env_entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
+
 ################################################################################
 
 # ---- Houdini
@@ -432,6 +465,39 @@ settings.tk-multi-workfiles2.houdini.env_asset_step:
   template_publish_area: env_asset_root
   template_work: env_asset_houdini_workfile
   template_work_area: env_asset_root
+  <<: *common_workfiles_settings
+  my_tasks_extra_display_fields: []    
+  <<: *env_entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
+
+# env_asset_simple_step
+settings.tk-multi-workfiles2.houdini.env_asset_simple_step:
+  template_publish: env_asset_simple_houdini_workfile
+  template_publish_area: env_asset_simple_root
+  template_work: env_asset_simple_houdini_workfile
+  template_work_area: env_asset_simple_root
+  <<: *common_workfiles_settings
+  my_tasks_extra_display_fields: []    
+  <<: *env_entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
+
+# env_asset_ext_step
+settings.tk-multi-workfiles2.houdini.env_asset_ext_step:
+  template_publish: env_asset_ext_houdini_workfile
+  template_publish_area: env_asset_ext_root
+  template_work: env_asset_ext_houdini_workfile
+  template_work_area: env_asset_ext_root
+  <<: *common_workfiles_settings
+  my_tasks_extra_display_fields: []    
+  <<: *env_entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
+
+# weapon_step
+settings.tk-multi-workfiles2.houdini.weapon_step:
+  template_publish: weapon_houdini_workfile
+  template_publish_area: weapon_root
+  template_work: weapon_houdini_workfile
+  template_work_area: weapon_root
   <<: *common_workfiles_settings
   my_tasks_extra_display_fields: []    
   <<: *env_entity_browser_settings
@@ -552,6 +618,39 @@ settings.tk-multi-workfiles2.maya.env_asset_step:
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
 
+# env_asset_simple_step
+settings.tk-multi-workfiles2.maya.env_asset_simple_step:
+  template_publish: env_asset_simple_maya_workfile
+  template_publish_area: env_asset_simple_root
+  template_work: env_asset_simple_maya_workfile
+  template_work_area: env_asset_simple_root
+  <<: *common_workfiles_settings
+  my_tasks_extra_display_fields: []    
+  <<: *env_entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
+
+# env_asset_ext_step
+settings.tk-multi-workfiles2.maya.env_asset_ext_step:
+  template_publish: env_asset_ext_maya_workfile
+  template_publish_area: env_asset_ext_root
+  template_work: env_asset_ext_maya_workfile
+  template_work_area: env_asset_ext_root
+  <<: *common_workfiles_settings
+  my_tasks_extra_display_fields: []    
+  <<: *env_entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
+
+# weapon_step
+settings.tk-multi-workfiles2.maya.weapon_step:
+  template_publish: weapon_maya_workfile
+  template_publish_area: weapon_root
+  template_work: weapon_maya_workfile
+  template_work_area: weapon_root
+  <<: *common_workfiles_settings
+  my_tasks_extra_display_fields: []    
+  <<: *env_entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
+
 # project
 settings.tk-multi-workfiles2.maya.project:
   template_publish: 
@@ -622,6 +721,39 @@ settings.tk-multi-workfiles2.photoshop.env_asset_step:
   template_publish_area: env_asset_root
   template_work: env_asset_photoshop_workfile
   template_work_area: env_asset_root
+  <<: *common_workfiles_settings
+  my_tasks_extra_display_fields: []    
+  <<: *env_entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
+
+# env_asset_simple_step
+settings.tk-multi-workfiles2.photoshop.env_asset_simple_step:
+  template_publish: env_asset_simple_photoshop_workfile
+  template_publish_area: env_asset_simple_root
+  template_work: env_asset_simple_photoshop_workfile
+  template_work_area: env_asset_simple_root
+  <<: *common_workfiles_settings
+  my_tasks_extra_display_fields: []    
+  <<: *env_entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
+
+# env_asset_ext_step
+settings.tk-multi-workfiles2.photoshop.env_asset_ext_step:
+  template_publish: env_asset_ext_photoshop_workfile
+  template_publish_area: env_asset_ext_root
+  template_work: env_asset_ext_photoshop_workfile
+  template_work_area: env_asset_ext_root
+  <<: *common_workfiles_settings
+  my_tasks_extra_display_fields: []    
+  <<: *env_entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
+
+# weapon_step
+settings.tk-multi-workfiles2.photoshop.weapon_step:
+  template_publish: weapon_photoshop_workfile
+  template_publish_area: weapon_root
+  template_work: weapon_photoshop_workfile
+  template_work_area: weapon_root
   <<: *common_workfiles_settings
   my_tasks_extra_display_fields: []    
   <<: *env_entity_browser_settings
@@ -720,6 +852,39 @@ settings.tk-multi-workfiles2.substancepainter.env_asset_step:
   template_publish_area: env_asset_root
   template_work: env_asset_substancepainter_workfile
   template_work_area: env_asset_root
+  <<: *common_workfiles_settings
+  my_tasks_extra_display_fields: []    
+  <<: *env_entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
+
+# env_asset_simple_step
+settings.tk-multi-workfiles2.substancepainter.env_asset_simple_step:
+  template_publish: env_asset_simple_substancepainter_workfile
+  template_publish_area: env_asset_simple_root
+  template_work: env_asset_simple_substancepainter_workfile
+  template_work_area: env_asset_simple_root
+  <<: *common_workfiles_settings
+  my_tasks_extra_display_fields: []    
+  <<: *env_entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
+
+# env_asset_ext_step
+settings.tk-multi-workfiles2.substancepainter.env_asset_ext_step:
+  template_publish: env_asset_ext_substancepainter_workfile
+  template_publish_area: env_asset_ext_root
+  template_work: env_asset_ext_substancepainter_workfile
+  template_work_area: env_asset_ext_root
+  <<: *common_workfiles_settings
+  my_tasks_extra_display_fields: []    
+  <<: *env_entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
+
+# weapon_step
+settings.tk-multi-workfiles2.substancepainter.weapon_step:
+  template_publish: weapon_substancepainter_workfile
+  template_publish_area: weapon_root
+  template_work: weapon_substancepainter_workfile
+  template_work_area: weapon_root
   <<: *common_workfiles_settings
   my_tasks_extra_display_fields: []    
   <<: *env_entity_browser_settings
@@ -830,6 +995,41 @@ settings.tk-multi-workfiles2.substancedesigner.env_asset_step:
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
 
+# env_asset_simple_step
+settings.tk-multi-workfiles2.substancedesigner.env_asset_simple_step:
+  template_publish: env_asset_simple_substancedesigner_workfile
+  template_publish_area: env_asset_simple_root
+  template_work: env_asset_simple_substancedesigner_workfile
+  template_work_area: env_asset_simple_root
+  # saveas_default_name: hook:tk-multi-workfiles2/saveas_default_name_tk-substancedesigner
+  <<: *common_workfiles_settings
+  my_tasks_extra_display_fields: []    
+  <<: *env_entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
+
+# env_asset_ext_step
+settings.tk-multi-workfiles2.substancedesigner.env_asset_ext_step:
+  template_publish: env_asset_ext_substancedesigner_workfile
+  template_publish_area: env_asset_ext_root
+  template_work: env_asset_ext_substancedesigner_workfile
+  template_work_area: env_asset_ext_root
+  # saveas_default_name: hook:tk-multi-workfiles2/saveas_default_name_tk-substancedesigner
+  <<: *common_workfiles_settings
+  my_tasks_extra_display_fields: []    
+  <<: *env_entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
+
+# weapon_step
+settings.tk-multi-workfiles2.substancedesigner.weapon_step:
+  template_publish: weapon_substancedesigner_workfile
+  template_publish_area: weapon_root
+  template_work: weapon_substancedesigner_workfile
+  template_work_area: weapon_root
+  # saveas_default_name: hook:tk-multi-workfiles2/saveas_default_name_tk-substancedesigner
+  <<: *common_workfiles_settings
+  my_tasks_extra_display_fields: []    
+  <<: *env_entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
 
 #-------------------------------------------------------------------------------------
 # ---- Unreal
@@ -1270,6 +1470,69 @@ settings.tk-multi-workfiles2.unreal.env_asset_step:
     template_publish_area: env_asset_root
     template_work: env_asset_unreal_workfile
     template_work_area: env_asset_root
+    <<: *common_workfiles_settings
+    my_tasks_extra_display_fields: [ ]
+    #<<: *env_entity_browser_settings
+    entities:
+      - caption: Environment
+        entity_type: CustomEntity01
+        hierarchy: [ sg_asset_library, sg_asset_type, sg_biome, sg_asset_category, sg_folder_name ]
+        filters:
+        sub_hierarchy:
+          entity_type: Task
+          filters:
+          link_field: entity
+          #hierarchy: [ entity ]
+    location: "@apps.tk-multi-workfiles2.location"
+
+  # env_asset_simple_step
+settings.tk-multi-workfiles2.unreal.env_asset_simple_step:
+    template_publish: env_asset_simple_unreal_workfile
+    template_publish_area: env_asset_simple_root
+    template_work: env_asset_simple_unreal_workfile
+    template_work_area: env_asset_simple_root
+    <<: *common_workfiles_settings
+    my_tasks_extra_display_fields: [ ]
+    #<<: *env_entity_browser_settings
+    entities:
+      - caption: Environment
+        entity_type: CustomEntity01
+        hierarchy: [ sg_asset_library, sg_asset_type, sg_biome, sg_asset_category, sg_folder_name ]
+        filters:
+        sub_hierarchy:
+          entity_type: Task
+          filters:
+          link_field: entity
+          #hierarchy: [ entity ]
+    location: "@apps.tk-multi-workfiles2.location"
+
+  # env_asset_ext_step
+settings.tk-multi-workfiles2.unreal.env_asset_ext_step:
+    template_publish: env_asset_ext_unreal_workfile
+    template_publish_area: env_asset_ext_root
+    template_work: env_asset_ext_unreal_workfile
+    template_work_area: env_asset_ext_root
+    <<: *common_workfiles_settings
+    my_tasks_extra_display_fields: [ ]
+    #<<: *env_entity_browser_settings
+    entities:
+      - caption: Environment
+        entity_type: CustomEntity01
+        hierarchy: [ sg_asset_library, sg_asset_type, sg_biome, sg_asset_category, sg_folder_name ]
+        filters:
+        sub_hierarchy:
+          entity_type: Task
+          filters:
+          link_field: entity
+          #hierarchy: [ entity ]
+    location: "@apps.tk-multi-workfiles2.location"
+
+  # weapon_step
+settings.tk-multi-workfiles2.unreal.weapon_step:
+    template_publish: weapon_unreal_workfile
+    template_publish_area: weapon_root
+    template_work: weapon_unreal_workfile
+    template_work_area: weapon_root
     <<: *common_workfiles_settings
     my_tasks_extra_display_fields: [ ]
     #<<: *env_entity_browser_settings

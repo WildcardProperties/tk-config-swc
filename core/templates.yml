@@ -380,13 +380,15 @@ paths:
     #
     # These don't require the standard formatting (with definition and root_name) because they
     # will be set within each template that uses the alias.
-    asset_root: '{asset_type}/{Asset}'
-    asset_child_root: '{asset_type_parent}/{asset_parent}/{Asset}'
-    sequence_root: '{seq_asset_library}/Sequences/{Sequence}'
-    shot_root: '{shot_asset_library_parent}/Sequences/{Sequence}/{Shot}'
-    seq_asset_root: '{seq_asset_library_parent}/Sequences/{seq_asset_parent}/{asset_type}/{asset_category}/{Asset}'    
-
-    env_asset_root: '{env_asset_type}/{biome}/{env_asset_category}/{env_folder_name}'
+    asset_root: 'Content/{asset_library}/{asset_type}/{Asset}'
+    asset_child_root: 'Content/{asset_library_parent}/{asset_type_parent}/{asset_parent}/{Asset}'
+    sequence_root: 'Content/{seq_asset_library}/Sequences/{Sequence}'
+    shot_root: 'Content/{shot_asset_library_parent}/Sequences/{Sequence}/{Shot}'
+    seq_asset_root: 'Content/{seq_asset_library_parent}/Sequences/{seq_asset_parent}/{asset_type}/{asset_category}/{Asset}'    
+    weapon_root: 'Content/{asset_library}/Weapon{Asset}'
+    env_asset_root: 'Content/{env_asset_library}/{env_asset_type}/{biome}/{env_asset_category}/{env_folder_name}'
+    env_asset_simple_root: 'Content/{env_asset_library}/{env_asset_type}/{env_asset_category}/{env_folder_name}'
+    env_asset_ext_root: 'Content/{env_asset_library}/{env_asset_type}/{biome}/{env_asset_category}/{env_asset_class}/{env_folder_name}'
     pub_asset_root: '{pub_asset_type}/{Campaign}/{Product}/{use}/{CustomEntity03}'
     prod_asset_root: '{pub_asset_type}/{Product}/{use}/{CustomEntity03}'
 
@@ -397,6 +399,10 @@ paths:
     asset_child_work_area: '@asset_child_root/{step_folder}/{Step}/'
     asset_child_filename: '@asset_child_work_area/{asset_name}[_{name}][_{Step}]'
     asset_child_snapshot_filename: '@asset_child_work_area/snapshots/{asset_name}[_{name}][_{Step}].{timestamp}'
+
+    weapon_work_area: '@weapon_root/{step_folder}/{Step}' 
+    weapon_filename: '@weapon_work_area/{Asset}[_{name}][_{Step}]'
+    weapon_snapshot_filename: '@weapon_work_area/snapshots/{Asset}[_{name}][_{Step}].{timestamp}'
 
     sequence_filename: '@sequence_root/{Sequence}[_{name}]'
     sequence_snapshot_filename: '@sequence_root/snapshots/{Sequence}[_{name}].{timestamp}'
@@ -413,14 +419,20 @@ paths:
     seq_asset_work_area: '@seq_asset_root/{Step}/{Task}' 
     seq_asset_filename: '@seq_asset_work_area/{asset_name}[_{name}][_{Task}]'
 
-    anim_asset_work_area: '{asset_type_parent}/{asset_parent}/{asset_type}/{Asset}'
+    anim_asset_work_area: 'Content/{asset_library_parent}/{asset_type_parent}/{asset_parent}/{asset_type}/{Asset}'
     anim_asset_filename: '@anim_asset_work_area/[{asset_name}_]{Task}[_{name}]'
     anim_asset_snapshot_filename: '@anim_asset_work_area/snapshots/[{asset_name}_]{Task}[_{name}].{timestamp}'     
 
     env_asset_work_area: '@env_asset_root/{step_folder}/{Step}'
     env_asset_filename: '@env_asset_work_area/{env_asset_name}[_{name}][_{Step}]'
     env_asset_snapshot_filename: '@env_asset_work_area/{env_asset_name}[_{name}][_{Step}].{timestamp}'
-    
+    env_asset_simple_work_area: '@env_asset_simple_root/{step_folder}/{Step}'
+    env_asset_simple_filename: '@env_asset_simple_work_area/{env_asset_name}[_{name}][_{Step}]'
+    env_asset_simple_snapshot_filename: '@env_asset_simple_work_area/{env_asset_name}[_{name}][_{Step}].{timestamp}'
+    env_asset_ext_work_area: '@env_asset_ext_root/{step_folder}/{Step}'
+    env_asset_ext_filename: '@env_asset_ext_work_area/{env_asset_name}[_{name}][_{Step}]'
+    env_asset_ext_snapshot_filename: '@env_asset_ext_work_area/{env_asset_name}[_{name}][_{Step}].{timestamp}'
+
     pub_asset_filename: '@pub_asset_root/{task_step}/{Product}_{Campaign}_{CustomEntity03}_{Task}[_{width}x{height}][_{name}]'
     pub_asset_snapshot_filename: '@pub_asset_root/{task_step}/snapshots/{Product}_{Campaign}_{CustomEntity03}_{Task}[_{width}x{height}][_{name}].{timestamp}'
     prod_asset_filename: '@prod_asset_root/{task_step}/{Product}_{CustomEntity03}_{Task}[_{width}x{height}][_{name}]'
@@ -501,10 +513,24 @@ paths:
     asset_child_photoshop_snapshot:
         definition: '@asset_child_snapshot_filename.{photoshop_extension}'
 
+    # weapon
+    weapon_photoshop_workfile:
+        definition: '@weapon_filename.{photoshop_extension}'
+    weapon_photoshop_snapshot:
+        definition: '@weapon_snapshot_filename.{photoshop_extension}'
+
     env_asset_photoshop_workfile:
         definition: '@env_asset_filename.{photoshop_extension}'
     env_asset_photoshop_snapshot:
         definition: '@env_asset_snapshot_filename.{photoshop_extension}'
+    env_asset_simple_photoshop_workfile:
+        definition: '@env_asset_simple_filename.{photoshop_extension}'
+    env_asset_simple_photoshop_snapshot:
+        definition: '@env_asset_simple_snapshot_filename.{photoshop_extension}'
+    env_asset_ext_photoshop_workfile:
+        definition: '@env_asset_ext_filename.{photoshop_extension}'
+    env_asset_ext_photoshop_snapshot:
+        definition: '@env_asset_ext_snapshot_filename.{photoshop_extension}'                
 
     pub_asset_photoshop_workfile:
         definition: '@pub_asset_filename.{photoshop_extension}'
@@ -525,6 +551,12 @@ paths:
         definition: '@asset_filename.{maya_extension}'
     asset_maya_snapshot:
         definition: '@asset_snapshot_filename.{maya_extension}'
+
+    # weapon
+    weapon_maya_workfile:
+        definition: '@weapon_filename.{maya_extension}'
+    weapon_maya_snapshot:
+        definition: '@weapon_snapshot_filename.{maya_extension}'
 
     sequence_maya_workfile:
         definition: '@sequence_filename.{maya_extension}'
@@ -560,7 +592,15 @@ paths:
         definition: '@env_asset_filename.{maya_extension}'
     env_asset_maya_snapshot:
         definition: '@env_asset_snapshot_filename.{maya_extension}'
-
+    env_asset_simple_maya_workfile:
+        definition: '@env_asset_simple_filename.{maya_extension}'
+    env_asset_simple_maya_snapshot:
+        definition: '@env_asset_simple_snapshot_filename.{maya_extension}'
+    env_asset_ext_maya_workfile:
+        definition: '@env_asset_ext_filename.{maya_extension}'
+    env_asset_ext_maya_snapshot:
+        definition: '@env_asset_ext_snapshot_filename.{maya_extension}'
+                
     pub_asset_maya_workfile:
         definition: '@pub_asset_filename.{maya_extension}'
     pub_asset_maya_snapshot:
@@ -589,6 +629,12 @@ paths:
         definition: '@asset_filename.hip'
     asset_houdini_snapshot:
         definition: '@asset_snapshot_filename.hip'
+
+    # weapon
+    weapon_houdini_workfile:
+        definition: '@weapon_filename.hip'
+    weapon_houdini_snapshot:
+        definition: '@weapon_snapshot_filename.hip'        
 
     sequence_houdini_workfile:
         definition: '@sequence_filename.hip'
@@ -624,6 +670,14 @@ paths:
         definition: '@env_asset_filename.hip'
     env_asset_houdini_snapshot:
         definition: '@env_asset_snapshot_filename.hip'
+    env_asset_simple_houdini_workfile:
+        definition: '@env_asset_simple_filename.hip'
+    env_asset_simple_houdini_snapshot:
+        definition: '@env_asset_simple_snapshot_filename.hip'
+    env_asset_ext_houdini_workfile:
+        definition: '@env_asset_ext_filename.hip'
+    env_asset_ext_houdini_snapshot:
+        definition: '@env_asset_ext_snapshot_filename.hip'                
 
     pub_asset_houdini_workfile:
         definition: '@pub_asset_filename.hip'
@@ -645,6 +699,12 @@ paths:
     asset_max_snapshot:
         definition: '@asset_snapshot_filename.max'
 
+    # weapon
+    weapon_max_workfile:
+        definition: '@weapon_filename.max'
+    weapon_max_snapshot:
+        definition: '@weapon_snapshot_filename.max'        
+
     asset_child_max_workfile:
         definition: '@asset_child_filename.max'
     asset_child_max_snapshot:
@@ -659,6 +719,14 @@ paths:
         definition: '@env_asset_filename.max'
     env_asset_max_snapshot:
         definition: '@env_asset_snapshot_filename.max'
+    env_asset_simple_max_workfile:
+        definition: '@env_asset_simple_filename.max'
+    env_asset_simple_max_snapshot:
+        definition: '@env_asset_simple_snapshot_filename.max'
+    env_asset_ext_max_workfile:
+        definition: '@env_asset_ext_filename.max'
+    env_asset_ext_max_snapshot:
+        definition: '@env_asset_ext_snapshot_filename.max'                
 
     pub_asset_max_workfile:
         definition: '@pub_asset_filename.max'
@@ -680,6 +748,12 @@ paths:
     asset_substancepainter_snapshot:
         definition: '@asset_snapshot_filename.spp'
 
+    # weapon
+    weapon_substancepainter_workfile:
+        definition: '@weapon_filename.spp'
+    weapon_substancepainter_snapshot:
+        definition: '@weapon_snapshot_filename.spp'        
+
     asset_child_substancepainter_workfile:
         definition: '@asset_child_filename.spp'
     asset_child_substancepainter_snapshot:
@@ -689,6 +763,14 @@ paths:
         definition: '@env_asset_filename.spp'
     env_asset_substancepainter_snapshot:
         definition: '@env_asset_snapshot_filename.spp'
+    env_asset_simple_substancepainter_workfile:
+        definition: '@env_asset_simple_filename.spp'
+    env_asset_simple_substancepainter_snapshot:
+        definition: '@env_asset_simple_snapshot_filename.spp'
+    env_asset_ext_substancepainter_workfile:
+        definition: '@env_asset_ext_filename.spp'
+    env_asset_ext_substancepainter_snapshot:
+        definition: '@env_asset_ext_snapshot_filename.spp'                
 
     pub_asset_substancepainter_workfile:
         definition: '@pub_asset_filename.spp'
@@ -720,6 +802,12 @@ paths:
     asset_substancedesigner_snapshot:
         definition: '@asset_snapshot_filename.{substancedesigner.extension}'
 
+    # weapon
+    weapon_substancedesigner_workfile:
+        definition: '@weapon_filename.{substancedesigner.extension}'
+    weapon_substancedesigner_snapshot:
+        definition: '@weapon_snapshot_filename.{substancedesigner.extension}'        
+
     asset_child_substancedesigner_workfile:
         definition: '@asset_child_filename.{substancedesigner.extension}'
     asset_child_substancedesigner_snapshot:
@@ -729,6 +817,14 @@ paths:
         definition: '@env_asset_filename.{substancedesigner.extension}'
     env_asset_substancedesigner_snapshot:
         definition: '@env_asset_snapshot_filename.{substancedesigner.extension}'
+    env_asset_simple_substancedesigner_workfile:
+        definition: '@env_asset_simple_filename.{substancedesigner.extension}'
+    env_asset_simple_substancedesigner_snapshot:
+        definition: '@env_asset_simple_snapshot_filename.{substancedesigner.extension}'
+    env_asset_ext_substancedesigner_workfile:
+        definition: '@env_asset_ext_filename.{substancedesigner.extension}'
+    env_asset_ext_substancedesigner_snapshot:
+        definition: '@env_asset_ext_snapshot_filename.{substancedesigner.extension}'                
 
     pub_asset_substancedesigner_workfile:
         definition: '@pub_asset_filename.{substancedesigner.extension}'
@@ -755,6 +851,12 @@ paths:
         definition: '@asset_filename.umap'
     asset_unreal_snapshot:
         definition: '@asset_snapshot_filename.umap'
+
+    # weapon
+    weapon_unreal_workfile:
+        definition: '@weapon_filename.umap'
+    weapon_unreal_snapshot:
+        definition: '@weapon_snapshot_filename.umap'        
 
     sequence_unreal_workfile:
         definition: '@sequence_filename.umap'
@@ -790,6 +892,14 @@ paths:
         definition: '@env_asset_filename.umap'
     env_asset_unreal_snapshot:
         definition: '@env_asset_snapshot_filename.umap'
+    env_asset_simple_unreal_workfile:
+        definition: '@env_asset_simple_filename.umap'
+    env_asset_simple_unreal_snapshot:
+        definition: '@env_asset_simple_snapshot_filename.umap'
+    env_asset_ext_unreal_workfile:
+        definition: '@env_asset_ext_filename.umap'
+    env_asset_ext_unreal_snapshot:
+        definition: '@env_asset_ext_snapshot_filename.umap'                
 
     pub_asset_unreal_workfile:
         definition: '@pub_asset_filename.umap'
