@@ -519,6 +519,16 @@ settings.tk-multi-workfiles2.maya.asset_step:
   <<: *entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
 
+# asset_step_flat
+settings.tk-multi-workfiles2.maya.asset_step_flat:
+  template_publish: asset_maya_workfile_flat
+  template_publish_area: asset_root
+  template_work: asset_maya_workfile_flat
+  template_work_area: asset_root
+  <<: *common_workfiles_settings
+  <<: *entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"  
+
 # sequence
 settings.tk-multi-workfiles2.maya.sequence:
   template_publish: sequence_maya_workfile

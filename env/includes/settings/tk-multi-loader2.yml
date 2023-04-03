@@ -201,7 +201,6 @@ settings.tk-multi-loader2.desktop:
   entity_mappings:
     Task: [perforce_sync,create_folders]
     Asset: [perforce_sync,create_folders]
-    CustomEntity01: [perforce_sync,create_folders]
     CustomEntity03: [perforce_sync,create_folders]    
   <<: *entity_browser_settings 
   publish_filters: [["sg_status_list", "is_not", null]]  
@@ -250,7 +249,6 @@ settings.tk-multi-loader2.houdini.sequence:
     Asset: [perforce_sync]
     Sequence: [perforce_sync]
     Shot: [perforce_sync]
-    CustomEntity01: [perforce_sync]
     CustomEntity03: [perforce_sync]   
   <<: *sequence_browser_settings   
   publish_filters: [["sg_status_list", "is_not", null]]
@@ -273,7 +271,6 @@ settings.tk-multi-loader2.houdini.shot:
     Asset: [perforce_sync]
     Sequence: [perforce_sync]
     Shot: [perforce_sync]
-    CustomEntity01: [perforce_sync]
     CustomEntity03: [perforce_sync]   
   <<: *shot_browser_settings   
   publish_filters: [["sg_status_list", "is_not", null]]
@@ -297,7 +294,6 @@ settings.tk-multi-loader2.maya:
     Asset: [perforce_sync]
     Sequence: [perforce_sync]
     Shot: [perforce_sync]
-    CustomEntity01: [perforce_sync]
     CustomEntity03: [perforce_sync]   
   <<: *entity_browser_settings   
   publish_filters: [["sg_status_list", "is_not", null]]
@@ -320,7 +316,6 @@ settings.tk-multi-loader2.maya.sequence:
     Asset: [perforce_sync]
     Sequence: [perforce_sync]
     Shot: [perforce_sync]
-    CustomEntity01: [perforce_sync]
     CustomEntity03: [perforce_sync]   
   <<: *sequence_browser_settings   
   publish_filters: [["sg_status_list", "is_not", null]]
@@ -343,7 +338,6 @@ settings.tk-multi-loader2.maya.shot:
     Asset: [perforce_sync]
     Sequence: [perforce_sync]
     Shot: [perforce_sync]
-    CustomEntity01: [perforce_sync]
     CustomEntity03: [perforce_sync]   
   <<: *shot_browser_settings   
   publish_filters: [["sg_status_list", "is_not", null]]

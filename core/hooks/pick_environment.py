@@ -89,7 +89,13 @@ class PickEnvironment(sgtk.Hook):
                 context_entity = context.sgtk.shotgun.find_one("Asset",
                                                                [["id", "is", context.entity["id"]]],
                                                                ["sg_asset_parent","sg_asset_library","sg_asset_type","sg_asset_section","sg_asset_category","sg_asset_class"])
-
+                context_step = context.sgtk.shotgun.find_one("Step",
+                                                             [["id", "is", context.step["id"]]],
+                                                             ["sg_step_folder"])
+                
+                if not context_step.get("sg_step_folder"):
+                    return "asset_step_flat"
+                
                 if context_entity.get("sg_asset_section") and context_entity.get("sg_asset_category") and context_entity.get("sg_asset_class"):           
                     logger.info("Entity is an asset_section_category_class_step")        
                     return "asset_section_category_class_step"  

@@ -273,6 +273,12 @@ settings.tk-multi-publish2.maya.asset_step: &settings_publish_plugins_tk-multi-p
   help_url: *help_url
   location: "@apps.tk-multi-publish2.location"
 
+# asset_step_flat
+settings.tk-multi-publish2.maya.asset_step_flat:
+  <<: *settings_publish_plugins_tk-multi-publish2_maya
+  collector_settings:
+      Work Template: asset_maya_workfile_flat
+
 # sequence
 settings.tk-multi-publish2.maya.sequence:
   <<: *settings_publish_plugins_tk-multi-publish2_maya

@@ -373,6 +373,9 @@ paths:
     asset_work_area: '@asset_root/{step_folder}/{Step}' 
     asset_filename: '@asset_work_area/{Asset}[_{name}][_{Step}]'
     asset_snapshot_filename: '@asset_work_area/snapshots/{Asset}[_{name}][_{Step}].{timestamp}'
+    asset_work_area_flat: '@asset_root/{Step}' 
+    asset_filename_flat: '@asset_work_area_flat/[{Asset}_]{Task}[_{name}]'
+    asset_snapshot_filename_flat: '@asset_work_area_flat/snapshots/[{Asset}_]{Task}[_{name}].{timestamp}'    
     asset_section_work_area: '@asset_section_root/{step_folder}/{Step}'
     asset_section_filename: '@asset_section_work_area/{Asset}[_{name}][_{Step}]'
     asset_section_snapshot_filename: '@asset_section_work_area/{Asset}[_{name}][_{Step}].{timestamp}'
@@ -484,6 +487,10 @@ paths:
         definition: '@asset_filename.{photoshop_extension}'
     asset_photoshop_snapshot:
         definition: '@asset_snapshot_filename.{photoshop_extension}'
+    asset_photoshop_workfile_flat:
+        definition: '@asset_filename_flat.{photoshop_extension}'
+    asset_photoshop_snapshot_flat:
+        definition: '@asset_snapshot_filename_flat.{photoshop_extension}'        
 
     asset_child_photoshop_workfile:
         definition: '@asset_child_filename.{photoshop_extension}'
@@ -528,6 +535,10 @@ paths:
         definition: '@asset_filename.{maya_extension}'
     asset_maya_snapshot:
         definition: '@asset_snapshot_filename.{maya_extension}'
+    asset_maya_workfile_flat:
+        definition: '@asset_filename_flat.{maya_extension}'
+    asset_maya_snapshot_flat:
+        definition: '@asset_snapshot_filename_flat.{maya_extension}'
 
     # weapon
     weapon_maya_workfile:
@@ -606,6 +617,10 @@ paths:
         definition: '@asset_filename.hip'
     asset_houdini_snapshot:
         definition: '@asset_snapshot_filename.hip'
+    asset_houdini_workfile_flat:
+        definition: '@asset_filename_flat.hip'
+    asset_houdini_snapshot_flat:
+        definition: '@asset_snapshot_filename_flat.hip'        
 
     # weapon
     weapon_houdini_workfile:
@@ -675,6 +690,10 @@ paths:
         definition: '@asset_filename.max'
     asset_max_snapshot:
         definition: '@asset_snapshot_filename.max'
+    asset_max_workfile_flat:
+        definition: '@asset_filename_flat.max'
+    asset_max_snapshot_flat:
+        definition: '@asset_snapshot_filename_flat.max'        
 
     # weapon
     weapon_max_workfile:
@@ -724,6 +743,10 @@ paths:
         definition: '@asset_filename.spp'
     asset_substancepainter_snapshot:
         definition: '@asset_snapshot_filename.spp'
+    asset_substancepainter_workfile_flat:
+        definition: '@asset_filename_flat.spp'
+    asset_substancepainter_snapshot_flat:
+        definition: '@asset_snapshot_filename_flat.spp'        
 
     # weapon
     weapon_substancepainter_workfile:
@@ -778,6 +801,10 @@ paths:
         definition: '@asset_filename.{substancedesigner.extension}'
     asset_substancedesigner_snapshot:
         definition: '@asset_snapshot_filename.{substancedesigner.extension}'
+    asset_substancedesigner_workfile_flat:
+        definition: '@asset_filename_flat.{substancedesigner.extension}'
+    asset_substancedesigner_snapshot_flat:
+        definition: '@asset_snapshot_filename_flat.{substancedesigner.extension}'        
 
     # weapon
     weapon_substancedesigner_workfile:
