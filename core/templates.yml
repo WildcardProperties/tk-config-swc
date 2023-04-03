@@ -64,6 +64,10 @@ keys:
         type: str
         shotgun_entity_type: Asset
         shotgun_field_name: sg_asset_parent.Asset.code
+    asset_parent_folder:
+        type: str
+        shotgun_entity_type: Asset
+        shotgun_field_name: sg_asset_parent.Asset.sg_folder_name        
     seq_asset_parent:  
         type: str
         shotgun_entity_type: Sequence
@@ -177,11 +181,7 @@ keys:
     folder_name:
         type: str
         shotgun_entity_type: Asset
-        shotgun_field_name: sg_folder_name       
-    asset_name:
-        type: str
-        shotgun_entity_type: Asset
-        shotgun_field_name: code            
+        shotgun_field_name: sg_folder_name               
 
     # Animation Asset
     CustomEntity05:
@@ -358,12 +358,12 @@ paths:
     #
     # These don't require the standard formatting (with definition and root_name) because they
     # will be set within each template that uses the alias.
-    asset_root: 'Content/{asset_library}/{asset_type}/{Asset}'
-    asset_child_root: 'Content/{asset_library_parent}/{asset_type_parent}/{asset_parent}/{Asset}'
+    asset_root: 'Content/{asset_library}/{asset_type}/{folder_name}'
+    asset_child_root: 'Content/{asset_library_parent}/{asset_type_parent}/{asset_parent_folder}/{folder_name}'
     sequence_root: 'Content/{seq_asset_library}/Sequences/{Sequence}'
     shot_root: 'Content/{shot_asset_library_parent}/Sequences/{Sequence}/{Shot}'
     seq_asset_root: 'Content/{seq_asset_library_parent}/Sequences/{seq_asset_parent}/{asset_type}/{asset_category}/{Asset}'    
-    weapon_root: 'Content/{asset_library}/Weapon{Asset}'
+    weapon_root: 'Content/{asset_library}/Weapon{folder_name}'
     asset_section_root: 'Content/{asset_library}/{asset_type}/{asset_section}/{folder_name}'    
     asset_section_category_root: 'Content/{asset_library}/{asset_type}/{asset_section}/{asset_category}/{folder_name}'
     asset_section_category_class_root: 'Content/{asset_library}/{asset_type}/{asset_section}/{asset_category}/{asset_class}/{folder_name}'
@@ -383,9 +383,9 @@ paths:
     asset_section_category_class_filename: '@asset_section_category_class_work_area/{Asset}[_{name}][_{Step}]'
     asset_section_category_class_snapshot_filename: '@asset_section_category_class_work_area/{Asset}[_{name}][_{Step}].{timestamp}'
 
-    asset_child_work_area: '@asset_child_root/{step_folder}/{Step}/'
-    asset_child_filename: '@asset_child_work_area/{asset_name}[_{name}][_{Step}]'
-    asset_child_snapshot_filename: '@asset_child_work_area/snapshots/{asset_name}[_{name}][_{Step}].{timestamp}'
+    asset_child_work_area: '@asset_child_root/{step_folder}/{Step}'
+    asset_child_filename: '@asset_child_work_area/{Asset}[_{name}][_{Step}]'
+    asset_child_snapshot_filename: '@asset_child_work_area/snapshots/{Asset}[_{name}][_{Step}].{timestamp}'
 
     weapon_work_area: '@weapon_root/{step_folder}/{Step}' 
     weapon_filename: '@weapon_work_area/{Asset}[_{name}][_{Step}]'
@@ -404,11 +404,11 @@ paths:
     shot_task_snapshot_filename: '@shot_work_area/snapshots/{Shot}[_{Task}][_{name}].{timestamp}'
 
     seq_asset_work_area: '@seq_asset_root/{Step}/{Task}' 
-    seq_asset_filename: '@seq_asset_work_area/{asset_name}[_{name}][_{Task}]'
+    seq_asset_filename: '@seq_asset_work_area/{Asset}[_{name}][_{Task}]'
 
-    anim_asset_work_area: 'Content/{asset_library_parent}/{asset_type_parent}/{asset_parent}/{asset_type}/{Asset}'
-    anim_asset_filename: '@anim_asset_work_area/[{asset_name}_]{Task}[_{name}]'
-    anim_asset_snapshot_filename: '@anim_asset_work_area/snapshots/[{asset_name}_]{Task}[_{name}].{timestamp}'     
+    anim_asset_work_area: 'Content/{asset_library_parent}/{asset_type_parent}/{asset_parent_folder}/{asset_type}/{folder_name}'
+    anim_asset_filename: '@anim_asset_work_area/[{Asset}_]{Task}[_{name}]'
+    anim_asset_snapshot_filename: '@anim_asset_work_area/snapshots/[{Asset}_]{Task}[_{name}].{timestamp}'     
 
     pub_asset_filename: '@pub_asset_root/{task_step}/{Product}_{Campaign}_{CustomEntity03}_{Task}[_{width}x{height}][_{name}]'
     pub_asset_snapshot_filename: '@pub_asset_root/{task_step}/snapshots/{Product}_{Campaign}_{CustomEntity03}_{Task}[_{width}x{height}][_{name}].{timestamp}'
