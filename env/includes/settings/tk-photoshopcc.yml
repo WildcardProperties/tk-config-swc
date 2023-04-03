@@ -103,33 +103,33 @@ settings.tk-photoshopcc.prod_asset_step:
   shelf_favorites: *settings_tk-photoshopcc_menu
   location: '@engines.tk-photoshopcc.location'
 
-# env_asset_step
-settings.tk-photoshopcc.env_asset_step:
+# asset_section_category_step
+settings.tk-photoshopcc.asset_section_category_step:
   apps:
     <<: *settings_tk-photoshopcc_apps
-    tk-multi-publish2: "@settings.tk-multi-publish2.photoshop.env_asset_step"
-    tk-multi-snapshot: "@settings.tk-multi-snapshot.photoshop.env_asset_step"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.photoshop.env_asset_step"
+    tk-multi-publish2: "@settings.tk-multi-publish2.photoshop.asset_section_category_step"
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.photoshop.asset_section_category_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.photoshop.asset_section_category_step"
   shelf_favorites: *settings_tk-photoshopcc_menu
   location: '@engines.tk-photoshopcc.location'
 
-# env_asset_simple_step
-settings.tk-photoshopcc.env_asset_simple_step:
+# asset_section_step
+settings.tk-photoshopcc.asset_section_step:
   apps:
     <<: *settings_tk-photoshopcc_apps
-    tk-multi-publish2: "@settings.tk-multi-publish2.photoshop.env_asset_simple_step"
-    tk-multi-snapshot: "@settings.tk-multi-snapshot.photoshop.env_asset_simple_step"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.photoshop.env_asset_simple_step"
+    tk-multi-publish2: "@settings.tk-multi-publish2.photoshop.asset_section_step"
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.photoshop.asset_section_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.photoshop.asset_section_step"
   shelf_favorites: *settings_tk-photoshopcc_menu
   location: '@engines.tk-photoshopcc.location'
 
-# env_asset_ext_step
-settings.tk-photoshopcc.env_asset_ext_step:
+# asset_section_category_class_step
+settings.tk-photoshopcc.asset_section_category_class_step:
   apps:
     <<: *settings_tk-photoshopcc_apps
-    tk-multi-publish2: "@settings.tk-multi-publish2.photoshop.env_asset_ext_step"
-    tk-multi-snapshot: "@settings.tk-multi-snapshot.photoshop.env_asset_ext_step"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.photoshop.env_asset_ext_step"
+    tk-multi-publish2: "@settings.tk-multi-publish2.photoshop.asset_section_category_class_step"
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.photoshop.asset_section_category_class_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.photoshop.asset_section_category_class_step"
   shelf_favorites: *settings_tk-photoshopcc_menu
   location: '@engines.tk-photoshopcc.location'
 

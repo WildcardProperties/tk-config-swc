@@ -54,10 +54,11 @@ entity_browser_settings: &entity_browser_settings
       - [sg_asset_type, is, ["Animations"]]               
   - caption: Environment
     entity_type: Task
-    hierarchy: [project, entity.CustomEntity01.sg_asset_library, entity.CustomEntity01.sg_asset_type, entity.CustomEntity01.sg_biome, entity.CustomEntity01.sg_asset_category, entity, step, content]
+    hierarchy: [project, entity.Asset.sg_asset_library, entity.Asset.sg_asset_type, entity.Asset.sg_asset_section, entity.Asset.sg_asset_category, entity.Asset.sg_asset_category, entity, step, content]
     filters:
       - [project, is, '{context.project}']    
-      - [entity, type_is, 'CustomEntity01']           
+      - [entity, type_is, 'Asset']   
+      - [sg_asset_type, is, ["Environment"]]                  
   - caption: Outsourcing
     entity_type: Task
     filters:

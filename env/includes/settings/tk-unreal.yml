@@ -166,14 +166,14 @@ settings.tk-unreal.prod_asset_step:
   automatic_context_switch: True
   location: "@engines.tk-unreal.location"
 
-# env_asset_step
-settings.tk-unreal.env_asset_step:
+# asset_section_category_step
+settings.tk-unreal.asset_section_category_step:
   apps:
     tk-multi-publish2: "@settings.tk-multi-publish2.unreal.project"
-    #tk-multi-snapshot: "@settings.tk-multi-snapshot.unreal.env_asset_step"
-    #tk-multi-workfiles2: "@settings.tk-multi-workfiles2.unreal.env_asset_step"
+    #tk-multi-snapshot: "@settings.tk-multi-snapshot.unreal.asset_section_category_step"
+    #tk-multi-workfiles2: "@settings.tk-multi-workfiles2.unreal.asset_section_category_step"
   menu_favourites: *settings_tk-unreal_menu
-  template_project: env_asset_work_area
+  template_project: asset_section_category_work_area
   automatic_context_switch: True
   location: "@engines.tk-unreal.location"
 

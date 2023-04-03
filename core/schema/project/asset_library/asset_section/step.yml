@@ -11,8 +11,6 @@
 # the type of dynamic content
 type: "shotgun_step"
 
-associated_entity_type: CustomEntity01
-
 defer_creation: false
 
 create_with_parent: true

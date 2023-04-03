@@ -89,24 +89,24 @@ settings.tk-desktop.seq_asset_step:
     tk-multi-publish2: "@settings.tk-multi-publish2.standalone"
   location: "@engines.tk-desktop.location"
 
-# env_asset_step
-settings.tk-desktop.env_asset_step:
+# asset_section_category_step
+settings.tk-desktop.asset_section_category_step:
   apps:
-    # tk-multi-workfiles2: "@settings.tk-multi-workfiles2.env_asset_step"
+    # tk-multi-workfiles2: "@settings.tk-multi-workfiles2.asset_section_category_step"
     tk-multi-publish2: "@settings.tk-multi-publish2.standalone"
   location: "@engines.tk-desktop.location"
 
-# env_asset_simple_step
-settings.tk-desktop.env_asset_simple_step:
+# asset_section_step
+settings.tk-desktop.asset_section_step:
   apps:
-    # tk-multi-workfiles2: "@settings.tk-multi-workfiles2.env_asset_simple_step"
+    # tk-multi-workfiles2: "@settings.tk-multi-workfiles2.asset_section_step"
     tk-multi-publish2: "@settings.tk-multi-publish2.standalone"
   location: "@engines.tk-desktop.location"
 
-# env_asset_ext_step
-settings.tk-desktop.env_asset_ext_step:
+# asset_section_category_class_step
+settings.tk-desktop.asset_section_category_class_step:
   apps:
-    # tk-multi-workfiles2: "@settings.tk-multi-workfiles2.env_asset_ext_step"
+    # tk-multi-workfiles2: "@settings.tk-multi-workfiles2.asset_section_category_class_step"
     tk-multi-publish2: "@settings.tk-multi-publish2.standalone"
   location: "@engines.tk-desktop.location"
 

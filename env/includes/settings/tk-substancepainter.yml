@@ -120,37 +120,37 @@ settings.tk-substancepainter.prod_asset_step:
   template_project: prod_asset_root
   location: "@engines.tk-substancepainter.location"  
 
-# env_asset_step
-settings.tk-substancepainter.env_asset_step:
+# asset_section_category_step
+settings.tk-substancepainter.asset_section_category_step:
   apps:
     <<: *settings_tk-substancepainter_apps
-    tk-multi-publish2: "@settings.tk-multi-publish2.substancepainter.env_asset_step"
-    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancepainter.env_asset_step"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancepainter.env_asset_step"
+    tk-multi-publish2: "@settings.tk-multi-publish2.substancepainter.asset_section_category_step"
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancepainter.asset_section_category_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancepainter.asset_section_category_step"
   menu_favourites: *settings_tk-substancepainter_menus
-  template_project: env_asset_root
+  template_project: asset_section_category_root
   location: "@engines.tk-substancepainter.location"
 
-# env_asset_simple_step
-settings.tk-substancepainter.env_asset_simple_step:
+# asset_section_step
+settings.tk-substancepainter.asset_section_step:
   apps:
     <<: *settings_tk-substancepainter_apps
-    tk-multi-publish2: "@settings.tk-multi-publish2.substancepainter.env_asset_simple_step"
-    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancepainter.env_asset_simple_step"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancepainter.env_asset_simple_step"
+    tk-multi-publish2: "@settings.tk-multi-publish2.substancepainter.asset_section_step"
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancepainter.asset_section_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancepainter.asset_section_step"
   menu_favourites: *settings_tk-substancepainter_menus
-  template_project: env_asset_simple_root
+  template_project: asset_section_root
   location: "@engines.tk-substancepainter.location"
 
-# env_asset_ext_step
-settings.tk-substancepainter.env_asset_ext_step:
+# asset_section_category_class_step
+settings.tk-substancepainter.asset_section_category_class_step:
   apps:
     <<: *settings_tk-substancepainter_apps
-    tk-multi-publish2: "@settings.tk-multi-publish2.substancepainter.env_asset_ext_step"
-    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancepainter.env_asset_ext_step"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancepainter.env_asset_ext_step"
+    tk-multi-publish2: "@settings.tk-multi-publish2.substancepainter.asset_section_category_class_step"
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancepainter.asset_section_category_class_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancepainter.asset_section_category_class_step"
   menu_favourites: *settings_tk-substancepainter_menus
-  template_project: env_asset_ext_root
+  template_project: asset_section_category_class_root
   location: "@engines.tk-substancepainter.location"
 
 # weapon_step

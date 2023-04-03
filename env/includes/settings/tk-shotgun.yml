@@ -71,8 +71,8 @@ settings.tk-shotgun.shot_step:
     tk-shotgun-launchfolder: "@settings.tk-shotgun-launchfolder"
   location: "@engines.tk-shotgun.location"
 
-# env_asset
-settings.tk-shotgun.env_asset:
+# asset_section_category
+settings.tk-shotgun.asset_section_category:
   apps:
     tk-multi-launchapp: "@settings.tk-multi-launchapp"
     tk-multi-publish2: "@settings.tk-multi-publish2.standalone"
@@ -81,8 +81,8 @@ settings.tk-shotgun.env_asset:
     tk-shotgun-launchfolder: "@settings.tk-shotgun-launchfolder"
   location: "@engines.tk-shotgun.location"
 
-# env_asset_step
-settings.tk-shotgun.env_asset_step:
+# asset_section_category_step
+settings.tk-shotgun.asset_section_category_step:
   apps:
     tk-multi-launchapp: "@settings.tk-multi-launchapp.shotgun"
     tk-multi-publish2: "@settings.tk-multi-publish2.standalone"

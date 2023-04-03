@@ -117,23 +117,23 @@ settings.tk-multi-publish2.3dsmax.prod_asset_step:
   collector_settings:
       Work Template: prod_asset_max_workfile
 
-# env_asset_step
-settings.tk-multi-publish2.3dsmax.env_asset_step: 
+# asset_section_category_step
+settings.tk-multi-publish2.3dsmax.asset_section_category_step: 
   <<: *settings_publish_plugins_tk-multi-publish2_3dsmax
   collector_settings:
-      Work Template: env_asset_max_workfile
+      Work Template: asset_section_category_max_workfile
 
-# env_asset_simple_step
-settings.tk-multi-publish2.3dsmax.env_asset_simple_step: 
+# asset_section_step
+settings.tk-multi-publish2.3dsmax.asset_section_step: 
   <<: *settings_publish_plugins_tk-multi-publish2_3dsmax
   collector_settings:
-      Work Template: env_asset_simple_max_workfile
+      Work Template: asset_section_max_workfile
 
-# env_asset_ext_step
-settings.tk-multi-publish2.3dsmax.env_asset_ext_step: 
+# asset_section_category_class_step
+settings.tk-multi-publish2.3dsmax.asset_section_category_class_step: 
   <<: *settings_publish_plugins_tk-multi-publish2_3dsmax
   collector_settings:
-      Work Template: env_asset_ext_max_workfile      
+      Work Template: asset_section_category_class_max_workfile      
       
 # weapon_step
 settings.tk-multi-publish2.3dsmax.weapon_step: 
@@ -222,23 +222,23 @@ settings.tk-multi-publish2.houdini.prod_asset_step:
   collector_settings:
       Work Template: prod_asset_houdini_workfile      
 
-# env_asset_step
-settings.tk-multi-publish2.houdini.env_asset_step:
+# asset_section_category_step
+settings.tk-multi-publish2.houdini.asset_section_category_step:
   <<: *settings_publish_plugins_tk-multi-publish2_houdini
   collector_settings:
-      Work Template: env_asset_houdini_workfile
+      Work Template: asset_section_category_houdini_workfile
 
-# env_asset_simple_step
-settings.tk-multi-publish2.houdini.env_asset_simple_step:
+# asset_section_step
+settings.tk-multi-publish2.houdini.asset_section_step:
   <<: *settings_publish_plugins_tk-multi-publish2_houdini
   collector_settings:
-      Work Template: env_asset_simple_houdini_workfile
+      Work Template: asset_section_houdini_workfile
 
-# env_asset_ext_step
-settings.tk-multi-publish2.houdini.env_asset_ext_step:
+# asset_section_category_class_step
+settings.tk-multi-publish2.houdini.asset_section_category_class_step:
   <<: *settings_publish_plugins_tk-multi-publish2_houdini
   collector_settings:
-      Work Template: env_asset_ext_houdini_workfile      
+      Work Template: asset_section_category_class_houdini_workfile      
 
 # weapon_step
 settings.tk-multi-publish2.houdini.weapon_step:
@@ -327,23 +327,23 @@ settings.tk-multi-publish2.maya.prod_asset_step:
   collector_settings:
       Work Template: prod_asset_maya_workfile      
 
-# env_asset_step
-settings.tk-multi-publish2.maya.env_asset_step:
+# asset_section_category_step
+settings.tk-multi-publish2.maya.asset_section_category_step:
   <<: *settings_publish_plugins_tk-multi-publish2_maya
   collector_settings:
-      Work Template: env_asset_maya_workfile
+      Work Template: asset_section_category_maya_workfile
 
-# env_asset_simple_step
-settings.tk-multi-publish2.maya.env_asset_simple_step:
+# asset_section_step
+settings.tk-multi-publish2.maya.asset_section_step:
   <<: *settings_publish_plugins_tk-multi-publish2_maya
   collector_settings:
-      Work Template: env_asset_simple_maya_workfile
+      Work Template: asset_section_maya_workfile
 
-# env_asset_ext_step
-settings.tk-multi-publish2.maya.env_asset_ext_step:
+# asset_section_category_class_step
+settings.tk-multi-publish2.maya.asset_section_category_class_step:
   <<: *settings_publish_plugins_tk-multi-publish2_maya
   collector_settings:
-      Work Template: env_asset_ext_maya_workfile
+      Work Template: asset_section_category_class_maya_workfile
 
 # weapon_step
 settings.tk-multi-publish2.maya.weapon_step:
@@ -407,26 +407,26 @@ settings.tk-multi-publish2.photoshop.prod_asset_step:
       Work Template: prod_asset_photoshop_workfile
       Work Area: prod_asset_root
 
-# env_asset_step
-settings.tk-multi-publish2.photoshop.env_asset_step:
+# asset_section_category_step
+settings.tk-multi-publish2.photoshop.asset_section_category_step:
   <<: *settings_publish_plugins_tk-multi-publish2_photoshop
   collector_settings:
-      Work Template: env_asset_photoshop_workfile
-      Work Area: env_asset_root
+      Work Template: asset_section_category_photoshop_workfile
+      Work Area: asset_section_category_root
 
-# env_asset_simple_step
-settings.tk-multi-publish2.photoshop.env_asset_simple_step:
+# asset_section_step
+settings.tk-multi-publish2.photoshop.asset_section_step:
   <<: *settings_publish_plugins_tk-multi-publish2_photoshop
   collector_settings:
-      Work Template: env_asset_simple_photoshop_workfile
-      Work Area: env_asset_simple_root
+      Work Template: asset_section_photoshop_workfile
+      Work Area: asset_section_root
 
-# env_asset_ext_step
-settings.tk-multi-publish2.photoshop.env_asset_ext_step:
+# asset_section_category_class_step
+settings.tk-multi-publish2.photoshop.asset_section_category_class_step:
   <<: *settings_publish_plugins_tk-multi-publish2_photoshop
   collector_settings:
-      Work Template: env_asset_ext_photoshop_workfile
-      Work Area: env_asset_ext_root
+      Work Template: asset_section_category_class_photoshop_workfile
+      Work Area: asset_section_category_class_root
 
 # weapon_step
 settings.tk-multi-publish2.photoshop.weapon_step:
@@ -524,23 +524,23 @@ settings.tk-multi-publish2.substancepainter.prod_asset_step:
   collector_settings:
       Work Template: prod_asset_substancepainter_workfile      
 
-# env_asset_step
-settings.tk-multi-publish2.substancepainter.env_asset_step:
+# asset_section_category_step
+settings.tk-multi-publish2.substancepainter.asset_section_category_step:
   <<: *settings_publish_plugins_tk-multi-publish2_substancepainter
   collector_settings:
-      Work Template: env_asset_substancepainter_workfile
+      Work Template: asset_section_category_substancepainter_workfile
 
-# env_asset_simple_step
-settings.tk-multi-publish2.substancepainter.env_asset_simple_step:
+# asset_section_step
+settings.tk-multi-publish2.substancepainter.asset_section_step:
   <<: *settings_publish_plugins_tk-multi-publish2_substancepainter
   collector_settings:
-      Work Template: env_asset_simple_substancepainter_workfile
+      Work Template: asset_section_substancepainter_workfile
 
-# env_asset_ext_step
-settings.tk-multi-publish2.substancepainter.env_asset_ext_step:
+# asset_section_category_class_step
+settings.tk-multi-publish2.substancepainter.asset_section_category_class_step:
   <<: *settings_publish_plugins_tk-multi-publish2_substancepainter
   collector_settings:
-      Work Template: env_asset_ext_substancepainter_workfile            
+      Work Template: asset_section_category_class_substancepainter_workfile            
 
 # weapon_step
 settings.tk-multi-publish2.substancepainter.weapon_step:
@@ -636,23 +636,23 @@ settings.tk-multi-publish2.substancedesigner.prod_asset_step:
   collector_settings:
       Work Template: prod_asset_substancedesigner_workfile      
 
-# env_asset_step
-settings.tk-multi-publish2.substancedesigner.env_asset_step:
+# asset_section_category_step
+settings.tk-multi-publish2.substancedesigner.asset_section_category_step:
   <<: *settings_publish_plugins_tk-multi-publish2_substancedesigner
   collector_settings:
-      Work Template: env_asset_substancedesigner_workfile
+      Work Template: asset_section_category_substancedesigner_workfile
 
-# env_asset_simple_step
-settings.tk-multi-publish2.substancedesigner.env_asset_simple_step:
+# asset_section_step
+settings.tk-multi-publish2.substancedesigner.asset_section_step:
   <<: *settings_publish_plugins_tk-multi-publish2_substancedesigner
   collector_settings:
-      Work Template: env_asset_simple_substancedesigner_workfile
+      Work Template: asset_section_substancedesigner_workfile
 
-# env_asset_ext_step
-settings.tk-multi-publish2.substancedesigner.env_asset_ext_step:
+# asset_section_category_class_step
+settings.tk-multi-publish2.substancedesigner.asset_section_category_class_step:
   <<: *settings_publish_plugins_tk-multi-publish2_substancedesigner
   collector_settings:
-      Work Template: env_asset_ext_substancedesigner_workfile            
+      Work Template: asset_section_category_class_substancedesigner_workfile            
 
 # weapon_step
 settings.tk-multi-publish2.substancedesigner.weapon_step:

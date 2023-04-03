@@ -176,39 +176,39 @@ settings.tk-maya.prod_asset_step:
   automatic_context_switch: True
   location: "@engines.tk-maya.location"     
 
-# env_asset_step
-settings.tk-maya.env_asset_step:
+# asset_section_category_step
+settings.tk-maya.asset_section_category_step:
   apps:
     <<: *settings_tk-maya_apps
-    tk-multi-publish2: "@settings.tk-multi-publish2.maya.env_asset_step"  
-    tk-multi-snapshot: "@settings.tk-multi-snapshot.maya.env_asset_step"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.env_asset_step"
+    tk-multi-publish2: "@settings.tk-multi-publish2.maya.asset_section_category_step"  
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.maya.asset_section_category_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.asset_section_category_step"
   menu_favourites: *settings_tk-maya_menu  
-  template_project: env_asset_work_area
+  template_project: asset_section_category_work_area
   automatic_context_switch: True
   location: "@engines.tk-maya.location"    
 
-# env_asset_simple_step
-settings.tk-maya.env_asset_simple_step:
+# asset_section_step
+settings.tk-maya.asset_section_step:
   apps:
     <<: *settings_tk-maya_apps
-    tk-multi-publish2: "@settings.tk-multi-publish2.maya.env_asset_simple_step"  
-    tk-multi-snapshot: "@settings.tk-multi-snapshot.maya.env_asset_simple_step"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.env_asset_simple_step"
+    tk-multi-publish2: "@settings.tk-multi-publish2.maya.asset_section_step"  
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.maya.asset_section_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.asset_section_step"
   menu_favourites: *settings_tk-maya_menu  
-  template_project: env_asset_simple_work_area
+  template_project: asset_section_work_area
   automatic_context_switch: True
   location: "@engines.tk-maya.location"  
 
-# env_asset_ext_step
-settings.tk-maya.env_asset_ext_step:
+# asset_section_category_class_step
+settings.tk-maya.asset_section_category_class_step:
   apps:
     <<: *settings_tk-maya_apps
-    tk-multi-publish2: "@settings.tk-multi-publish2.maya.env_asset_ext_step"  
-    tk-multi-snapshot: "@settings.tk-multi-snapshot.maya.env_asset_ext_step"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.env_asset_ext_step"
+    tk-multi-publish2: "@settings.tk-multi-publish2.maya.asset_section_category_class_step"  
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.maya.asset_section_category_class_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.asset_section_category_class_step"
   menu_favourites: *settings_tk-maya_menu  
-  template_project: env_asset_ext_work_area
+  template_project: asset_section_category_class_work_area
   automatic_context_switch: True
   location: "@engines.tk-maya.location"    
 

@@ -45,11 +45,20 @@ class PickEnvironment(sgtk.Hook):
             if context.entity["type"] == "Asset":
                 context_entity = context.sgtk.shotgun.find_one("Asset",
                                                                [["id", "is", context.entity["id"]]],
-                                                               ["sg_asset_parent","sg_asset_type","sg_asset_library"])
+                                                               ["sg_asset_parent","sg_asset_library","sg_asset_type","sg_asset_section","sg_asset_category","sg_asset_class"])
+                            
+                if context_entity.get("sg_asset_section") and context_entity.get("sg_asset_category") and context_entity.get("sg_asset_class"):           
+                    return "asset_section_category_class"  
+                elif context_entity.get("sg_asset_section") and context_entity.get("sg_asset_category"):
+                    return "asset_section_category"
+                elif context_entity.get("sg_asset_section"):
+                    return "asset_section"
+
+                # Library Assets
                 if context_entity.get("sg_asset_library") == "Lib":
                     return "asset"
 
-                # Weapons
+                # Weapon Assets
                 if context_entity.get("sg_asset_type") == "Weapons":
                     return "weapon"                
 
@@ -64,16 +73,7 @@ class PickEnvironment(sgtk.Hook):
                 return "sequence" 
             elif context.entity["type"] == "Shot":
                 return "shot"                     
-            elif context.entity["type"] == "CustomEntity01":
-                context_entity = context.sgtk.shotgun.find_one("CustomEntity01",
-                                                               [["id", "is", context.entity["id"]]],
-                                                               ["sg_biome","sg_asset_class","sg_asset_category"])     
-                if context_entity.get("sg_biome") and context_entity.get("sg_asset_class") and context_entity.get("sg_asset_category"):           
-                    return "env_asset_ext"  
-                elif context_entity.get("sg_biome") and context_entity.get("sg_asset_category"):
-                    return "env_asset"
-                else:
-                    return "env_asset_simple"
+
             elif context.entity["type"] == "CustomEntity03":
                 context_entity = context.sgtk.shotgun.find_one("CustomEntity03",
                                                                [["id", "is", context.entity["id"]]],
@@ -88,7 +88,18 @@ class PickEnvironment(sgtk.Hook):
             if context.entity["type"] == "Asset":
                 context_entity = context.sgtk.shotgun.find_one("Asset",
                                                                [["id", "is", context.entity["id"]]],
-                                                               ["sg_asset_parent","sg_asset_type","sg_asset_library"])
+                                                               ["sg_asset_parent","sg_asset_library","sg_asset_type","sg_asset_section","sg_asset_category","sg_asset_class"])
+
+                if context_entity.get("sg_asset_section") and context_entity.get("sg_asset_category") and context_entity.get("sg_asset_class"):           
+                    logger.info("Entity is an asset_section_category_class_step")        
+                    return "asset_section_category_class_step"  
+                elif context_entity.get("sg_asset_section") and context_entity.get("sg_asset_category"):
+                    logger.info("Entity is an asset_section_category_step")
+                    return "asset_section_category_step"
+                elif context_entity.get("sg_asset_section"):
+                    logger.info("Entity is an asset_section_step")                    
+                    return "asset_section_step"
+
                 if context_entity.get("sg_asset_library") == "Lib":
                     logger.info("Entity is a library asset")
                     return "asset"
@@ -96,7 +107,8 @@ class PickEnvironment(sgtk.Hook):
                 # Weapons
                 if context_entity.get("sg_asset_type") == "Weapons":
                     logger.info("Entity is a weapon_step")
-                    return "weapon_step"   
+                    return "weapon_step"
+                
                 # Child Assets
                 if context_entity.get("sg_asset_parent") and context_entity.get("sg_asset_type") == "Animations":
                     logger.info("Entity is an anim_asset_step")
@@ -104,6 +116,7 @@ class PickEnvironment(sgtk.Hook):
                 elif context_entity.get("sg_asset_parent"):
                     logger.info("Entity is an asset_child_step")
                     return "asset_child_step"
+                
                 logger.info("Entity is an asset_step")
                 return "asset_step"
             elif context.entity["type"] == "Sequence":
@@ -112,19 +125,7 @@ class PickEnvironment(sgtk.Hook):
             elif context.entity["type"] == "Shot":
                 logger.info("Entity is a shot_step")
                 return "shot_step"  
-            elif context.entity["type"] == "CustomEntity01":
-                context_entity = context.sgtk.shotgun.find_one("CustomEntity01",
-                                                               [["id", "is", context.entity["id"]]],
-                                                               ["sg_biome","sg_asset_class","sg_asset_category"])     
-                if context_entity.get("sg_biome") and context_entity.get("sg_asset_class") and context_entity.get("sg_asset_category"):   
-                    logger.info("Entity is an env_asset_ext_step")        
-                    return "env_asset_ext_step"  
-                elif context_entity.get("sg_biome") and context_entity.get("sg_asset_category"):
-                    logger.info("Entity is an env_asset_step")
-                    return "env_asset_step"
-                else:
-                    logger.info("Entity is an env_asset_simple_step")                    
-                    return "env_asset_simple_step"
+
             elif context.entity["type"] == "CustomEntity03":
                 context_entity = context.sgtk.shotgun.find_one("CustomEntity03",
                                                                [["id", "is", context.entity["id"]]],

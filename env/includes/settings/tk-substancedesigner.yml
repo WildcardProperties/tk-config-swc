@@ -156,16 +156,16 @@ settings.tk-substancedesigner.prod_asset_step:
   template_project: pub_asset_root
   location: "@engines.tk-substancedesigner.location"  
 
-# env_asset_step
-settings.tk-substancedesigner.env_asset_step:
+# asset_section_category_step
+settings.tk-substancedesigner.asset_section_category_step:
   apps:
     tk-multi-about:
       location: "@apps.tk-multi-about.location"
     tk-multi-loader2: "@settings.tk-multi-loader2.substancedesigner"
-    tk-multi-publish2: "@settings.tk-multi-publish2.substancedesigner.env_asset_step"
+    tk-multi-publish2: "@settings.tk-multi-publish2.substancedesigner.asset_section_category_step"
     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.substancedesigner"
-    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancedesigner.env_asset_step"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancedesigner.env_asset_step"
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancedesigner.asset_section_category_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancedesigner.asset_section_category_step"
     tk-multi-perforce: "@settings.tk-multi-perforce"
   menu_favourites:
   - {app_instance: tk-multi-workfiles2, name: File Open...}
@@ -173,19 +173,19 @@ settings.tk-substancedesigner.env_asset_step:
   - {app_instance: tk-multi-workfiles2, name: File Save...}
   - {app_instance: tk-multi-publish2, name: Publish...}
   - {app_instance: tk-multi-perforce, name: Perforce Status...}
-  template_project: env_asset_root
+  template_project: asset_section_category_root
   location: "@engines.tk-substancedesigner.location"
 
-# env_asset_simple_step
-settings.tk-substancedesigner.env_asset_simple_step:
+# asset_section_step
+settings.tk-substancedesigner.asset_section_step:
   apps:
     tk-multi-about:
       location: "@apps.tk-multi-about.location"
     tk-multi-loader2: "@settings.tk-multi-loader2.substancedesigner"
-    tk-multi-publish2: "@settings.tk-multi-publish2.substancedesigner.env_asset_simple_step"
+    tk-multi-publish2: "@settings.tk-multi-publish2.substancedesigner.asset_section_step"
     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.substancedesigner"
-    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancedesigner.env_asset_simple_step"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancedesigner.env_asset_simple_step"
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancedesigner.asset_section_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancedesigner.asset_section_step"
     tk-multi-perforce: "@settings.tk-multi-perforce"
   menu_favourites:
   - {app_instance: tk-multi-workfiles2, name: File Open...}
@@ -193,19 +193,19 @@ settings.tk-substancedesigner.env_asset_simple_step:
   - {app_instance: tk-multi-workfiles2, name: File Save...}
   - {app_instance: tk-multi-publish2, name: Publish...}
   - {app_instance: tk-multi-perforce, name: Perforce Status...}
-  template_project: env_asset_simple_root
+  template_project: asset_section_root
   location: "@engines.tk-substancedesigner.location"
 
-# env_asset_ext_step
-settings.tk-substancedesigner.env_asset_ext_step:
+# asset_section_category_class_step
+settings.tk-substancedesigner.asset_section_category_class_step:
   apps:
     tk-multi-about:
       location: "@apps.tk-multi-about.location"
     tk-multi-loader2: "@settings.tk-multi-loader2.substancedesigner"
-    tk-multi-publish2: "@settings.tk-multi-publish2.substancedesigner.env_asset_ext_step"
+    tk-multi-publish2: "@settings.tk-multi-publish2.substancedesigner.asset_section_category_class_step"
     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.substancedesigner"
-    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancedesigner.env_asset_ext_step"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancedesigner.env_asset_ext_step"
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancedesigner.asset_section_category_class_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancedesigner.asset_section_category_class_step"
     tk-multi-perforce: "@settings.tk-multi-perforce"
   menu_favourites:
   - {app_instance: tk-multi-workfiles2, name: File Open...}
@@ -213,7 +213,7 @@ settings.tk-substancedesigner.env_asset_ext_step:
   - {app_instance: tk-multi-workfiles2, name: File Save...}
   - {app_instance: tk-multi-publish2, name: Publish...}
   - {app_instance: tk-multi-perforce, name: Perforce Status...}
-  template_project: env_asset_ext_root
+  template_project: asset_section_category_class_root
   location: "@engines.tk-substancedesigner.location"  
   
 # weapon_step
