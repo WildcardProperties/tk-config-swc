@@ -117,9 +117,7 @@ keys:
         shotgun_entity_type: Asset
         shotgun_field_name: sg_asset_parent.Asset.sg_asset_category
     Step:
-        type: str
-    step_flat:
-        type: str        
+        type: str     
     name:
         type: str
         filter_by: alphanumeric
