@@ -72,7 +72,7 @@ frameworks:
       type: git_branch
       branch: swc_main_ai
       path: https://github.com/StudioWildcard/tk-swc-framework-shotgunutils
-      version: 165b9fc
+      version: badc733
 
   # widget v0 - QT Widget Framework for Tank Apps (qtwidgets fw predecessor)
   tk-framework-widget_v0.2.x:
@@ -123,7 +123,8 @@ frameworks:
       type: git_branch
       branch: swc_beta_rb_ai
       path: https://gitlab.com/nexodus/consulting/swc/tk-framework-perforce.git
-      version: c2924a9e
+      #version: c2924a9e
+      version: b8caccb
 
   # SWC - Custom utilities
   tk-framework-swc_v0.x.x:
