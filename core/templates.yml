@@ -363,7 +363,7 @@ paths:
     sequence_root: 'Content/{seq_asset_library}/Sequences/{Sequence}'
     shot_root: 'Content/{shot_asset_library_parent}/Sequences/{Sequence}/{Shot}'
     seq_asset_root: 'Content/{seq_asset_library_parent}/Sequences/{seq_asset_parent}/{asset_type}/{asset_category}/{Asset}'    
-    weapon_root: 'Content/{asset_library}/Weapon{folder_name}'
+    weapon_root: 'Content/{asset_library}/{folder_name}'
     asset_section_root: 'Content/{asset_library}/{asset_type}/{asset_section}/{folder_name}'    
     asset_section_category_root: 'Content/{asset_library}/{asset_type}/{asset_section}/{asset_category}/{folder_name}'
     asset_section_category_class_root: 'Content/{asset_library}/{asset_type}/{asset_section}/{asset_category}/{asset_class}/{folder_name}'
