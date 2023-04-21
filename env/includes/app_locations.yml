@@ -29,7 +29,7 @@ apps.tk-multi-about.location:
 apps.tk-multi-demo.location:
   type: app_store
   name: tk-multi-demo
-  version: v1.3.0
+  version: v1.3.5
 
 # launchapp
 apps.tk-multi-launchapp.location:
@@ -77,7 +77,7 @@ apps.tk-multi-publish2.location:
   type: git_branch
   branch: beta-ai
   path: https://github.com/StudioWildcard/tk-multi-publish2
-  version: 5e2a280
+  version: 5e2a28075330adf7b8690eca77801853632e525d
 
 # screeningroom
 apps.tk-multi-screeningroom.location:
@@ -95,7 +95,7 @@ apps.tk-multi-pythonconsole.location:
 apps.tk-multi-reviewsubmission.location:
   type: app_store
   name: tk-multi-reviewsubmission
-  version: v1.2.0
+  version: v1.2.1
 
 # shotgun panel
 apps.tk-multi-shotgunpanel.location:
@@ -113,7 +113,7 @@ apps.tk-multi-shotgunpanel.location:
 apps.tk-multi-devutils.location:
   type: app_store
   name: tk-multi-devutils
-  version: v1.2.0
+  version: v1.2.1
 
 # ---- Houdini apps
 
@@ -205,7 +205,7 @@ apps.tk-multi-perforce.location:
   type: git_branch
   branch: swc_main_ai
   path: https://gitlab.com/nexodus/consulting/swc/tk-multi-perforce.git
-  version: 3bcb713
+  version: 3bcb71387aec8e63b291cc221e7b80b62c76ba39
 
 ################################################################################
 # reference all of the common frameworks
