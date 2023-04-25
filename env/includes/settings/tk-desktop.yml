@@ -16,6 +16,7 @@ includes:
 - ../engine_locations.yml
 - ./tk-multi-launchapp.yml
 - ./tk-multi-publish2.yml
+- ./tk-swc-publish2.yml
 - ./tk-multi-workfiles2.yml
 - ./tk-multi-perforce.yml
 #- ./tk-multi-loader2.yml
@@ -147,6 +148,7 @@ settings.tk-desktop.project:
       location: "@apps.tk-multi-devutils.location"
     tk-multi-launchapp: "@settings.tk-multi-launchapp"
     tk-multi-publish2: "@settings.tk-multi-publish2.standalone"
+    tk-swc-publish2: "@settings.tk-swc-publish2.standalone"
     tk-multi-perforce: "@settings.tk-multi-perforce.desktop"
     # tk-multi-loader2: "@settings.tk-multi-loader2.desktop"
     tk-swc-perforce-sync: "@settings.tk-swc-perforce-sync.desktop"
