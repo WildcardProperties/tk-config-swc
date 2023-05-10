@@ -336,8 +336,6 @@ class BasicSceneCollector(HookBaseClass):
 
         # make sure the path is normalized. no trailing separator, separators
         # are appropriate for the current os, no double separators, etc.
-
-        self.logger.debug("Path is {}".format(path))
         path = sgtk.util.ShotgunPath.normalize(path)
 
         # Make the p4 connection
