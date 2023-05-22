@@ -28,9 +28,13 @@ settings.tk-multi-publish2.standalone:
   publish_plugins:
   - name: ADD to Perforce & ShotGrid
     hook: "{config}/tk-multi-publish2/publish_file.py:{config}/tk-multi-publish2/add_file.py"
-    settings: {}    
+    settings: {}
+  #- name: Fix Files - Edit
+  #  hook: "{config}/tk-multi-publish2/publish_file.py:{config}/tk-multi-publish2/fix_files_edit.py"
+  #  settings: { }
   - name: EDIT in Perforce & ShotGrid
     hook: "{config}/tk-multi-publish2/publish_file.py:{config}/tk-multi-publish2/edit_file.py"
+    #hook: "{config}/tk-multi-publish2/publish_file.py:{config}/tk-multi-publish2/fix_files_edit.py"
     settings: {}
   - name: DELETE from Perforce & ShotGrid
     hook: "{config}/tk-multi-publish2/publish_file.py:{config}/tk-multi-publish2/delete_file.py"
