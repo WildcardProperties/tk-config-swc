@@ -82,3 +82,20 @@ class AddPublishPlugin(HookBaseClass):
                 return super(AddPublishPlugin, self).accept(settings, item)
         
         return {"accepted": False}          
+
+    def validate(self, settings, item):
+        """
+        Validates the given item to check that it is ok to publish.
+
+        Returns a boolean to indicate validity.
+
+        :param settings: Dictionary of Settings. The keys are strings, matching
+            the keys returned in the settings property. The values are `Setting`
+            instances.
+        :param item: Item to process
+
+        :returns: True if item is valid, False otherwise.
+        """
+
+        return super(AddPublishPlugin, self).validate(settings, item)
+
