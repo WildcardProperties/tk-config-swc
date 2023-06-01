@@ -84,13 +84,13 @@ class SceneOperation(HookBaseClass):
         informativeText = "Do you want to check it out"
 
         if operation == "open":
-            text = "This file is not checked out."
-            informativeText = f"{informativeText} before opening to make changes?"
+            text = "This file is not checked out by you."
+            informativeText = f"{informativeText} before opening to prevent others from making changes?"
         elif operation == "save":
-            text = "This file is not checked out."
+            text = "This file is not checked out by you."
             informativeText = f"{informativeText} to save your changes? Click No to abort the save operation."           
         elif operation == "save_as":
-            text = "This file exists and is not checked out."
+            text = "This file exists and is not checked out by you."
             informativeText = f"{informativeText} to save your changes? Click No to abort the save operation."
 
         file_details = None
