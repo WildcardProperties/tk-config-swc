@@ -46,7 +46,13 @@ class PickEnvironment(sgtk.Hook):
                 context_entity = context.sgtk.shotgun.find_one("Asset",
                                                                [["id", "is", context.entity["id"]]],
                                                                ["sg_asset_parent","sg_asset_library","sg_asset_type","sg_asset_section","sg_asset_category","sg_asset_class"])
-                            
+                
+                # Child Assets
+                if context_entity.get("sg_asset_parent") and context_entity.get("sg_asset_type") == "Animations":
+                    return "anim_asset"
+                elif context_entity.get("sg_asset_parent"):
+                    return "asset_child"
+
                 if context_entity.get("sg_asset_section") and context_entity.get("sg_asset_category") and context_entity.get("sg_asset_class"):           
                     return "asset_section_category_class"  
                 elif context_entity.get("sg_asset_section") and context_entity.get("sg_asset_category"):
@@ -61,12 +67,6 @@ class PickEnvironment(sgtk.Hook):
                 # Weapon Assets
                 if context_entity.get("sg_asset_type") == "Weapons":
                     return "weapon"                
-
-                # Child Assets
-                if context_entity.get("sg_asset_parent") and context_entity.get("sg_asset_type") == "Animations":
-                    return "anim_asset"
-                elif context_entity.get("sg_asset_parent"):
-                    return "asset_child"
 
                 return "asset"
             elif context.entity["type"] == "Sequence":
@@ -92,7 +92,15 @@ class PickEnvironment(sgtk.Hook):
                 context_step = context.sgtk.shotgun.find_one("Step",
                                                              [["id", "is", context.step["id"]]],
                                                              ["sg_step_folder"])
-                
+
+                # Child Assets
+                if context_entity.get("sg_asset_parent") and context_entity.get("sg_asset_type") == "Animations":
+                    logger.info("Entity is an anim_asset_step")
+                    return "anim_asset_step"
+                elif context_entity.get("sg_asset_parent"):
+                    logger.info("Entity is an asset_child_step")
+                    return "asset_child_step"
+
                 if not context_step.get("sg_step_folder"):
                     return "asset_step_flat"
                 
@@ -114,14 +122,6 @@ class PickEnvironment(sgtk.Hook):
                 if context_entity.get("sg_asset_type") == "Weapons":
                     logger.info("Entity is a weapon_step")
                     return "weapon_step"
-                
-                # Child Assets
-                if context_entity.get("sg_asset_parent") and context_entity.get("sg_asset_type") == "Animations":
-                    logger.info("Entity is an anim_asset_step")
-                    return "anim_asset_step"
-                elif context_entity.get("sg_asset_parent"):
-                    logger.info("Entity is an asset_child_step")
-                    return "asset_child_step"
                 
                 logger.info("Entity is an asset_step")
                 return "asset_step"
