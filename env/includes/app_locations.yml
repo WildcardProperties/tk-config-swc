@@ -65,7 +65,7 @@ apps.tk-swc-perforce-sync.location:
   type: git_branch
   branch: swc_main_ai
   path: https://github.com/StudioWildcard/tk-swc-perforce-sync
-  version: 6f01ff2
+  version: 28258f1
 
 # publish2
 apps.tk-multi-publish2.location:
@@ -77,7 +77,7 @@ apps.tk-multi-publish2.location:
   type: git_branch
   branch: beta-ai
   path: https://github.com/StudioWildcard/tk-multi-publish2
-  version: 5e2a28075330adf7b8690eca77801853632e525d
+  version: b1c36ea
 
 # screeningroom
 apps.tk-multi-screeningroom.location:
@@ -205,7 +205,7 @@ apps.tk-multi-perforce.location:
   type: git_branch
   branch: swc_main_ai
   path: https://gitlab.com/nexodus/consulting/swc/tk-multi-perforce.git
-  version: 3bcb71387aec8e63b291cc221e7b80b62c76ba39
+  version: 3bcb713
 
 ################################################################################
 # reference all of the common frameworks
