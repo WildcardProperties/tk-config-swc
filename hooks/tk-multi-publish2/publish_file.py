@@ -18,6 +18,7 @@ from sgtk.platform.qt import QtGui, QtCore
 
 HookBaseClass = sgtk.get_hook_baseclass()
 TK_FRAMEWORK_SWC_NAME = "tk-framework-swc_v0.x.x"
+TK_FRAMEWORK_PERFORCE_NAME = "tk-framework-perforce_v0.x.x"
 
 class PublishPlugin(HookBaseClass):
     """
@@ -287,6 +288,33 @@ class PublishPlugin(HookBaseClass):
 
         publish_path = self.get_publish_path(settings, item)
         publish_name = self.get_publish_name(settings, item)
+
+        if item.properties.get('p4_data'):
+            self.logger.debug("Starting Perforce validation phase.")
+            self.publisher = self.parent
+
+            # Make the p4 connection
+            self.p4_fw = self.load_framework(TK_FRAMEWORK_PERFORCE_NAME)
+            self.logger.debug("Perforce framework loaded.")
+
+            p4 = self.p4_fw.connection.connect(progress=True)
+            self.logger.debug("Perforce connection made.")
+
+            path = self.ensure_path(item)
+
+            self.logger.info("Ensuring file is checked out...")
+            try:
+                self.p4_fw.util.open_file_for_edit(p4, path, add_if_new=True, dry_run=True)
+            except Exception as e:
+                self.logger.error("Perforce Error", extra={
+                    "action_show_more_info": {
+                        "label": "Error Details",
+                        "tooltip": pprint.pformat(str(e)),
+                        "text": "<pre>%s</pre>" %pprint.pformat(str(e)),
+                        }
+                    }
+                )
+                return False
 
         self.logger.info("A Publish will be created in ShotGrid and linked to:")
         self.logger.info("  %s" % (path,))
