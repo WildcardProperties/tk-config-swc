@@ -77,7 +77,7 @@ apps.tk-multi-publish2.location:
   type: git_branch
   branch: beta-ai
   path: https://github.com/StudioWildcard/tk-multi-publish2
-  version: b1c36ea
+  version: 53cc92d
 
 # screeningroom
 apps.tk-multi-screeningroom.location:
