@@ -58,14 +58,11 @@ apps.tk-multi-loader2.location:
 apps.tk-swc-perforce-sync.location:
   #type: dev
   #path: S:\Projects\ShotgunConfig\tk-swc-perforce-sync
-  #type: git_branch
-  #branch: swc_main_ai
-  #path: https://github.com/alaa-e-ibrahim/tk-swc-perforce-sync
-  #version: 67aff26
   type: git_branch
   branch: swc_main_ai
   path: https://github.com/StudioWildcard/tk-swc-perforce-sync
-  version: 9302dd8
+  # version: 9302dd8
+  version: c030b02
 
 # publish2
 apps.tk-multi-publish2.location:
