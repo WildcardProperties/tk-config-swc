@@ -176,7 +176,7 @@ class BasicSceneCollector(HookBaseClass):
                     "item_priority": 0,
                 },      
                 "Python Scripts": {
-                    "extensions": ["py", "pyc"],
+                    "extensions": ["py"],
                     "icon": self._get_icon_path("file.png"),
                     "item_type": "script.python",
                     "item_priority": 0,
@@ -206,7 +206,7 @@ class BasicSceneCollector(HookBaseClass):
                     "item_priority": 5,
                 }, 
                 "Ignore": {
-                    "extensions": ["painter_lock", "peak", "bak", "csh"],
+                    "extensions": ["painter_lock", "peak", "bak", "csh", "pyc"],
                     "icon": self._get_icon_path("file.png"),
                     "item_type": "ignore",
                     "item_priority": 0,                    
@@ -274,6 +274,11 @@ class BasicSceneCollector(HookBaseClass):
                     "name": "Mixdown",
                     "item_type": "folder.audio.mixdown",
                     "ignored": True,
+                },          
+                "Python Cache": {
+                    "name": "__pycache__",
+                    "item_type": "folder.python.cache",
+                    "ignored": True,
                 },                                                                             
             }
 
@@ -284,6 +289,7 @@ class BasicSceneCollector(HookBaseClass):
         
         ignored = [
             "autosave",
+            "workspace.mel"
         ]
 
         return ignored
@@ -384,7 +390,7 @@ class BasicSceneCollector(HookBaseClass):
         :returns: The item that was created
         """
 
-        if item_info["item_type"].startswith("script") or item_info["item_type"] == "ignore":
+        if item_info["item_type"] == "ignore":
             return None
 
         for subStr in self.ignored_filename_strings:

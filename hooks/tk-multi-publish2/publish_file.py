@@ -93,6 +93,7 @@ class PublishPlugin(HookBaseClass):
                     ["Settings File", "pkl", "json"],                
                     ["Substance Designer", "sbs"],
                     ["Substance Painter", "spp"],
+                    ["Python Script", "py"],
                 ],
                 "description": (
                     "List of file types to include. Each entry in the list "
@@ -145,7 +146,7 @@ class PublishPlugin(HookBaseClass):
         accept() method. Strings can contain glob patters such as *, for example
         ["maya.*", "file.maya"]
         """
-        return ["file.*"]
+        return ["file.*", "script.*"]
 
     def accept(self, settings, item):
         """
