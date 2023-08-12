@@ -228,7 +228,7 @@ apps.tk-unreal-launcher.location:
   #type: dev
   #path: 'S:/Projects/ShotgunConfig/tk-unreal-launcher'
   type: git_branch
-  branch: swc_main_ai
+  branch: swc_main_aei
   path: https://github.com/StudioWildcard/tk-unreal-launcher
   version: 6fc4599
 
@@ -246,7 +246,7 @@ engines.tk-unreal.location:
   #organization: ue4plugins
   #repository: tk-unreal
   type: git_branch
-  branch: swc_main_ai
+  branch: swc_main_aei
   path: https://github.com/StudioWildcard/tk-unreal
   version: 2358068
 
