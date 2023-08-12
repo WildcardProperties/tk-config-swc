@@ -224,25 +224,31 @@ apps.tk-copyfromplaylist.location:
   path: https://github.com/studiowildcard/tk-copyfromplaylist.git
   version: v0.4
 
+apps.tk-unreal-launcher.location:
+  #type: dev
+  #path: 'S:/Projects/ShotgunConfig/tk-unreal-launcher'
+  type: git_branch
+  branch: swc_main_ai
+  path: https://github.com/StudioWildcard/tk-unreal-launcher
+  version: 6fc4599
+
+
 # Unreal
 engines.tk-unreal.location:
   #type: dev
   #path: 'S:/Projects/ShotgunConfig/tk-unreal'
-
-  #type: git_branch
-  #path: git@github.com:shotgunsoftware/tk-unreal
-  #branch: master
-  #version: e589cdfe37b7eee89328920c26f913617d4ef5a3
-
   #type: git_branch
   #path: https://github.com/ue4plugins/tk-unreal
   #branch: master
   #version: v1.2.0
-
-  version: v1.2.0
-  type: github_release
-  organization: ue4plugins
-  repository: tk-unreal
+  #version: v1.2.0
+  #type: github_release
+  #organization: ue4plugins
+  #repository: tk-unreal
+  type: git_branch
+  branch: swc_main_ai
+  path: https://github.com/StudioWildcard/tk-unreal
+  version: 2358068
 
 
 

@@ -19,6 +19,7 @@ includes:
 - ./tk-shotgun-folders.yml
 - ./tk-shotgun-launchfolder.yml
 - ./tk-copyfromplaylist.yml
+- ./tk-unreal-launcher.yml
 
 ################################################################################
 
@@ -148,7 +149,7 @@ settings.tk-shotgun.version:
 settings.tk-shotgun.playlist:
   apps:
     tk-copyfromplaylist: "@settings.tk-copyfromplaylist"
-  location: "@engines.tk-shotgun.location"  
+  location: "@engines.tk-shotgun.location"
 
 # publishedfile
 settings.tk-shotgun.publishedfile:
