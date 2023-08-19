@@ -35,7 +35,7 @@ apps.tk-multi-demo.location:
 apps.tk-multi-launchapp.location:
   type: app_store
   name: tk-multi-launchapp
-  version: v0.12.2
+  version: v0.12.3
 
 # loader2
 apps.tk-multi-loader2.location:
@@ -73,7 +73,7 @@ apps.tk-multi-publish2.location:
   type: git_branch
   branch: beta-ai
   path: https://github.com/StudioWildcard/tk-multi-publish2
-  version: 53cc92d
+  version: 53cc92d7251cd7d4789f78f7b68ad027fd16c2b1
 
 # screeningroom
 apps.tk-multi-screeningroom.location:
@@ -201,7 +201,7 @@ apps.tk-multi-perforce.location:
   type: git_branch
   branch: swc_main_ai
   path: https://gitlab.com/nexodus/consulting/swc/tk-multi-perforce.git
-  version: 3bcb713
+  version: 3bcb71387aec8e63b291cc221e7b80b62c76ba39
 
 ################################################################################
 # reference all of the common frameworks
