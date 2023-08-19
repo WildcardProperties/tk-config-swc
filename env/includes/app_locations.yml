@@ -103,7 +103,7 @@ apps.tk-multi-shotgunpanel.location:
   type: git_branch
   branch: master
   path: https://github.com/StudioWildcard/tk-multi-shotgunpanel
-  version: 575cd5604c723b12787ffe7467b8521b862237f3
+  version: cd1bdbf7703ebd7f0025471182c7c466660904b7
 
 # dev utils
 apps.tk-multi-devutils.location:
