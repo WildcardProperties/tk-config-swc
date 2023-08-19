@@ -17,7 +17,7 @@ import re
 
 HookBaseClass = sgtk.get_hook_baseclass()
 TK_FRAMEWORK_PERFORCE_NAME = "tk-framework-perforce_v0.x.x"
-TK_FRAMEWORK_SWC_NAME = "tk-framework-swc_v0.x.x"
+TK_FRAMEWORK_SWC_NAME = "tk-framework-swc_v1.x.x"
 
 logger = sgtk.platform.get_logger(__name__)
 
@@ -462,7 +462,7 @@ class BasicSceneCollector(HookBaseClass):
             file_item.thumbnail_explicit = True
         # if the supplied path is a SpeedTree SPM file, extract the thumbnail.
         elif item_type.startswith("file.speedtree") and extension.startswith("spm"):
-            swc = self.load_framework("tk-framework-swc_v0.x.x")
+            swc = self.load_framework("tk-framework-swc_v1.x.x")
             spm_utils = swc.import_module("SPM_Utils")
             temp_path = os.path.expandvars(r'%APPDATA%\Shotgun\Temp')
             os.makedirs(temp_path, exist_ok=True)

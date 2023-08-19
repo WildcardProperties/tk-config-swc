@@ -15,7 +15,7 @@ import tempfile
 from tank_vendor import six
 
 HookBaseClass = sgtk.get_hook_baseclass()
-TK_FRAMEWORK_SWC_NAME = "tk-framework-swc_v0.x.x"
+TK_FRAMEWORK_SWC_NAME = "tk-framework-swc_v1.x.x"
 
 class PhotoshopCCSceneCollector(HookBaseClass):
     """

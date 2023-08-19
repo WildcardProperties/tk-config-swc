@@ -141,7 +141,7 @@ frameworks:
 
 
   # SWC - Custom utilities
-  tk-framework-swc_v0.x.x:
+  tk-framework-swc_v1.x.x:
     location:
       # # Dev
       # type: dev
