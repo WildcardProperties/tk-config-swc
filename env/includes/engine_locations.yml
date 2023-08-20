@@ -38,7 +38,7 @@ engines.tk-desktop.location:
   type: git_branch
   branch: swc_main_ai
   path: https://github.com/StudioWildcard/tk-desktop
-  version: 0740d50
+  version: 0740d508c25813bfac39a9c278227f26f5bbc791
 
 
 # Desktop2
@@ -57,13 +57,13 @@ engines.tk-houdini.location:
 engines.tk-maya.location:
   type: app_store
   name: tk-maya
-  version: v0.11.5
+  version: v0.11.6
 
 # Photoshop
 engines.tk-photoshopcc.location:
   type: app_store
   name: tk-photoshopcc
-  version: v1.9.4
+  version: v1.9.5
 
 # Shell
 engines.tk-shell.location:
