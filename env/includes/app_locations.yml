@@ -179,7 +179,7 @@ apps.tk-multi-workfiles2.location:
   type: git_branch
   branch: master
   path: https://github.com/studiowildcard/tk-multi-workfiles2.git
-  version: 6079952270e5fab7ff36ccf6558c888d75a7f355
+  version: 1c3efe20a73231d6caecfde70fde84d09690c277
   #type: git_branch
   #branch: beta-ai
   #path: https://github.com/studiowildcard/tk-multi-workfiles2.git

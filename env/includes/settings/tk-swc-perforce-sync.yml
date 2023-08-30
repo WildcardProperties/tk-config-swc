@@ -199,9 +199,9 @@ settings.tk-swc-perforce-sync.desktop:
     Zprj File: [perforce_sync]
     Ztl File: [perforce_sync]
   entity_mappings:
-    Task: [perforce_sync,create_folders]
-    Asset: [perforce_sync,create_folders]
-    CustomEntity03: [perforce_sync,create_folders]    
+    Task: [perforce_sync,create_folders,unregister_folders]
+    Asset: [perforce_sync,create_folders,unregister_folders]
+    CustomEntity03: [perforce_sync,create_folders,unregister_folders]    
   <<: *entity_browser_settings 
   publish_filters: [["sg_status_list", "is_not", null]]  
   location: "@apps.tk-swc-perforce-sync.location"

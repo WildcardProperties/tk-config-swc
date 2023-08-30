@@ -44,7 +44,7 @@ frameworks:
       #path: "S:/Projects/ShotgunConfig/tk-framework-qtwidgets"
       type: git
       path: https://github.com/StudioWildcard/tk-framework-qtwidgets.git
-      version: v2.100.0
+      version: v2.110.7
 
   # shotgunutils v4 - Shotgun Related Utilities
   tk-framework-shotgunutils_v4.x.x:
