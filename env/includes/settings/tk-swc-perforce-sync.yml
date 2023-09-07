@@ -21,7 +21,7 @@ entity_browser_settings: &entity_browser_settings
     entity_type: Task
     filters:
     - [task_assignees, is, '{context.user}']
-    - [sg_status_list, is, ["rdy", "ip", "rev", "hld"]]
+    - [sg_status_list, in, ["rdy", "ip", "rev", "hld"]]
     - [project, is, '{context.project}']
     hierarchy: [project, entity, step, content]      
   - caption: Assets
