@@ -71,6 +71,16 @@ class ShellActions(HookBaseClass):
 
         # For the sake of easy test, we'll reuse Maya publish types.
 
+        if "preview_create_folders" in actions:
+            action_instances.append(
+                {
+                    "name": "preview_create_folders",
+                    "params": "Preview Create Folders 'params'",
+                    "caption": "Preview Create Folders",
+                    "description": "Executes Preview Create Folders.",
+                }
+            )
+
         if "create_folders" in actions:
             action_instances.append(
                 {
@@ -118,7 +128,7 @@ class ShellActions(HookBaseClass):
         :param list actions: Action dictionaries.
         """
         app = self.parent
-        app.log_info("Executing action '%s' on the selection")
+        app.log_info(f"Executing action '{actions}' on the selection")
         # Helps to visually scope selections
         # Execute each action.
 
@@ -151,34 +161,116 @@ class ShellActions(HookBaseClass):
         # so convert the path to ensure filenames containing complex characters are supported
         # path = six.ensure_str(self.get_publish_path(sg_publish_data))
 
-        if name == "create_folders":   
-            tk = sgtk.sgtk_from_entity(sg_publish_data['type'], sg_publish_data['id'])    
-            tk.synchronize_filesystem_structure()     
-            tk.create_filesystem_structure(sg_publish_data['type'], sg_publish_data['id'])        
+        if name == "preview_create_folders":  
+            self.preview_create_folders(sg_publish_data['type'], [sg_publish_data['id']])            
+        elif name == "create_folders":    
+            self.create_folders(sg_publish_data['type'], [sg_publish_data['id']])                 
         elif name =="unregister_folders":
-            self.unregister_folders(sg_publish_data['type'], [sg_publish_data['id']])
+            self.unregister_folders(sg_publish_data['type'], [sg_publish_data['id']])           
             
-    def unregister_folders(self, entity_type, entity_ids):
+    def preview_create_folders(self, entity_type, entity_ids):
         app = self.parent
+        if len(entity_ids) == 0:
+            app.log_error("No entities specified!")
+            return
 
+        paths = []
+        try:
+            paths.extend(
+                app.tank.preview_filesystem_structure(entity_type, entity_ids)
+            )
+
+        except tank.TankError as tank_error:
+            # tank errors are errors that are expected and intended for the user
+            app.log_error(tank_error)
+
+        except Exception:
+            # other errors are not expected and probably bugs - here it's useful with a callstack.
+            app.log_exception("Error when previewing folders!")
+
+        else:
+            # success! report back to user
+            if len(paths) == 0:
+                app.log_info("*No folders would be generated on disk for this item!*")
+
+            else:
+                app.log_info(
+                    "*Creating folders would generate %d items on disk:*" % len(paths)
+                )
+                app.log_info("")
+                for p in paths:
+                    app.log_info(p.replace(r"\_", r"\\_"))
+                app.log_info("")
+                app.log_info(
+                    "Note that some of these folders may exist on disk already."
+                )
+
+    def _add_plural(self, word, items):
+        """
+        appends an s if items > 1
+        """
+        if items > 1:
+            return "%ss" % word
+        else:
+            return word
+
+    def create_folders(self, entity_type, entity_ids):         
+        app = self.parent
+        if len(entity_ids) == 0:
+            app.log_error("No entities specified!")
+            return
+
+        entities_processed = 0
+        try:
+            tk = sgtk.sgtk_from_entity(entity_type, entity_ids)   
+            entities_processed = app.tank.create_filesystem_structure(
+                entity_type, entity_ids
+            )
+            tk.synchronize_filesystem_structure()        
+
+        except tank.TankError as tank_error:
+            # tank errors are errors that are expected and intended for the user
+            app.log_error(tank_error)
+
+        except Exception:
+            # other errors are not expected and probably bugs - here it's useful with a callstack.
+            app.log_exception("Error when creating folders!")
+
+        else:
+            # report back to user
+            app.log_info(
+                "%d %s processed - "
+                "Processed %d folders on disk."
+                % (
+                    len(entity_ids),
+                    self._add_plural(entity_type, len(entity_ids)),
+                    entities_processed,
+                )
+            )
+
+    def unregister_folders(self, entity_type, entity_ids):    
+        app = self.parent
         if len(entity_ids) == 0:
             app.log_error("No entities specified!")
             return
 
         try:
 
-            uf = self.tank.get_command("unregister_folders")
+            uf = app.tank.get_command("unregister_folders")
 
             message = []
             for entity_id in entity_ids:
+                tk = sgtk.sgtk_from_entity(entity_type, entity_id)   
                 if entity_type == "Task":
                     parent_entity = self.parent.shotgun.find_one("Task",
                                         [["id", "is", entity_id]],
                                         ["entity"]).get("entity")
-                    result = uf.execute({"entity": {"type": parent_entity["type"], "id": parent_entity["id"]}})                    
-                else:
+                    result = uf.execute({"entity": {"type": parent_entity["type"], "id": parent_entity["id"]}})      
+                    message.append(result)                                  
+                else:                
                     result = uf.execute({"entity": {"type": entity_type, "id": entity_id}})
-                message.append(result)
+                    message.append(result)
+                tk.synchronize_filesystem_structure()        
 
         except tank.TankError as tank_error:
             # tank errors are errors that are expected and intended for the user

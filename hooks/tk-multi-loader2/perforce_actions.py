@@ -115,7 +115,7 @@ class PerforceActions(HookBaseClass):
         :param list actions: Action dictionaries.
         """
         app = self.parent
-        app.log_info("Executing action '%s' on the selection")
+        app.log_info(f"Executing action '{actions}' on the selection")
         # Helps to visually scope selections
         # Execute each action.
         perforce_entities = []
