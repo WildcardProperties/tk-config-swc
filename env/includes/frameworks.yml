@@ -27,7 +27,7 @@ frameworks:
     location:
       type: app_store
       name: tk-framework-adminui
-      version: v0.7.3
+      version: v0.7.4
   # desktopserver - provides a server to run local commands.
   tk-framework-desktopserver_v1.x.x:
     location:
@@ -60,7 +60,7 @@ frameworks:
       #path: "S:/Projects/ShotgunConfig/tk-framework-shotgunutils"
       type: app_store
       name: tk-framework-shotgunutils
-      version: v5.8.6
+      version: v5.8.7
       #type: git_branch
       #branch: main
       #path: https://github.com/alaa-e-ibrahim/tk-framework-shotgunutils
