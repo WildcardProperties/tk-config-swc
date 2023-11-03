@@ -102,3 +102,14 @@ settings.tk-houdini-alembicnode.weapon_step:
     color: []
     output_cache_template: houdini_weapon_work_alembic_cache
   location: "@apps.tk-houdini-alembicnode.location"
+
+# weapon_child_step
+settings.tk-houdini-alembicnode.weapon_child_step:
+  work_file_template: weapon_child_houdini_workfile
+  default_node_name: sg_alembic_out
+  output_profiles:
+  - name: Asset Work Cache
+    settings: {}
+    color: []
+    output_cache_template: houdini_weapon_child_work_alembic_cache
+  location: "@apps.tk-houdini-alembicnode.location"

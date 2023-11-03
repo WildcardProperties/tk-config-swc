@@ -163,3 +163,14 @@ settings.tk-substancepainter.weapon_step:
   menu_favourites: *settings_tk-substancepainter_menus
   template_project: weapon_root
   location: "@engines.tk-substancepainter.location"
+
+# weapon_child_step
+settings.tk-substancepainter.weapon_child_step:
+  apps:
+    <<: *settings_tk-substancepainter_apps
+    tk-multi-publish2: "@settings.tk-multi-publish2.substancepainter.weapon_child_step"
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancepainter.weapon_child_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancepainter.weapon_child_step"
+  menu_favourites: *settings_tk-substancepainter_menus
+  template_project: weapon_child_root
+  location: "@engines.tk-substancepainter.location"

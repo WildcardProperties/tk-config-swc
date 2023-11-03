@@ -141,6 +141,12 @@ settings.tk-multi-publish2.3dsmax.weapon_step:
   collector_settings:
       Work Template: weapon_max_workfile      
 
+# weapon_child_step
+settings.tk-multi-publish2.3dsmax.weapon_child_step: 
+  <<: *settings_publish_plugins_tk-multi-publish2_3dsmax
+  collector_settings:
+      Work Template: weapon_child_max_workfile
+
 ################################################################################
 
 # ---- Houdini
@@ -245,6 +251,12 @@ settings.tk-multi-publish2.houdini.weapon_step:
   <<: *settings_publish_plugins_tk-multi-publish2_houdini
   collector_settings:
       Work Template: weapon_houdini_workfile   
+
+# weapon_child_step
+settings.tk-multi-publish2.houdini.weapon_child_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_houdini
+  collector_settings:
+      Work Template: weapon_child_houdini_workfile      
 
 ################################################################################
 
@@ -357,6 +369,12 @@ settings.tk-multi-publish2.maya.weapon_step:
   collector_settings:
       Work Template: weapon_maya_workfile
 
+# weapon_child_step
+settings.tk-multi-publish2.maya.weapon_child_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_maya
+  collector_settings:
+      Work Template: weapon_child_maya_workfile
+
 ################################################################################
 
 # ---- Photoshop
@@ -441,6 +459,13 @@ settings.tk-multi-publish2.photoshop.weapon_step:
       Work Template: weapon_photoshop_workfile
       Work Area: weapon_root
 
+# weapon_child_step
+settings.tk-multi-publish2.photoshop.weapon_child_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_photoshop
+  collector_settings:
+      Work Template: weapon_child_photoshop_workfile
+      Work Area: weapon_child_root
+
 ################################################################################
 
 # --- Substance Painter
@@ -475,48 +500,12 @@ settings.tk-multi-publish2.substancepainter.asset_child_step:
   <<: *settings_publish_plugins_tk-multi-publish2_substancepainter
   collector_settings:
       Work Template: asset_child_substancepainter_workfile
-      # Work Export Template: substancepainter_asset_textures_path_export
-      # Publish Textures as Folder: true
-  post_phase: "{config}/tk-multi-publish2/post_phase.py"
-  publish_plugins:
-  - name: ADD to Perforce & ShotGrid
-    hook: "{config}/tk-multi-publish2/publish_file.py:{config}/tk-multi-publish2/tk-substancepainter/publish_file.py:{config}/tk-multi-publish2/add_file.py"
-    settings: {}    
-  - name: EDIT in Perforce & ShotGrid
-    hook: "{config}/tk-multi-publish2/publish_file.py:{config}/tk-multi-publish2/tk-substancepainter/publish_file.py:{config}/tk-multi-publish2/edit_file.py"
-    settings: {}
-  - name: DELETE from Perforce & ShotGrid
-    hook: "{config}/tk-multi-publish2/publish_file.py:{config}/tk-multi-publish2/tk-substancepainter/publish_file.py:{config}/tk-multi-publish2/delete_file.py"
-    settings: {}    
-  - name: Upload for review
-    hook: "{self}/upload_version.py:{config}/tk-multi-publish2/upload_version.py:{config}/tk-multi-publish2/tk-substancepainter/upload_version.py"
-    settings: {}  
-  help_url: *help_url
-  location: "@apps.tk-multi-publish2.location"
 
 # seq_asset_step
 settings.tk-multi-publish2.substancepainter.seq_asset_step:
   <<: *settings_publish_plugins_tk-multi-publish2_substancepainter
   collector_settings:
       Work Template: seq_asset_substancepainter_workfile
-      # Work Export Template: substancepainter_asset_textures_path_export
-      # Publish Textures as Folder: true
-  post_phase: "{config}/tk-multi-publish2/post_phase.py"
-  publish_plugins:
-  - name: ADD to Perforce & ShotGrid
-    hook: "{config}/tk-multi-publish2/publish_file.py:{config}/tk-multi-publish2/tk-substancepainter/publish_file.py:{config}/tk-multi-publish2/add_file.py"
-    settings: {}    
-  - name: EDIT in Perforce & ShotGrid
-    hook: "{config}/tk-multi-publish2/publish_file.py:{config}/tk-multi-publish2/tk-substancepainter/publish_file.py:{config}/tk-multi-publish2/edit_file.py"
-    settings: {}
-  - name: DELETE from Perforce & ShotGrid
-    hook: "{config}/tk-multi-publish2/publish_file.py:{config}/tk-multi-publish2/tk-substancepainter/publish_file.py:{config}/tk-multi-publish2/delete_file.py"
-    settings: {}    
-  - name: Upload for review
-    hook: "{self}/upload_version.py:{config}/tk-multi-publish2/upload_version.py:{config}/tk-multi-publish2/tk-substancepainter/upload_version.py"
-    settings: {}  
-  help_url: *help_url
-  location: "@apps.tk-multi-publish2.location"
 
 # pub_asset step
 settings.tk-multi-publish2.substancepainter.pub_asset_step:
@@ -552,7 +541,13 @@ settings.tk-multi-publish2.substancepainter.asset_section_category_class_step:
 settings.tk-multi-publish2.substancepainter.weapon_step:
   <<: *settings_publish_plugins_tk-multi-publish2_substancepainter
   collector_settings:
-      Work Template: weapon_substancepainter_workfile            
+      Work Template: weapon_substancepainter_workfile        
+
+# weapon_child_step
+settings.tk-multi-publish2.substancepainter.weapon_child_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_substancepainter
+  collector_settings:
+      Work Template: weapon_child_substancepainter_workfile        
 
 ################################################################################
 
@@ -664,7 +659,19 @@ settings.tk-multi-publish2.substancedesigner.asset_section_category_class_step:
 settings.tk-multi-publish2.substancedesigner.weapon_step:
   <<: *settings_publish_plugins_tk-multi-publish2_substancedesigner
   collector_settings:
-      Work Template: weapon_substancedesigner_workfile            
+      Work Template: weapon_substancedesigner_workfile    
+
+# weapon_child_step
+settings.tk-multi-publish2.substancedesigner.weapon_child_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_substancedesigner
+  collector_settings:
+      Work Template: weapon_child_substancedesigner_workfile     
+
+# weapon_child_step
+settings.tk-multi-publish2.substancedesigner.weapon_child_step:
+  <<: *settings_publish_plugins_tk-multi-publish2_substancedesigner
+  collector_settings:
+      Work Template: weapon_child_substancedesigner_workfile               
 
 ################################################################################
 

@@ -48,27 +48,31 @@ class PickEnvironment(sgtk.Hook):
                                                                ["sg_asset_parent","sg_asset_library","sg_asset_type","sg_asset_section","sg_asset_category","sg_asset_class"])
                 
                 # Child Assets
-                if context_entity.get("sg_asset_parent") and context_entity.get("sg_asset_type") == "Animations":
-                    return "anim_asset"
-                elif context_entity.get("sg_asset_parent"):
-                    return "asset_child"
+                if context_entity.get("sg_asset_parent"):
+                    if context_entity.get("sg_asset_type") == "Animations":
+                        return "anim_asset"
+                    elif context_entity.get("sg_asset_type") == "Weapons":
+                        return "weapon_child"
+                    else:
+                        return "asset_child"
+                else:
 
-                if context_entity.get("sg_asset_section") and context_entity.get("sg_asset_category") and context_entity.get("sg_asset_class"):           
-                    return "asset_section_category_class"  
-                elif context_entity.get("sg_asset_section") and context_entity.get("sg_asset_category"):
-                    return "asset_section_category"
-                elif context_entity.get("sg_asset_section"):
-                    return "asset_section"
+                    if context_entity.get("sg_asset_section") and context_entity.get("sg_asset_category") and context_entity.get("sg_asset_class"):           
+                        return "asset_section_category_class"  
+                    elif context_entity.get("sg_asset_section") and context_entity.get("sg_asset_category"):
+                        return "asset_section_category"
+                    elif context_entity.get("sg_asset_section"):
+                        return "asset_section"
 
-                # Library Assets
-                if context_entity.get("sg_asset_library") == "Lib":
+                    # Library Assets
+                    if context_entity.get("sg_asset_library") == "Lib":
+                        return "asset"
+
+                    # Weapon Assets
+                    if context_entity.get("sg_asset_type") == "Weapons":
+                        return "weapon"                
+
                     return "asset"
-
-                # Weapon Assets
-                if context_entity.get("sg_asset_type") == "Weapons":
-                    return "weapon"                
-
-                return "asset"
             elif context.entity["type"] == "Sequence":
                 return "sequence" 
             elif context.entity["type"] == "Shot":
@@ -94,37 +98,42 @@ class PickEnvironment(sgtk.Hook):
                                                              ["sg_step_folder"])
 
                 # Child Assets
-                if context_entity.get("sg_asset_parent") and context_entity.get("sg_asset_type") == "Animations":
-                    logger.info("Entity is an anim_asset_step")
-                    return "anim_asset_step"
-                elif context_entity.get("sg_asset_parent"):
-                    logger.info("Entity is an asset_child_step")
-                    return "asset_child_step"
+                if context_entity.get("sg_asset_parent"):
+                    if context_entity.get("sg_asset_type") == "Animations":
+                        logger.info("Entity is an anim_asset_step")
+                        return "anim_asset_step"
+                    # Weapons
+                    elif context_entity.get("sg_asset_type") == "Weapons":
+                        logger.info("Entity is a weapon_child_step")
+                        return "weapon_child_step"                    
+                    else:
+                        logger.info("Entity is an asset_child_step")
+                        return "asset_child_step"
+                else:
+                    if not context_step.get("sg_step_folder"):
+                        return "asset_step_flat"
+                    
+                    if context_entity.get("sg_asset_section") and context_entity.get("sg_asset_category") and context_entity.get("sg_asset_class"):           
+                        logger.info("Entity is an asset_section_category_class_step")        
+                        return "asset_section_category_class_step"  
+                    elif context_entity.get("sg_asset_section") and context_entity.get("sg_asset_category"):
+                        logger.info("Entity is an asset_section_category_step")
+                        return "asset_section_category_step"
+                    elif context_entity.get("sg_asset_section"):
+                        logger.info("Entity is an asset_section_step")                    
+                        return "asset_section_step"
 
-                if not context_step.get("sg_step_folder"):
-                    return "asset_step_flat"
-                
-                if context_entity.get("sg_asset_section") and context_entity.get("sg_asset_category") and context_entity.get("sg_asset_class"):           
-                    logger.info("Entity is an asset_section_category_class_step")        
-                    return "asset_section_category_class_step"  
-                elif context_entity.get("sg_asset_section") and context_entity.get("sg_asset_category"):
-                    logger.info("Entity is an asset_section_category_step")
-                    return "asset_section_category_step"
-                elif context_entity.get("sg_asset_section"):
-                    logger.info("Entity is an asset_section_step")                    
-                    return "asset_section_step"
-
-                if context_entity.get("sg_asset_library") == "Lib":
-                    logger.info("Entity is a library asset")
-                    return "asset"
-                
-                # Weapons
-                if context_entity.get("sg_asset_type") == "Weapons":
-                    logger.info("Entity is a weapon_step")
-                    return "weapon_step"
-                
-                logger.info("Entity is an asset_step")
-                return "asset_step"
+                    if context_entity.get("sg_asset_library") == "Lib":
+                        logger.info("Entity is a library asset")
+                        return "asset"
+                    
+                    # Weapons
+                    if context_entity.get("sg_asset_type") == "Weapons":
+                        logger.info("Entity is a weapon_step")
+                        return "weapon_step"
+                    
+                    logger.info("Entity is an asset_step")
+                    return "asset_step"
             elif context.entity["type"] == "Sequence":
                 logger.info("Entity is a sequence_step")
                 return "sequence_step"  

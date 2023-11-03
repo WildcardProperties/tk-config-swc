@@ -359,6 +359,16 @@ settings.tk-multi-workfiles2.3dsmax.weapon_step:
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
 
+# weapon_child_step
+settings.tk-multi-workfiles2.3dsmax.weapon_child_step:
+  template_publish: weapon_child_max_workfile
+  template_publish_area: weapon_child_root
+  template_work: weapon_child_max_workfile
+  template_work_area: weapon_child_root
+  <<: *common_workfiles_settings
+  <<: *entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"  
+
 ################################################################################
 
 # ---- Houdini
@@ -503,6 +513,16 @@ settings.tk-multi-workfiles2.houdini.weapon_step:
   <<: *common_workfiles_settings
   my_tasks_extra_display_fields: []    
   <<: *env_entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
+
+# weapon_child_step
+settings.tk-multi-workfiles2.houdini.weapon_child_step:
+  template_publish: weapon_child_houdini_workfile
+  template_publish_area: weapon_child_root
+  template_work: weapon_child_houdini_workfile
+  template_work_area: weapon_child_root
+  <<: *common_workfiles_settings
+  <<: *entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
 
 ################################################################################
@@ -663,6 +683,16 @@ settings.tk-multi-workfiles2.maya.weapon_step:
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
 
+# weapon_child_step
+settings.tk-multi-workfiles2.maya.weapon_child_step:
+  template_publish: weapon_child_maya_workfile
+  template_publish_area: weapon_child_root
+  template_work: weapon_child_maya_workfile
+  template_work_area: weapon_child_root
+  <<: *common_workfiles_settings
+  <<: *entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"
+
 # project
 settings.tk-multi-workfiles2.maya.project:
   template_publish: 
@@ -770,6 +800,16 @@ settings.tk-multi-workfiles2.photoshop.weapon_step:
   my_tasks_extra_display_fields: []    
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
+
+# weapon_child_step
+settings.tk-multi-workfiles2.photoshop.weapon_child_step:
+  template_publish: weapon_child_photoshop_workfile
+  template_publish_area: weapon_child_root
+  template_work: weapon_child_photoshop_workfile
+  template_work_area: weapon_child_root
+  <<: *common_workfiles_settings
+  <<: *entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"  
 
 ################################################################################
 
@@ -901,6 +941,16 @@ settings.tk-multi-workfiles2.substancepainter.weapon_step:
   my_tasks_extra_display_fields: []    
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
+
+# weapon_child_step
+settings.tk-multi-workfiles2.substancepainter.weapon_child_step:
+  template_publish: weapon_child_substancepainter_workfile
+  template_publish_area: weapon_child_root
+  template_work: weapon_child_substancepainter_workfile
+  template_work_area: weapon_child_root
+  <<: *common_workfiles_settings
+  <<: *entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"  
 
 ################################################################################
 
@@ -1042,6 +1092,17 @@ settings.tk-multi-workfiles2.substancedesigner.weapon_step:
   my_tasks_extra_display_fields: []    
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
+
+# weapon_child_step
+settings.tk-multi-workfiles2.substancedesigner.weapon_child_step:
+  template_publish: weapon_child_substancedesigner_workfile
+  template_publish_area: weapon_child_root
+  template_work: weapon_child_substancedesigner_workfile
+  template_work_area: weapon_child_root
+  # saveas_default_name: hook:tk-multi-workfiles2/saveas_default_name_tk-substancedesigner
+  <<: *common_workfiles_settings
+  <<: *entity_browser_settings
+  location: "@apps.tk-multi-workfiles2.location"  
 
 #-------------------------------------------------------------------------------------
 # ---- Unreal

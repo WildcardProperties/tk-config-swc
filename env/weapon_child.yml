@@ -33,7 +33,6 @@ includes:
 - ./includes/settings/tk-shell.yml
 - ./includes/settings/tk-shotgun.yml
 - ./includes/settings/tk-multi-perforce.yml
-- ./includes/settings/tk-unreal.yml
 
 ################################################################################
 # configuration for all engines to load in an asset context
@@ -49,7 +48,6 @@ engines:
   tk-substancepainter: "@settings.tk-substancepainter.asset"
   tk-shell: "@settings.tk-shell.asset"
   tk-shotgun: "@settings.tk-shotgun.weapon"
-  tk-unreal: "@settings.tk-unreal.asset"
 
 ################################################################################
 # reference all of the common frameworks

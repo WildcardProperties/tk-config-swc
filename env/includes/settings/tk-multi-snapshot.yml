@@ -87,6 +87,13 @@ settings.tk-multi-snapshot.3dsmax.weapon_step:
   hook_scene_operation: "{engine}/tk-multi-snapshot/basic/scene_operation.py"
   location: "@apps.tk-multi-snapshot.location"
 
+# weapon_child_step
+settings.tk-multi-snapshot.3dsmax.weapon_child_step:
+  template_snapshot: weapon_child_max_snapshot
+  template_work: weapon_child_max_workfile
+  hook_scene_operation: "{engine}/tk-multi-snapshot/basic/scene_operation.py"
+  location: "@apps.tk-multi-snapshot.location"  
+
 ################################################################################
 
 # ---- Houdini
@@ -174,6 +181,12 @@ settings.tk-multi-snapshot.houdini.weapon_step:
   template_snapshot: weapon_houdini_snapshot
   template_work: weapon_houdini_workfile
   location: "@apps.tk-multi-snapshot.location"
+
+# weapon_child_step
+settings.tk-multi-snapshot.houdini.weapon_child_step:
+  template_snapshot: weapon_child_houdini_snapshot
+  template_work: weapon_child_houdini_workfile
+  location: "@apps.tk-multi-snapshot.location"  
 
 ################################################################################
 
@@ -269,6 +282,12 @@ settings.tk-multi-snapshot.maya.weapon_step:
   template_work: weapon_maya_workfile
   location: "@apps.tk-multi-snapshot.location"
 
+# weapon_child_step
+settings.tk-multi-snapshot.maya.weapon_child_step:
+  template_snapshot: weapon_child_maya_snapshot
+  template_work: weapon_child_maya_workfile
+  location: "@apps.tk-multi-snapshot.location"  
+
 ################################################################################
 
 # ---- Photoshop
@@ -327,6 +346,11 @@ settings.tk-multi-snapshot.photoshop.weapon_step:
   template_work: weapon_photoshop_workfile
   location: "@apps.tk-multi-snapshot.location"    
 
+# weapon_child_step
+settings.tk-multi-snapshot.photoshop.weapon_child_step:
+  template_snapshot: weapon_child_photoshop_snapshot
+  template_work: weapon_child_photoshop_workfile
+  location: "@apps.tk-multi-snapshot.location"
 ################################################################################
 
 # ---- Substance Painter
@@ -400,6 +424,14 @@ settings.tk-multi-snapshot.substancepainter.weapon_step:
   hook_scene_operation: "{engine}/tk-multi-snapshot/scene_operation_tk-substancepainter.py"
   template_snapshot: weapon_substancepainter_snapshot
   template_work: weapon_substancepainter_workfile
+  hook_thumbnail: "{engine}/thumbnail.py"
+  location: "@apps.tk-multi-snapshot.location"
+
+# weapon_child_step
+settings.tk-multi-snapshot.substancepainter.weapon_child_step:
+  hook_scene_operation: "{engine}/tk-multi-snapshot/scene_operation_tk-substancepainter.py"
+  template_snapshot: weapon_child_substancepainter_snapshot
+  template_work: weapon_child_substancepainter_workfile
   hook_thumbnail: "{engine}/thumbnail.py"
   location: "@apps.tk-multi-snapshot.location"
 
@@ -478,6 +510,15 @@ settings.tk-multi-snapshot.substancedesigner.weapon_step:
   template_work: weapon_substancedesigner_workfile
   hook_thumbnail: "{engine}/thumbnail.py"
   location: "@apps.tk-multi-snapshot.location"
+
+# weapon_child_step
+settings.tk-multi-snapshot.substancedesigner.weapon_child_step:
+  hook_scene_operation: "{engine}/tk-multi-snapshot/scene_operation_tk-substancedesigner.py"
+  template_snapshot: weapon_child_substancedesigner_snapshot
+  template_work: weapon_child_substancedesigner_workfile
+  hook_thumbnail: "{engine}/thumbnail.py"
+  location: "@apps.tk-multi-snapshot.location"
+
 
 ################################################################################
 
@@ -566,3 +607,9 @@ settings.tk-multi-snapshot.unreal.weapon_step:
   template_snapshot: weapon_unreal_snapshot
   template_work: weapon_unreal_workfile
   location: "@apps.tk-multi-snapshot.location"
+
+# weapon_child_step
+settings.tk-multi-snapshot.unreal.weapon_child_step:
+  template_snapshot: weapon_child_unreal_snapshot
+  template_work: weapon_child_unreal_workfile
+  location: "@apps.tk-multi-snapshot.location"  

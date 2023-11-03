@@ -41,7 +41,7 @@ engines:
   tk-substancedesigner: "@settings.tk-substancedesigner.weapon_step"
   tk-substancepainter: "@settings.tk-substancepainter.weapon_step"
   tk-shell: "@settings.tk-shell.asset"
-  tk-shotgun: "@settings.tk-shotgun.asset_step"
+  tk-shotgun: "@settings.tk-shotgun.weapon_step"
   tk-unreal: "@settings.tk-unreal.asset_step"
 
 ################################################################################
