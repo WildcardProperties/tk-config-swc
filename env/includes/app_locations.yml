@@ -68,12 +68,12 @@ apps.tk-multi-publish2.location:
   #type: app_store
   #name: tk-multi-publish2
   #version: v2.6.3
-  #type: dev
-  #path: S:\Projects\ShotgunConfig\tk-multi-publish2
+  # type: dev
+  # path: S:\Projects\ShotgunConfig\tk-multi-publish2
   type: git_branch
   branch: beta-ai
   path: https://github.com/StudioWildcard/tk-multi-publish2
-  version: 53cc92d7251cd7d4789f78f7b68ad027fd16c2b1
+  version: 303311eb3bccf75636fadc63ff657ef96975133d
 
 # screeningroom
 apps.tk-multi-screeningroom.location:

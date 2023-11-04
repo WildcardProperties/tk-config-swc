@@ -317,15 +317,28 @@ class BasicSceneCollector(HookBaseClass):
 
     def process_current_session(self, settings, parent_item):
         """
-        Analyzes the current scene open in a DCC and parents a subtree of items
-        under the parent_item passed in.
+        For Desktop Publisher, expects to find a changelist in the parent App to process,
+        originally passed in when invoking the Publish... engine command.
 
         :param dict settings: Configured settings for this collector
         :param parent_item: Root item instance
         """
 
         # default implementation does not do anything
-        pass
+        self.p4_fw = self.load_framework(TK_FRAMEWORK_PERFORCE_NAME)
+        self.logger.debug("Perforce framework loaded.")            
+        
+        if self.parent.changelist:
+            try:                
+                self.logger.debug(f"Found change {self.parent.changelist} for processing.")
+                changes = self.p4_fw.util.reconcile_files(change=self.parent.changelist)
+                self.logger.debug(f"Found opened files: \n {changes}")
+                self._collect_folder(parent_item, changes)
+                return None                
+            except Exception as e:
+                self.logger.debug(f"Error: {e}")    
+        else:
+            pass 
 
     def process_file(self, settings, parent_item, path, custom_info=None):
         """
