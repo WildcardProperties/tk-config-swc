@@ -19,11 +19,11 @@ entity_browser_settings: &entity_browser_settings
   entities:
   - caption: My Tasks
     entity_type: Task
+    hierarchy: [entity, step, content]          
     filters:
     - [task_assignees, is, '{context.user}']
     - [sg_status_list, in, ["rdy", "ip", "rev", "hld"]]
     - [project, is, '{context.project}']
-    hierarchy: [project, entity, step, content]      
   - caption: All Assets
     entity_type: Asset
     hierarchy: [sg_asset_library, sg_asset_type, code]
