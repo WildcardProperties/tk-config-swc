@@ -315,6 +315,91 @@ class BasicSceneCollector(HookBaseClass):
         """
         return {}
 
+    def get_changelist_description(self, changelist):
+        """
+        Fetches the description of the specified Perforce changelist.
+
+        :param changelist: The changelist number as a string or an integer.
+        :return: The description of the changelist.
+        """
+        changelist = str(changelist)
+        try:
+            result = subprocess.check_output(["p4", "describe", "-s", changelist], universal_newlines=True)
+            # The output will contain multiple lines, where the description is present after a line 'Description:'
+            lines = result.split("\n")
+            description = ""
+            capture = False
+            for line in lines:
+                if capture:
+                    description += line.strip() + " "
+                if line.startswith("Description:"):
+                    capture = True
+            return description.strip()
+        except subprocess.CalledProcessError as e:
+            self.logger.error("Failed to fetch description for changelist {}: {}".format(changelist, e))
+            return None
+
+    def get_file_log(self, file_path):
+        try:
+            filelog_list = self.p4_fw.run("filelog", "-l", file_path)
+            # self._log_debug(">>>>>> filelog_list: {}".format(filelog_list))
+            if filelog_list:
+                filelog = filelog_list[0]
+                # 'desc': ['- Climb Idle ']
+                desc = filelog.get("desc", None)
+                if desc:
+                    desc = desc[0]
+                    if desc.startswith("-"):
+                        desc = desc[1:]
+                    if desc.startswith(" "):
+                        desc = desc[1:]
+
+                return desc
+            else:
+                return None
+        except:
+            return None
+
+    def process_current_session_tmp(self, settings, parent_item):
+        """
+        For Desktop Publisher, expects to find a changelist in the parent App to process,
+        originally passed in when invoking the Publish... engine command.
+
+        :param dict settings: Configured settings for this collector
+        :param parent_item: Root item instance
+        """
+
+        self.p4_fw = self.load_framework(TK_FRAMEWORK_PERFORCE_NAME)
+        self.logger.debug("Perforce framework loaded.")
+
+        if self.parent.changelist:
+            try:
+                self.logger.debug(f"Found change {self.parent.changelist} for processing.")
+                changes = self.p4_fw.util.reconcile_files(change=self.parent.changelist)
+                self.logger.debug(f"Found opened files: \n {changes}")
+
+                """
+                # Fetch changelist description from Perforce
+                desc = self.get_file_log(changes[0].get("clientFile", None))
+                self.logger.debug("Changelist Description: " + desc)
+                changelist_description = self.get_changelist_description(self.parent.changelist)
+                """
+                changelist_description = "testing"
+                if changelist_description:
+                    self.logger.debug("Changelist Description: " + changelist_description)
+
+                    # Use the changelist description as the summary for the ShotGrid publisher
+                    for item in changes:
+                        if item.properties.type == "publish":  # Or check the appropriate condition to identify publishable items
+                            item.description = changelist_description
+
+                self._collect_folder(parent_item, changes)
+                return None
+            except Exception as e:
+                self.logger.debug(f"Error: {e}")
+        else:
+            pass
+
     def process_current_session(self, settings, parent_item):
         """
         For Desktop Publisher, expects to find a changelist in the parent App to process,
@@ -338,7 +423,8 @@ class BasicSceneCollector(HookBaseClass):
             except Exception as e:
                 self.logger.debug(f"Error: {e}")    
         else:
-            pass 
+            pass
+
 
     def process_file(self, settings, parent_item, path, custom_info=None):
         """
@@ -460,6 +546,9 @@ class BasicSceneCollector(HookBaseClass):
         file_item = parent_item.create_item(item_type, type_display, display_name)
         file_item.set_icon_from_path(item_info["icon_path"])
         file_item.context_change_allowed = True
+
+        # Set description for the item
+        # file_item.description = "testing"
 
         # If we found a better context, set it here
         if context:
