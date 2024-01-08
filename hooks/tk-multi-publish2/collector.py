@@ -390,8 +390,8 @@ class BasicSceneCollector(HookBaseClass):
 
                     # Use the changelist description as the summary for the ShotGrid publisher
                     for item in changes:
-                        if item.properties.type == "publish":  # Or check the appropriate condition to identify publishable items
-                            item.description = changelist_description
+                        #if item.properties.type == "publish":  # Or check the appropriate condition to identify publishable items
+                        item.description = changelist_description
 
                 self._collect_folder(parent_item, changes)
                 return None
@@ -399,6 +399,7 @@ class BasicSceneCollector(HookBaseClass):
                 self.logger.debug(f"Error: {e}")
         else:
             pass
+
 
     def process_current_session(self, settings, parent_item):
         """

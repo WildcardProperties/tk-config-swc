@@ -173,6 +173,8 @@ class ShellActions(HookBaseClass):
         if len(entity_ids) == 0:
             app.log_error("No entities specified!")
             return
+        app.log_info("--> Entity Type: %s" % entity_type)
+        app.log_info("--> Entity IDs: %s" % entity_ids)
 
         paths = []
         try:

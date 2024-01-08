@@ -141,6 +141,7 @@ entity_browser_settings: &shot_browser_settings
 # Desktop
 settings.tk-swc-perforce-sync.desktop:
   actions_hook: "{config}/tk-swc-perforce-sync/tk-desktop/tk-desktop_actions.py:{config}/tk-swc-perforce-sync/perforce_actions.py"
+  # actions_hook: "{config}/tk-swc-perforce-sync/perforce_actions.py"
   action_mappings:
     3dsmax Scene: [perforce_sync]
     Ai File: [perforce_sync]
