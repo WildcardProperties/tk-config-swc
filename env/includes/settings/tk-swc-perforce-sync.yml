@@ -26,7 +26,7 @@ entity_browser_settings: &entity_browser_settings
     - [project, is, '{context.project}']
   - caption: All Assets
     entity_type: Asset
-    hierarchy: [sg_asset_library, sg_asset_type, code]
+    hierarchy: [sg_asset_library.AssetLibrary.sg_asset_library_type, sg_asset_library, sg_asset_type, code]
     filters:
       - [sg_asset_parent, is, [ null ]]
       - [project, is, '{context.project}']    
@@ -35,7 +35,7 @@ entity_browser_settings: &entity_browser_settings
       - [task.Task.step.Step.short_name, is_not, 'Animations']
   - caption: Dinos
     entity_type: Asset
-    hierarchy: [sg_asset_library, code]
+    hierarchy: [sg_asset_library.AssetLibrary.sg_asset_library_type, sg_asset_library, code]
     filters:
       - [project, is, '{context.project}']  
       - [sg_asset_parent, is, [ null ]]
@@ -44,7 +44,7 @@ entity_browser_settings: &entity_browser_settings
       - [task.Task.step.Step.short_name, is_not, 'Animations']      
   - caption: Structures
     entity_type: Asset
-    hierarchy: [sg_asset_library, sg_folder_name, code]
+    hierarchy: [sg_asset_library.AssetLibrary.sg_asset_library_type, sg_asset_library, sg_folder_name, code]
     filters:
       - [project, is, '{context.project}']  
       - [sg_asset_parent, is, [ null ]]
@@ -53,7 +53,7 @@ entity_browser_settings: &entity_browser_settings
       - [task.Task.step.Step.short_name, is_not, 'Animations']         
   - caption: Weapons \ Tools
     entity_type: Asset
-    hierarchy: [sg_asset_library, tags, code]
+    hierarchy: [sg_asset_library.AssetLibrary.sg_asset_library_type, sg_asset_library, tags, code]
     filters:
       - [project, is, '{context.project}']  
       - [sg_asset_parent, is, [ null ]]
@@ -62,7 +62,7 @@ entity_browser_settings: &entity_browser_settings
       - [task.Task.step.Step.short_name, is_not, 'Animations']          
   - caption: Outfits
     entity_type: Asset
-    hierarchy: [sg_asset_library, sg_asset_type, sg_asset_section, sg_asset_category, code]
+    hierarchy: [sg_asset_library.AssetLibrary.sg_asset_library_type, sg_asset_library, sg_asset_type, sg_asset_section, sg_asset_category, code]
     filters:
       - [project, is, '{context.project}']  
       - [sg_asset_type, in, ["Human", "Outfits"]]   
