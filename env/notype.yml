@@ -48,7 +48,7 @@ engines:
   tk-substancedesigner: "@settings.tk-substancedesigner.asset"
   tk-substancepainter: "@settings.tk-substancepainter.asset"
   tk-shell: "@settings.tk-shell.asset"
-  tk-shotgun: "@settings.tk-shotgun.weapon"
+  tk-shotgun: "@settings.tk-shotgun.notype"
   tk-unreal: "@settings.tk-unreal.asset"
 
 ################################################################################

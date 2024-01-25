@@ -33,8 +33,8 @@ settings.tk-shotgun.asset:
     tk-shotgun-launchfolder: "@settings.tk-shotgun-launchfolder"
   location: "@engines.tk-shotgun.location"
 
-# weapon & weapon_child & sequence
-settings.tk-shotgun.weapon:
+# notype & notype_child & sequence
+settings.tk-shotgun.notype:
   apps:
     tk-multi-launchapp: "@settings.tk-multi-launchapp"
     tk-multi-publish2: "@settings.tk-multi-publish2.standalone"
@@ -43,8 +43,8 @@ settings.tk-shotgun.weapon:
     tk-shotgun-launchfolder: "@settings.tk-shotgun-launchfolder"
   location: "@engines.tk-shotgun.location"
 
-# weapon_step & weapon_child_step
-settings.tk-shotgun.weapon_step:
+# notype_step & notype_child_step
+settings.tk-shotgun.notype_step:
   apps:
     tk-multi-launchapp: "@settings.tk-multi-launchapp.shotgun"
     tk-multi-publish2: "@settings.tk-multi-publish2.standalone"

@@ -9,7 +9,7 @@
 # not expressly granted therein are reserved by Shotgun Software Inc.
 #
 
-description: Apps and Engines related to Child Asset based work.
+description: Apps and Engines related to Asset based work.
 
 ################################################################################
 
@@ -26,21 +26,23 @@ includes:
 - ./includes/settings/tk-shell.yml
 - ./includes/settings/tk-shotgun.yml
 - ./includes/settings/tk-multi-perforce.yml
+- ./includes/settings/tk-unreal.yml
 
 ################################################################################
 # configuration for all engines to load in an asset step context
 
 engines:
   tk-desktop2: "@settings.tk-desktop2.all"
-  tk-desktop: "@settings.tk-desktop.weapon_child_step"
-  tk-3dsmax: "@settings.tk-3dsmax.weapon_child_step"
-  tk-houdini: "@settings.tk-houdini.weapon_child_step"
-  tk-maya: "@settings.tk-maya.weapon_child_step"
-  tk-photoshopcc: "@settings.tk-photoshopcc.weapon_child_step"
-  tk-substancedesigner: "@settings.tk-substancedesigner.weapon_child_step"
-  tk-substancepainter: "@settings.tk-substancepainter.weapon_child_step"
+  tk-desktop: "@settings.tk-desktop.notype_step"
+  tk-3dsmax: "@settings.tk-3dsmax.notype_step"
+  tk-houdini: "@settings.tk-houdini.notype_step"
+  tk-maya: "@settings.tk-maya.notype_step"
+  tk-photoshopcc: "@settings.tk-photoshopcc.notype_step"
+  tk-substancedesigner: "@settings.tk-substancedesigner.notype_step"
+  tk-substancepainter: "@settings.tk-substancepainter.notype_step"
   tk-shell: "@settings.tk-shell.asset"
-  tk-shotgun: "@settings.tk-shotgun.weapon_step"
+  tk-shotgun: "@settings.tk-shotgun.notype_step"
+  tk-unreal: "@settings.tk-unreal.asset_step"
 
 ################################################################################
 # reference all of the common frameworks

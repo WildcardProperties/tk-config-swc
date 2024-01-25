@@ -216,16 +216,16 @@ settings.tk-substancedesigner.asset_section_category_class_step:
   template_project: asset_section_category_class_root
   location: "@engines.tk-substancedesigner.location"  
   
-# weapon_step
-settings.tk-substancedesigner.weapon_step:
+# notype_step
+settings.tk-substancedesigner.notype_step:
   apps:
     tk-multi-about:
       location: "@apps.tk-multi-about.location"
     tk-multi-loader2: "@settings.tk-multi-loader2.substancedesigner"
-    tk-multi-publish2: "@settings.tk-multi-publish2.substancedesigner.weapon_step"
+    tk-multi-publish2: "@settings.tk-multi-publish2.substancedesigner.notype_step"
     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.substancedesigner"
-    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancedesigner.weapon_step"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancedesigner.weapon_step"
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancedesigner.notype_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancedesigner.notype_step"
     tk-multi-perforce: "@settings.tk-multi-perforce"
   menu_favourites:
   - {app_instance: tk-multi-workfiles2, name: File Open...}
@@ -233,19 +233,19 @@ settings.tk-substancedesigner.weapon_step:
   - {app_instance: tk-multi-workfiles2, name: File Save...}
   - {app_instance: tk-multi-publish2, name: Publish...}
   - {app_instance: tk-multi-perforce, name: Perforce Status...}
-  template_project: weapon_root
+  template_project: notype_root
   location: "@engines.tk-substancedesigner.location"  
 
-# weapon_child_step
-settings.tk-substancedesigner.weapon_child_step:
+# notype_child_step
+settings.tk-substancedesigner.notype_child_step:
   apps:
     tk-multi-about:
       location: "@apps.tk-multi-about.location"
     tk-multi-loader2: "@settings.tk-multi-loader2.substancedesigner"
-    tk-multi-publish2: "@settings.tk-multi-publish2.substancedesigner.weapon_child_step"
+    tk-multi-publish2: "@settings.tk-multi-publish2.substancedesigner.notype_child_step"
     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.substancedesigner"
-    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancedesigner.weapon_child_step"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancedesigner.weapon_child_step"
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancedesigner.notype_child_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancedesigner.notype_child_step"
     tk-multi-perforce: "@settings.tk-multi-perforce"
   menu_favourites:
   - {app_instance: tk-multi-workfiles2, name: File Open...}
@@ -253,5 +253,5 @@ settings.tk-substancedesigner.weapon_child_step:
   - {app_instance: tk-multi-workfiles2, name: File Save...}
   - {app_instance: tk-multi-publish2, name: Publish...}
   - {app_instance: tk-multi-perforce, name: Perforce Status...}
-  template_project: weapon_child_root
+  template_project: notype_child_root
   location: "@engines.tk-substancedesigner.location"  

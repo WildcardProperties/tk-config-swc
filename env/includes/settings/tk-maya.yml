@@ -224,27 +224,27 @@ settings.tk-maya.asset_section_category_class_step:
   automatic_context_switch: True
   location: "@engines.tk-maya.location"    
 
-# weapon_step
-settings.tk-maya.weapon_step:
+# notype_step
+settings.tk-maya.notype_step:
   apps:
     <<: *settings_tk-maya_apps
-    tk-multi-publish2: "@settings.tk-multi-publish2.maya.weapon_step"  
-    tk-multi-snapshot: "@settings.tk-multi-snapshot.maya.weapon_step"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.weapon_step"
+    tk-multi-publish2: "@settings.tk-multi-publish2.maya.notype_step"  
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.maya.notype_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.notype_step"
   menu_favourites: *settings_tk-maya_menu  
-  template_project: weapon_work_area
+  template_project: notype_work_area
   automatic_context_switch: True
   location: "@engines.tk-maya.location"    
 
-# weapon_child_step
-settings.tk-maya.weapon_child_step:
+# notype_child_step
+settings.tk-maya.notype_child_step:
   apps:
     <<: *settings_tk-maya_apps
-    tk-multi-publish2: "@settings.tk-multi-publish2.maya.weapon_child_step"  
-    tk-multi-snapshot: "@settings.tk-multi-snapshot.maya.weapon_child_step"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.weapon_child_step"
+    tk-multi-publish2: "@settings.tk-multi-publish2.maya.notype_child_step"  
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.maya.notype_child_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.notype_child_step"
   menu_favourites: *settings_tk-maya_menu
-  template_project: weapon_child_work_area
+  template_project: notype_child_work_area
   automatic_context_switch: True
   location: "@engines.tk-maya.location"  
 

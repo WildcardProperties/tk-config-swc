@@ -113,9 +113,9 @@ settings.tk-houdini-mantranode.asset_section_category_class_step:
     output_extra_plane_template: houdini_asset_extra_plane
   location: "@apps.tk-houdini-mantranode.location"
 
-# weapon_step
-settings.tk-houdini-mantranode.weapon_step:
-  work_file_template: weapon_houdini_workfile
+# notype_step
+settings.tk-houdini-mantranode.notype_step:
+  work_file_template: notype_houdini_workfile
   default_node_name: sg_mantra_out
   output_profiles:
   - name: Default Render
@@ -127,9 +127,9 @@ settings.tk-houdini-mantranode.weapon_step:
     output_extra_plane_template: houdini_asset_extra_plane
   location: "@apps.tk-houdini-mantranode.location"
 
-# weapon_child_step
-settings.tk-houdini-mantranode.weapon_child_step:
-  work_file_template: weapon_child_houdini_workfile
+# notype_child_step
+settings.tk-houdini-mantranode.notype_child_step:
+  work_file_template: notype_child_houdini_workfile
   default_node_name: sg_mantra_out
   output_profiles:
   - name: Default Render

@@ -14,7 +14,7 @@ name: "{sg_asset_type}/{sg_asset_section}/{sg_asset_category}/{sg_folder_name}"
 # any values starting with $ are resolved into path objects
 filters:
     - { "path": "sg_asset_parent", "relation": "is", "values": [ null ] }     
-    - { "path": "sg_asset_type", "relation": "is_not", "values": [ "Weapons" ] }         
+    - { "path": "sg_asset_type", "relation": "is_not", "values": [ "NoType" ] }         
     - { "path": "sg_asset_library", "relation": "is", "values": [ "$asset_library" ] } 
     - { "path": "sg_asset_section", "relation": "is_not", "values": [ null ] }
     - { "path": "sg_asset_category", "relation": "is_not", "values": [ null ] }    
