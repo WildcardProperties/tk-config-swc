@@ -383,8 +383,8 @@ paths:
     sequence_root: '{seq_asset_library_type}/{seq_asset_library}/Sequences/{Sequence}'
     shot_root: '{shot_asset_library_type_parent}/{shot_asset_library_parent}/Sequences/{Sequence}/{Shot}'
     seq_asset_root: '{seq_asset_library_type}/{seq_asset_library_parent}/Sequences/{seq_asset_parent}/{asset_type}/{asset_category}/{Asset}'    
-    weapon_root: '{asset_library_type}/{asset_library}/{folder_name}'
-    weapon_child_root: '{asset_library_type_parent}/{asset_library_parent}/{asset_parent_folder}/{folder_name}'
+    notype_root: '{asset_library_type}/{asset_library}/{folder_name}'
+    notype_child_root: '{asset_library_type_parent}/{asset_library_parent}/{asset_parent_folder}/{folder_name}'
     asset_section_root: '{asset_library_type}/{asset_library}/{asset_type}/{asset_section}/{folder_name}'    
     asset_section_category_root: '{asset_library_type}/{asset_library}/{asset_type}/{asset_section}/{asset_category}/{folder_name}'
     asset_section_category_class_root: '{asset_library_type}/{asset_library}/{asset_type}/{asset_section}/{asset_category}/{asset_class}/{folder_name}'
@@ -411,12 +411,12 @@ paths:
     asset_child_filename: '@asset_child_work_area/{Asset}[_{name}][_{Step}]'
     asset_child_snapshot_filename: '@asset_child_work_area/snapshots/{Asset}[_{name}][_{Step}].{timestamp}'
 
-    weapon_work_area: '@weapon_root/{step_folder}/{Step}' 
-    weapon_filename: '@weapon_work_area/{Asset}[_{name}][_{Step}]'
-    weapon_snapshot_filename: '@weapon_work_area/snapshots/{Asset}[_{name}][_{Step}].{timestamp}'
-    weapon_child_work_area: '@weapon_child_root/{step_folder}/{Step}'    
-    weapon_child_filename: '@weapon_child_work_area/{Asset}[_{name}][_{Step}]'
-    weapon_child_snapshot_filename: '@weapon_child_work_area/snapshots/{Asset}[_{name}][_{Step}].{timestamp}'    
+    notype_work_area: '@notype_root/{step_folder}/{Step}' 
+    notype_filename: '@notype_work_area/{Asset}[_{name}][_{Step}]'
+    notype_snapshot_filename: '@notype_work_area/snapshots/{Asset}[_{name}][_{Step}].{timestamp}'
+    notype_child_work_area: '@notype_child_root/{step_folder}/{Step}'    
+    notype_child_filename: '@notype_child_work_area/{Asset}[_{name}][_{Step}]'
+    notype_child_snapshot_filename: '@notype_child_work_area/snapshots/{Asset}[_{name}][_{Step}].{timestamp}'    
 
     sequence_filename: '@sequence_root/{Sequence}[_{name}]'
     sequence_snapshot_filename: '@sequence_root/snapshots/{Sequence}[_{name}].{timestamp}'
@@ -521,15 +521,15 @@ paths:
     asset_child_photoshop_snapshot:
         definition: '@asset_child_snapshot_filename.{photoshop_extension}'
 
-    # weapon
-    weapon_photoshop_workfile:
-        definition: '@weapon_filename.{photoshop_extension}'
-    weapon_photoshop_snapshot:
-        definition: '@weapon_snapshot_filename.{photoshop_extension}'
-    weapon_child_photoshop_workfile:
-        definition: '@weapon_child_filename.{photoshop_extension}'
-    weapon_child_photoshop_snapshot:
-        definition: '@weapon_child_snapshot_filename.{photoshop_extension}'        
+    # notype
+    notype_photoshop_workfile:
+        definition: '@notype_filename.{photoshop_extension}'
+    notype_photoshop_snapshot:
+        definition: '@notype_snapshot_filename.{photoshop_extension}'
+    notype_child_photoshop_workfile:
+        definition: '@notype_child_filename.{photoshop_extension}'
+    notype_child_photoshop_snapshot:
+        definition: '@notype_child_snapshot_filename.{photoshop_extension}'        
 
     asset_section_category_photoshop_workfile:
         definition: '@asset_section_category_filename.{photoshop_extension}'
@@ -568,15 +568,15 @@ paths:
     asset_maya_snapshot_flat:
         definition: '@asset_snapshot_filename_flat.{maya_extension}'
 
-    # weapon
-    weapon_maya_workfile:
-        definition: '@weapon_filename.{maya_extension}'
-    weapon_maya_snapshot:
-        definition: '@weapon_snapshot_filename.{maya_extension}'
-    weapon_child_maya_workfile:
-        definition: '@weapon_child_filename.{maya_extension}'
-    weapon_child_maya_snapshot:
-        definition: '@weapon_child_snapshot_filename.{maya_extension}'        
+    # notype
+    notype_maya_workfile:
+        definition: '@notype_filename.{maya_extension}'
+    notype_maya_snapshot:
+        definition: '@notype_snapshot_filename.{maya_extension}'
+    notype_child_maya_workfile:
+        definition: '@notype_child_filename.{maya_extension}'
+    notype_child_maya_snapshot:
+        definition: '@notype_child_snapshot_filename.{maya_extension}'        
 
     sequence_maya_workfile:
         definition: '@sequence_filename.{maya_extension}'
@@ -654,16 +654,16 @@ paths:
     asset_houdini_snapshot_flat:
         definition: '@asset_snapshot_filename_flat.hip'        
 
-    # weapon
-    weapon_houdini_workfile:
-        definition: '@weapon_filename.hip'
-    weapon_houdini_snapshot:
-        definition: '@weapon_snapshot_filename.hip'  
+    # notype
+    notype_houdini_workfile:
+        definition: '@notype_filename.hip'
+    notype_houdini_snapshot:
+        definition: '@notype_snapshot_filename.hip'  
 
-    weapon_child_houdini_workfile:
-        definition: '@weapon_child_filename.hip'
-    weapon_child_houdini_snapshot:
-        definition: '@weapon_child_snapshot_filename.hip'              
+    notype_child_houdini_workfile:
+        definition: '@notype_child_filename.hip'
+    notype_child_houdini_snapshot:
+        definition: '@notype_child_snapshot_filename.hip'              
 
     sequence_houdini_workfile:
         definition: '@sequence_filename.hip'
@@ -732,15 +732,15 @@ paths:
     asset_max_snapshot_flat:
         definition: '@asset_snapshot_filename_flat.max'        
 
-    # weapon
-    weapon_max_workfile:
-        definition: '@weapon_filename.max'
-    weapon_max_snapshot:
-        definition: '@weapon_snapshot_filename.max'       
-    weapon_child_max_workfile:
-        definition: '@weapon_child_filename.max'
-    weapon_child_max_snapshot:
-        definition: '@weapon_child_snapshot_filename.max'         
+    # notype
+    notype_max_workfile:
+        definition: '@notype_filename.max'
+    notype_max_snapshot:
+        definition: '@notype_snapshot_filename.max'       
+    notype_child_max_workfile:
+        definition: '@notype_child_filename.max'
+    notype_child_max_snapshot:
+        definition: '@notype_child_snapshot_filename.max'         
 
     asset_child_max_workfile:
         definition: '@asset_child_filename.max'
@@ -789,15 +789,15 @@ paths:
     asset_substancepainter_snapshot_flat:
         definition: '@asset_snapshot_filename_flat.spp'        
 
-    # weapon
-    weapon_substancepainter_workfile:
-        definition: '@weapon_filename.spp'
-    weapon_substancepainter_snapshot:
-        definition: '@weapon_snapshot_filename.spp'     
-    weapon_child_substancepainter_workfile:
-        definition: '@weapon_child_filename.spp'
-    weapon_child_substancepainter_snapshot:
-        definition: '@weapon_child_snapshot_filename.spp'           
+    # notype
+    notype_substancepainter_workfile:
+        definition: '@notype_filename.spp'
+    notype_substancepainter_snapshot:
+        definition: '@notype_snapshot_filename.spp'     
+    notype_child_substancepainter_workfile:
+        definition: '@notype_child_filename.spp'
+    notype_child_substancepainter_snapshot:
+        definition: '@notype_child_snapshot_filename.spp'           
 
     asset_child_substancepainter_workfile:
         definition: '@asset_child_filename.spp'
@@ -851,15 +851,15 @@ paths:
     asset_substancedesigner_snapshot_flat:
         definition: '@asset_snapshot_filename_flat.{substancedesigner.extension}'        
 
-    # weapon
-    weapon_substancedesigner_workfile:
-        definition: '@weapon_filename.{substancedesigner.extension}'
-    weapon_substancedesigner_snapshot:
-        definition: '@weapon_snapshot_filename.{substancedesigner.extension}'    
-    weapon_child_substancedesigner_workfile:
-        definition: '@weapon_child_filename.{substancedesigner.extension}'
-    weapon_child_substancedesigner_snapshot:
-        definition: '@weapon_child_snapshot_filename.{substancedesigner.extension}'            
+    # notype
+    notype_substancedesigner_workfile:
+        definition: '@notype_filename.{substancedesigner.extension}'
+    notype_substancedesigner_snapshot:
+        definition: '@notype_snapshot_filename.{substancedesigner.extension}'    
+    notype_child_substancedesigner_workfile:
+        definition: '@notype_child_filename.{substancedesigner.extension}'
+    notype_child_substancedesigner_snapshot:
+        definition: '@notype_child_snapshot_filename.{substancedesigner.extension}'            
 
     asset_child_substancedesigner_workfile:
         definition: '@asset_child_filename.{substancedesigner.extension}'
@@ -905,15 +905,15 @@ paths:
     asset_unreal_snapshot:
         definition: '@asset_snapshot_filename.umap'
 
-    # weapon
-    weapon_unreal_workfile:
-        definition: '@weapon_filename.umap'
-    weapon_unreal_snapshot:
-        definition: '@weapon_snapshot_filename.umap'      
-    weapon_child_unreal_workfile:
-        definition: '@weapon_child_filename.umap'
-    weapon_child_unreal_snapshot:
-        definition: '@weapon_child_snapshot_filename.umap'          
+    # notype
+    notype_unreal_workfile:
+        definition: '@notype_filename.umap'
+    notype_unreal_snapshot:
+        definition: '@notype_snapshot_filename.umap'      
+    notype_child_unreal_workfile:
+        definition: '@notype_child_filename.umap'
+    notype_child_unreal_snapshot:
+        definition: '@notype_child_snapshot_filename.umap'          
 
     sequence_unreal_workfile:
         definition: '@sequence_filename.umap'

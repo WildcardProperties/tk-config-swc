@@ -110,17 +110,17 @@ settings.tk-desktop.asset_section_category_class_step:
     tk-multi-publish2: "@settings.tk-multi-publish2.standalone"
   location: "@engines.tk-desktop.location"
 
-# weapon_step
-settings.tk-desktop.weapon_step:
+# notype_step
+settings.tk-desktop.notype_step:
   apps:
-    # tk-multi-workfiles2: "@settings.tk-multi-workfiles2.weapon_step"
+    # tk-multi-workfiles2: "@settings.tk-multi-workfiles2.notype_step"
     tk-multi-publish2: "@settings.tk-multi-publish2.standalone"
   location: "@engines.tk-desktop.location"  
 
-# weapon_child_step
-settings.tk-desktop.weapon_child_step:
+# notype_child_step
+settings.tk-desktop.notype_child_step:
   apps:
-    # tk-multi-workfiles2: "@settings.tk-multi-workfiles2.weapon_child_step"
+    # tk-multi-workfiles2: "@settings.tk-multi-workfiles2.notype_child_step"
     tk-multi-publish2: "@settings.tk-multi-publish2.standalone"
   location: "@engines.tk-desktop.location"
 

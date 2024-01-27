@@ -348,23 +348,23 @@ settings.tk-multi-workfiles2.3dsmax.asset_section_category_class_step:
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
 
-# weapon_step
-settings.tk-multi-workfiles2.3dsmax.weapon_step:
-  template_publish: weapon_max_workfile
+# notype_step
+settings.tk-multi-workfiles2.3dsmax.notype_step:
+  template_publish: notype_max_workfile
   template_publish_area: pub_asset_root
-  template_work: weapon_max_workfile
-  template_work_area: weapon_root
+  template_work: notype_max_workfile
+  template_work_area: notype_root
   <<: *common_workfiles_settings
   my_tasks_extra_display_fields: []    
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
 
-# weapon_child_step
-settings.tk-multi-workfiles2.3dsmax.weapon_child_step:
-  template_publish: weapon_child_max_workfile
-  template_publish_area: weapon_child_root
-  template_work: weapon_child_max_workfile
-  template_work_area: weapon_child_root
+# notype_child_step
+settings.tk-multi-workfiles2.3dsmax.notype_child_step:
+  template_publish: notype_child_max_workfile
+  template_publish_area: notype_child_root
+  template_work: notype_child_max_workfile
+  template_work_area: notype_child_root
   <<: *common_workfiles_settings
   <<: *entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"  
@@ -504,23 +504,23 @@ settings.tk-multi-workfiles2.houdini.asset_section_category_class_step:
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
 
-# weapon_step
-settings.tk-multi-workfiles2.houdini.weapon_step:
-  template_publish: weapon_houdini_workfile
-  template_publish_area: weapon_root
-  template_work: weapon_houdini_workfile
-  template_work_area: weapon_root
+# notype_step
+settings.tk-multi-workfiles2.houdini.notype_step:
+  template_publish: notype_houdini_workfile
+  template_publish_area: notype_root
+  template_work: notype_houdini_workfile
+  template_work_area: notype_root
   <<: *common_workfiles_settings
   my_tasks_extra_display_fields: []    
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
 
-# weapon_child_step
-settings.tk-multi-workfiles2.houdini.weapon_child_step:
-  template_publish: weapon_child_houdini_workfile
-  template_publish_area: weapon_child_root
-  template_work: weapon_child_houdini_workfile
-  template_work_area: weapon_child_root
+# notype_child_step
+settings.tk-multi-workfiles2.houdini.notype_child_step:
+  template_publish: notype_child_houdini_workfile
+  template_publish_area: notype_child_root
+  template_work: notype_child_houdini_workfile
+  template_work_area: notype_child_root
   <<: *common_workfiles_settings
   <<: *entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
@@ -672,23 +672,23 @@ settings.tk-multi-workfiles2.maya.asset_section_category_class_step:
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
 
-# weapon_step
-settings.tk-multi-workfiles2.maya.weapon_step:
-  template_publish: weapon_maya_workfile
-  template_publish_area: weapon_root
-  template_work: weapon_maya_workfile
-  template_work_area: weapon_root
+# notype_step
+settings.tk-multi-workfiles2.maya.notype_step:
+  template_publish: notype_maya_workfile
+  template_publish_area: notype_root
+  template_work: notype_maya_workfile
+  template_work_area: notype_root
   <<: *common_workfiles_settings
   my_tasks_extra_display_fields: []    
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
 
-# weapon_child_step
-settings.tk-multi-workfiles2.maya.weapon_child_step:
-  template_publish: weapon_child_maya_workfile
-  template_publish_area: weapon_child_root
-  template_work: weapon_child_maya_workfile
-  template_work_area: weapon_child_root
+# notype_child_step
+settings.tk-multi-workfiles2.maya.notype_child_step:
+  template_publish: notype_child_maya_workfile
+  template_publish_area: notype_child_root
+  template_work: notype_child_maya_workfile
+  template_work_area: notype_child_root
   <<: *common_workfiles_settings
   <<: *entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
@@ -790,23 +790,23 @@ settings.tk-multi-workfiles2.photoshop.asset_section_category_class_step:
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
 
-# weapon_step
-settings.tk-multi-workfiles2.photoshop.weapon_step:
-  template_publish: weapon_photoshop_workfile
-  template_publish_area: weapon_root
-  template_work: weapon_photoshop_workfile
-  template_work_area: weapon_root
+# notype_step
+settings.tk-multi-workfiles2.photoshop.notype_step:
+  template_publish: notype_photoshop_workfile
+  template_publish_area: notype_root
+  template_work: notype_photoshop_workfile
+  template_work_area: notype_root
   <<: *common_workfiles_settings
   my_tasks_extra_display_fields: []    
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
 
-# weapon_child_step
-settings.tk-multi-workfiles2.photoshop.weapon_child_step:
-  template_publish: weapon_child_photoshop_workfile
-  template_publish_area: weapon_child_root
-  template_work: weapon_child_photoshop_workfile
-  template_work_area: weapon_child_root
+# notype_child_step
+settings.tk-multi-workfiles2.photoshop.notype_child_step:
+  template_publish: notype_child_photoshop_workfile
+  template_publish_area: notype_child_root
+  template_work: notype_child_photoshop_workfile
+  template_work_area: notype_child_root
   <<: *common_workfiles_settings
   <<: *entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"  
@@ -931,23 +931,23 @@ settings.tk-multi-workfiles2.substancepainter.asset_section_category_class_step:
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
 
-# weapon_step
-settings.tk-multi-workfiles2.substancepainter.weapon_step:
-  template_publish: weapon_substancepainter_workfile
-  template_publish_area: weapon_root
-  template_work: weapon_substancepainter_workfile
-  template_work_area: weapon_root
+# notype_step
+settings.tk-multi-workfiles2.substancepainter.notype_step:
+  template_publish: notype_substancepainter_workfile
+  template_publish_area: notype_root
+  template_work: notype_substancepainter_workfile
+  template_work_area: notype_root
   <<: *common_workfiles_settings
   my_tasks_extra_display_fields: []    
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
 
-# weapon_child_step
-settings.tk-multi-workfiles2.substancepainter.weapon_child_step:
-  template_publish: weapon_child_substancepainter_workfile
-  template_publish_area: weapon_child_root
-  template_work: weapon_child_substancepainter_workfile
-  template_work_area: weapon_child_root
+# notype_child_step
+settings.tk-multi-workfiles2.substancepainter.notype_child_step:
+  template_publish: notype_child_substancepainter_workfile
+  template_publish_area: notype_child_root
+  template_work: notype_child_substancepainter_workfile
+  template_work_area: notype_child_root
   <<: *common_workfiles_settings
   <<: *entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"  
@@ -1081,24 +1081,24 @@ settings.tk-multi-workfiles2.substancedesigner.asset_section_category_class_step
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
 
-# weapon_step
-settings.tk-multi-workfiles2.substancedesigner.weapon_step:
-  template_publish: weapon_substancedesigner_workfile
-  template_publish_area: weapon_root
-  template_work: weapon_substancedesigner_workfile
-  template_work_area: weapon_root
+# notype_step
+settings.tk-multi-workfiles2.substancedesigner.notype_step:
+  template_publish: notype_substancedesigner_workfile
+  template_publish_area: notype_root
+  template_work: notype_substancedesigner_workfile
+  template_work_area: notype_root
   # saveas_default_name: hook:tk-multi-workfiles2/saveas_default_name_tk-substancedesigner
   <<: *common_workfiles_settings
   my_tasks_extra_display_fields: []    
   <<: *env_entity_browser_settings
   location: "@apps.tk-multi-workfiles2.location"
 
-# weapon_child_step
-settings.tk-multi-workfiles2.substancedesigner.weapon_child_step:
-  template_publish: weapon_child_substancedesigner_workfile
-  template_publish_area: weapon_child_root
-  template_work: weapon_child_substancedesigner_workfile
-  template_work_area: weapon_child_root
+# notype_child_step
+settings.tk-multi-workfiles2.substancedesigner.notype_child_step:
+  template_publish: notype_child_substancedesigner_workfile
+  template_publish_area: notype_child_root
+  template_work: notype_child_substancedesigner_workfile
+  template_work_area: notype_child_root
   # saveas_default_name: hook:tk-multi-workfiles2/saveas_default_name_tk-substancedesigner
   <<: *common_workfiles_settings
   <<: *entity_browser_settings
@@ -1604,12 +1604,12 @@ settings.tk-multi-workfiles2.unreal.asset_section_category_class_step:
           hierarchy: [entity,step]   
     location: "@apps.tk-multi-workfiles2.location"
 
-  # weapon_step
-settings.tk-multi-workfiles2.unreal.weapon_step:
-    template_publish: weapon_unreal_workfile
-    template_publish_area: weapon_root
-    template_work: weapon_unreal_workfile
-    template_work_area: weapon_root
+  # notype_step
+settings.tk-multi-workfiles2.unreal.notype_step:
+    template_publish: notype_unreal_workfile
+    template_publish_area: notype_root
+    template_work: notype_unreal_workfile
+    template_work_area: notype_root
     <<: *common_workfiles_settings
     my_tasks_extra_display_fields: [ ]
     #<<: *env_entity_browser_settings

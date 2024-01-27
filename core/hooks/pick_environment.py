@@ -51,8 +51,8 @@ class PickEnvironment(sgtk.Hook):
                 if context_entity.get("sg_asset_parent"):
                     if context_entity.get("sg_asset_type") == "Animations":
                         return "anim_asset"
-                    elif context_entity.get("sg_asset_type") == "Weapons":
-                        return "weapon_child"
+                    elif context_entity.get("sg_asset_type") == "NoType":
+                        return "notype_child"
                     else:
                         return "asset_child"
                 else:
@@ -69,8 +69,8 @@ class PickEnvironment(sgtk.Hook):
                         return "asset"
 
                     # Weapon Assets
-                    if context_entity.get("sg_asset_type") == "Weapons":
-                        return "weapon"                
+                    if context_entity.get("sg_asset_type") == "NoType":
+                        return "notype"                
 
                     return "asset"
             elif context.entity["type"] == "Sequence":
@@ -102,10 +102,10 @@ class PickEnvironment(sgtk.Hook):
                     if context_entity.get("sg_asset_type") == "Animations":
                         logger.info("Entity is an anim_asset_step")
                         return "anim_asset_step"
-                    # Weapons
-                    elif context_entity.get("sg_asset_type") == "Weapons":
-                        logger.info("Entity is a weapon_child_step")
-                        return "weapon_child_step"                    
+                    # NoType
+                    elif context_entity.get("sg_asset_type") == "NoType":
+                        logger.info("Entity is a notype_child_step")
+                        return "notype_child_step"                    
                     else:
                         logger.info("Entity is an asset_child_step")
                         return "asset_child_step"
@@ -127,10 +127,10 @@ class PickEnvironment(sgtk.Hook):
                         logger.info("Entity is a library asset")
                         return "asset"
                     
-                    # Weapons
-                    if context_entity.get("sg_asset_type") == "Weapons":
-                        logger.info("Entity is a weapon_step")
-                        return "weapon_step"
+                    # NoType
+                    if context_entity.get("sg_asset_type") == "NoType":
+                        logger.info("Entity is a notype_step")
+                        return "notype_step"
                     
                     logger.info("Entity is an asset_step")
                     return "asset_step"

@@ -80,17 +80,17 @@ settings.tk-multi-snapshot.3dsmax.asset_section_category_class_step:
   hook_scene_operation: "{engine}/tk-multi-snapshot/basic/scene_operation.py"
   location: "@apps.tk-multi-snapshot.location"
 
-# weapon_step
-settings.tk-multi-snapshot.3dsmax.weapon_step:
-  template_snapshot: weapon_max_snapshot
-  template_work: weapon_max_workfile
+# notype_step
+settings.tk-multi-snapshot.3dsmax.notype_step:
+  template_snapshot: notype_max_snapshot
+  template_work: notype_max_workfile
   hook_scene_operation: "{engine}/tk-multi-snapshot/basic/scene_operation.py"
   location: "@apps.tk-multi-snapshot.location"
 
-# weapon_child_step
-settings.tk-multi-snapshot.3dsmax.weapon_child_step:
-  template_snapshot: weapon_child_max_snapshot
-  template_work: weapon_child_max_workfile
+# notype_child_step
+settings.tk-multi-snapshot.3dsmax.notype_child_step:
+  template_snapshot: notype_child_max_snapshot
+  template_work: notype_child_max_workfile
   hook_scene_operation: "{engine}/tk-multi-snapshot/basic/scene_operation.py"
   location: "@apps.tk-multi-snapshot.location"  
 
@@ -176,16 +176,16 @@ settings.tk-multi-snapshot.houdini.asset_section_category_class_step:
   template_work: asset_section_category_class_houdini_workfile
   location: "@apps.tk-multi-snapshot.location"
 
-# weapon_step
-settings.tk-multi-snapshot.houdini.weapon_step:
-  template_snapshot: weapon_houdini_snapshot
-  template_work: weapon_houdini_workfile
+# notype_step
+settings.tk-multi-snapshot.houdini.notype_step:
+  template_snapshot: notype_houdini_snapshot
+  template_work: notype_houdini_workfile
   location: "@apps.tk-multi-snapshot.location"
 
-# weapon_child_step
-settings.tk-multi-snapshot.houdini.weapon_child_step:
-  template_snapshot: weapon_child_houdini_snapshot
-  template_work: weapon_child_houdini_workfile
+# notype_child_step
+settings.tk-multi-snapshot.houdini.notype_child_step:
+  template_snapshot: notype_child_houdini_snapshot
+  template_work: notype_child_houdini_workfile
   location: "@apps.tk-multi-snapshot.location"  
 
 ################################################################################
@@ -276,16 +276,16 @@ settings.tk-multi-snapshot.maya.asset_section_category_class_step:
   template_work: asset_section_category_class_maya_workfile
   location: "@apps.tk-multi-snapshot.location"
 
-# weapon_step
-settings.tk-multi-snapshot.maya.weapon_step:
-  template_snapshot: weapon_maya_snapshot
-  template_work: weapon_maya_workfile
+# notype_step
+settings.tk-multi-snapshot.maya.notype_step:
+  template_snapshot: notype_maya_snapshot
+  template_work: notype_maya_workfile
   location: "@apps.tk-multi-snapshot.location"
 
-# weapon_child_step
-settings.tk-multi-snapshot.maya.weapon_child_step:
-  template_snapshot: weapon_child_maya_snapshot
-  template_work: weapon_child_maya_workfile
+# notype_child_step
+settings.tk-multi-snapshot.maya.notype_child_step:
+  template_snapshot: notype_child_maya_snapshot
+  template_work: notype_child_maya_workfile
   location: "@apps.tk-multi-snapshot.location"  
 
 ################################################################################
@@ -340,16 +340,16 @@ settings.tk-multi-snapshot.photoshop.asset_section_category_class_step:
   template_work: asset_section_category_class_photoshop_workfile
   location: "@apps.tk-multi-snapshot.location"    
 
-# weapon_step
-settings.tk-multi-snapshot.photoshop.weapon_step:
-  template_snapshot: weapon_photoshop_snapshot
-  template_work: weapon_photoshop_workfile
+# notype_step
+settings.tk-multi-snapshot.photoshop.notype_step:
+  template_snapshot: notype_photoshop_snapshot
+  template_work: notype_photoshop_workfile
   location: "@apps.tk-multi-snapshot.location"    
 
-# weapon_child_step
-settings.tk-multi-snapshot.photoshop.weapon_child_step:
-  template_snapshot: weapon_child_photoshop_snapshot
-  template_work: weapon_child_photoshop_workfile
+# notype_child_step
+settings.tk-multi-snapshot.photoshop.notype_child_step:
+  template_snapshot: notype_child_photoshop_snapshot
+  template_work: notype_child_photoshop_workfile
   location: "@apps.tk-multi-snapshot.location"
 ################################################################################
 
@@ -419,19 +419,19 @@ settings.tk-multi-snapshot.substancepainter.asset_section_category_class_step:
   hook_thumbnail: "{engine}/thumbnail.py"
   location: "@apps.tk-multi-snapshot.location"
 
-# weapon_step
-settings.tk-multi-snapshot.substancepainter.weapon_step:
+# notype_step
+settings.tk-multi-snapshot.substancepainter.notype_step:
   hook_scene_operation: "{engine}/tk-multi-snapshot/scene_operation_tk-substancepainter.py"
-  template_snapshot: weapon_substancepainter_snapshot
-  template_work: weapon_substancepainter_workfile
+  template_snapshot: notype_substancepainter_snapshot
+  template_work: notype_substancepainter_workfile
   hook_thumbnail: "{engine}/thumbnail.py"
   location: "@apps.tk-multi-snapshot.location"
 
-# weapon_child_step
-settings.tk-multi-snapshot.substancepainter.weapon_child_step:
+# notype_child_step
+settings.tk-multi-snapshot.substancepainter.notype_child_step:
   hook_scene_operation: "{engine}/tk-multi-snapshot/scene_operation_tk-substancepainter.py"
-  template_snapshot: weapon_child_substancepainter_snapshot
-  template_work: weapon_child_substancepainter_workfile
+  template_snapshot: notype_child_substancepainter_snapshot
+  template_work: notype_child_substancepainter_workfile
   hook_thumbnail: "{engine}/thumbnail.py"
   location: "@apps.tk-multi-snapshot.location"
 
@@ -503,19 +503,19 @@ settings.tk-multi-snapshot.substancedesigner.asset_section_category_class_step:
   hook_thumbnail: "{engine}/thumbnail.py"
   location: "@apps.tk-multi-snapshot.location"
 
-# weapon_step
-settings.tk-multi-snapshot.substancedesigner.weapon_step:
+# notype_step
+settings.tk-multi-snapshot.substancedesigner.notype_step:
   hook_scene_operation: "{engine}/tk-multi-snapshot/scene_operation_tk-substancedesigner.py"
-  template_snapshot: weapon_substancedesigner_snapshot
-  template_work: weapon_substancedesigner_workfile
+  template_snapshot: notype_substancedesigner_snapshot
+  template_work: notype_substancedesigner_workfile
   hook_thumbnail: "{engine}/thumbnail.py"
   location: "@apps.tk-multi-snapshot.location"
 
-# weapon_child_step
-settings.tk-multi-snapshot.substancedesigner.weapon_child_step:
+# notype_child_step
+settings.tk-multi-snapshot.substancedesigner.notype_child_step:
   hook_scene_operation: "{engine}/tk-multi-snapshot/scene_operation_tk-substancedesigner.py"
-  template_snapshot: weapon_child_substancedesigner_snapshot
-  template_work: weapon_child_substancedesigner_workfile
+  template_snapshot: notype_child_substancedesigner_snapshot
+  template_work: notype_child_substancedesigner_workfile
   hook_thumbnail: "{engine}/thumbnail.py"
   location: "@apps.tk-multi-snapshot.location"
 
@@ -602,14 +602,14 @@ settings.tk-multi-snapshot.unreal.asset_section_category_class_step:
   template_work: asset_section_category_class_unreal_workfile
   location: "@apps.tk-multi-snapshot.location"
 
-# weapon_step
-settings.tk-multi-snapshot.unreal.weapon_step:
-  template_snapshot: weapon_unreal_snapshot
-  template_work: weapon_unreal_workfile
+# notype_step
+settings.tk-multi-snapshot.unreal.notype_step:
+  template_snapshot: notype_unreal_snapshot
+  template_work: notype_unreal_workfile
   location: "@apps.tk-multi-snapshot.location"
 
-# weapon_child_step
-settings.tk-multi-snapshot.unreal.weapon_child_step:
-  template_snapshot: weapon_child_unreal_snapshot
-  template_work: weapon_child_unreal_workfile
+# notype_child_step
+settings.tk-multi-snapshot.unreal.notype_child_step:
+  template_snapshot: notype_child_unreal_snapshot
+  template_work: notype_child_unreal_workfile
   location: "@apps.tk-multi-snapshot.location"  

@@ -153,24 +153,24 @@ settings.tk-substancepainter.asset_section_category_class_step:
   template_project: asset_section_category_class_root
   location: "@engines.tk-substancepainter.location"
 
-# weapon_step
-settings.tk-substancepainter.weapon_step:
+# notype_step
+settings.tk-substancepainter.notype_step:
   apps:
     <<: *settings_tk-substancepainter_apps
-    tk-multi-publish2: "@settings.tk-multi-publish2.substancepainter.weapon_step"
-    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancepainter.weapon_step"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancepainter.weapon_step"
+    tk-multi-publish2: "@settings.tk-multi-publish2.substancepainter.notype_step"
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancepainter.notype_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancepainter.notype_step"
   menu_favourites: *settings_tk-substancepainter_menus
-  template_project: weapon_root
+  template_project: notype_root
   location: "@engines.tk-substancepainter.location"
 
-# weapon_child_step
-settings.tk-substancepainter.weapon_child_step:
+# notype_child_step
+settings.tk-substancepainter.notype_child_step:
   apps:
     <<: *settings_tk-substancepainter_apps
-    tk-multi-publish2: "@settings.tk-multi-publish2.substancepainter.weapon_child_step"
-    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancepainter.weapon_child_step"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancepainter.weapon_child_step"
+    tk-multi-publish2: "@settings.tk-multi-publish2.substancepainter.notype_child_step"
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.substancepainter.notype_child_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.substancepainter.notype_child_step"
   menu_favourites: *settings_tk-substancepainter_menus
-  template_project: weapon_child_root
+  template_project: notype_child_root
   location: "@engines.tk-substancepainter.location"
