@@ -27,13 +27,13 @@ frameworks:
     location:
       type: app_store
       name: tk-framework-adminui
-      version: v0.7.4
+      version: v0.7.5
   # desktopserver - provides a server to run local commands.
   tk-framework-desktopserver_v1.x.x:
     location:
       type: app_store
       name: tk-framework-desktopserver
-      version: v1.6.3
+      version: v1.6.4
   # qtwidgets - collection of Toolkit related QT Widgets
   tk-framework-qtwidgets_v2.x.x:
     location:
@@ -72,8 +72,7 @@ frameworks:
       type: git_branch
       branch: swc_main_ai
       path: https://github.com/StudioWildcard/tk-swc-framework-shotgunutils
-      version: 6b3acd1
-
+      version: 6b3acd1dc2700ea8446db5bcf891c6bef8917d15
   # widget v0 - QT Widget Framework for Tank Apps (qtwidgets fw predecessor)
   tk-framework-widget_v0.2.x:
     location:

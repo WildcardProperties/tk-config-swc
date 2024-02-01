@@ -19,7 +19,7 @@
 engines.tk-3dsmax.location:
   type: app_store
   name: tk-3dsmax
-  version: v1.2.5
+  version: v1.2.6
 
 # Desktop
 engines.tk-desktop.location:
@@ -51,13 +51,13 @@ engines.tk-desktop2.location:
 engines.tk-houdini.location:
   type: app_store
   name: tk-houdini
-  version: v1.8.6
+  version: v1.8.7
 
 # Maya
 engines.tk-maya.location:
   type: app_store
   name: tk-maya
-  version: v0.11.7
+  version: v0.11.8
 
 # Photoshop
 engines.tk-photoshopcc.location:
