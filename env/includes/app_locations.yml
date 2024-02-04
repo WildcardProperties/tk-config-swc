@@ -79,7 +79,7 @@ apps.tk-multi-publish2.location:
 apps.tk-multi-screeningroom.location:
   type: app_store
   name: tk-multi-screeningroom
-  version: v0.3.3
+  version: v0.5.1
 
 # pythonconsole
 apps.tk-multi-pythonconsole.location:
@@ -117,13 +117,13 @@ apps.tk-multi-devutils.location:
 apps.tk-houdini-alembicnode.location:
   type: app_store
   name: tk-houdini-alembicnode
-  version: v0.5.0
+  version: v0.5.2
 
 # houdini mantranode
 apps.tk-houdini-mantranode.location:
   type: app_store
   name: tk-houdini-mantranode
-  version: v0.5.0
+  version: v0.5.2
 
 # ---- Shotgun app takeovers
 

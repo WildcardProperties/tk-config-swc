@@ -97,7 +97,7 @@ frameworks:
     location:
       type: app_store
       name: tk-framework-lmv
-      version: v0.2.2
+      version: v1.0.0
 # ---- 3rd Party Frameworks
 
   # unrealqt - PySide build for Unreal (Windows-only)
