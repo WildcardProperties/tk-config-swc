@@ -53,6 +53,13 @@ settings.tk-shotgun.notype_step:
     tk-shotgun-launchfolder: "@settings.tk-shotgun-launchfolder"
   location: "@engines.tk-shotgun.location"  
 
+# tool
+settings.tk-shotgun.tool:
+  apps:
+    tk-shotgun-folders: "@settings.tk-shotgun-folders"
+    tk-shotgun-launchfolder: "@settings.tk-shotgun-launchfolder"
+  location: "@engines.tk-shotgun.location"    
+
 settings.tk-shotgun.sequence:
   apps:
     tk-multi-launchapp: "@settings.tk-multi-launchapp"

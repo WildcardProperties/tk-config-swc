@@ -48,6 +48,10 @@ keys:
         type: str
     Shot:
         type: str        
+    Tool:
+        type: str  
+        shotgun_entity_type: Tool
+        shotgun_field_name: code           
     task_step:
         type: str
         shotgun_entity_type: Task
@@ -388,6 +392,7 @@ paths:
     asset_section_root: '{asset_library_type}/{asset_library}/{asset_type}/{asset_section}/{folder_name}'    
     asset_section_category_root: '{asset_library_type}/{asset_library}/{asset_type}/{asset_section}/{asset_category}/{folder_name}'
     asset_section_category_class_root: '{asset_library_type}/{asset_library}/{asset_type}/{asset_section}/{asset_category}/{asset_class}/{folder_name}'
+    tool_root: '{Tool}/'
     pub_asset_root: '{pub_asset_type}/{Campaign}/{Product}/{use}/{CustomEntity03}'
     prod_asset_root: '{pub_asset_type}/{Product}/{use}/{CustomEntity03}'
 

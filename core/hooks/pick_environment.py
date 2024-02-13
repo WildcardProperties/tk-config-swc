@@ -84,7 +84,9 @@ class PickEnvironment(sgtk.Hook):
                                                                ["sg_asset_type"])
                 if context_entity.get("sg_asset_type") == "Campaigns":
                     return "pub_asset"
-                return "prod_asset"                   
+                return "prod_asset"          
+            elif context.entity["type"] == "Tool":
+                return "tool"         
 
         if context.entity and context.step:
             # We have a step and an entity.
