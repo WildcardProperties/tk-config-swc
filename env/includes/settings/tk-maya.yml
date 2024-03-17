@@ -30,7 +30,8 @@ settings.tk-maya.asset:
   apps:
     tk-multi-about:
       location: "@apps.tk-multi-about.location"
-    tk-multi-loader2: "@settings.tk-multi-loader2.maya"
+    # tk-multi-loader2: "@settings.tk-multi-loader2.maya"
+    tk-swc-perforce-sync: "@settings.tk-swc-perforce-sync.maya"
     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
     tk-multi-workfiles2: "@settings.tk-multi-workfiles2.launch_at_startup"
     tk-multi-perforce: "@settings.tk-multi-perforce"
@@ -47,7 +48,8 @@ settings.tk-maya.asset_step:
   apps: &settings_tk-maya_apps
     tk-multi-about:
       location: "@apps.tk-multi-about.location"
-    tk-multi-loader2: "@settings.tk-multi-loader2.maya"
+    # tk-multi-loader2: "@settings.tk-multi-loader2.maya"
+    tk-swc-perforce-sync: "@settings.tk-swc-perforce-sync.maya"
     tk-multi-publish2: "@settings.tk-multi-publish2.maya.asset_step"
     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.maya"
     tk-multi-snapshot: "@settings.tk-multi-snapshot.maya.asset_step"
@@ -68,7 +70,8 @@ settings.tk-maya.asset_step:
 settings.tk-maya.sequence:
   apps:
     <<: *settings_tk-maya_apps
-    tk-multi-loader2: "@settings.tk-multi-loader2.maya.sequence"
+    # tk-multi-loader2: "@settings.tk-multi-loader2.maya.sequence"
+    tk-swc-perforce-sync: "@settings.tk-swc-perforce-sync.maya.sequence"
     tk-multi-publish2: "@settings.tk-multi-publish2.maya.sequence"  
     tk-multi-snapshot: "@settings.tk-multi-snapshot.maya.sequence"
     tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.sequence"
@@ -81,7 +84,8 @@ settings.tk-maya.sequence:
 settings.tk-maya.sequence_step:
   apps:
     <<: *settings_tk-maya_apps
-    tk-multi-loader2: "@settings.tk-multi-loader2.maya.sequence"
+    # tk-multi-loader2: "@settings.tk-multi-loader2.maya.sequence"
+    tk-swc-perforce-sync: "@settings.tk-swc-perforce-sync.maya.sequence"
     tk-multi-publish2: "@settings.tk-multi-publish2.maya.sequence_step"  
     tk-multi-snapshot: "@settings.tk-multi-snapshot.maya.sequence_step"
     tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.sequence_step"
@@ -94,7 +98,8 @@ settings.tk-maya.sequence_step:
 settings.tk-maya.shot:
   apps:
     <<: *settings_tk-maya_apps
-    tk-multi-loader2: "@settings.tk-multi-loader2.maya.shot"
+    # tk-multi-loader2: "@settings.tk-multi-loader2.maya.shot"
+    tk-swc-perforce-sync: "@settings.tk-swc-perforce-sync.maya.shot"
     tk-multi-publish2: "@settings.tk-multi-publish2.maya.shot"  
     tk-multi-snapshot: "@settings.tk-multi-snapshot.maya.shot"
     tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.shot"
@@ -107,7 +112,8 @@ settings.tk-maya.shot:
 settings.tk-maya.shot_step:
   apps:
     <<: *settings_tk-maya_apps
-    tk-multi-loader2: "@settings.tk-multi-loader2.maya.shot"
+    # tk-multi-loader2: "@settings.tk-multi-loader2.maya.shot"
+    tk-swc-perforce-sync: "@settings.tk-swc-perforce-sync.maya.shot"
     tk-multi-publish2: "@settings.tk-multi-publish2.maya.shot_step"  
     tk-multi-snapshot: "@settings.tk-multi-snapshot.maya.shot_step"
     tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.shot_step"
@@ -253,7 +259,8 @@ settings.tk-maya.project:
   apps:
     tk-multi-about:
       location: "@apps.tk-multi-about.location"
-    tk-multi-loader2: "@settings.tk-multi-loader2.maya"      
+    # tk-multi-loader2: "@settings.tk-multi-loader2.maya"
+    tk-swc-perforce-sync: "@settings.tk-swc-perforce-sync.maya"
     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
     tk-multi-workfiles2: "@settings.tk-multi-workfiles2.launch_at_startup"
     tk-multi-perforce: "@settings.tk-multi-perforce"
