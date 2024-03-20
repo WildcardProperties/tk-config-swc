@@ -28,7 +28,6 @@ entity_browser_settings: &entity_browser_settings
     entity_type: Asset
     hierarchy: [sg_asset_library.AssetLibrary.sg_asset_library_type, sg_asset_library, sg_asset_type, code]
     filters:
-      - [sg_asset_parent, is, [ null ]]
       - [project, is, '{context.project}']    
       - [sg_asset_type, is_not, ["Animations"]]       
     publish_filters:
@@ -38,7 +37,6 @@ entity_browser_settings: &entity_browser_settings
     hierarchy: [sg_asset_library.AssetLibrary.sg_asset_library_type, sg_asset_library, code]
     filters:
       - [project, is, '{context.project}']
-      - [sg_asset_parent, is, [ null ]]
       - [sg_asset_type, is, ["Dinos"]]
     publish_filters:
       - [task.Task.step.Step.short_name, is_not, 'Animations']
