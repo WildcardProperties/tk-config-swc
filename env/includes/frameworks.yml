@@ -42,9 +42,13 @@ frameworks:
       #version: v2.10.2
       #type: dev
       #path: "S:/Projects/ShotgunConfig/tk-framework-qtwidgets"
-      type: git
-      path: https://github.com/StudioWildcard/tk-framework-qtwidgets.git
-      version: v2.110.7
+      #type: git
+      #path: https://github.com/StudioWildcard/tk-framework-qtwidgets.git
+      #version: v2.110.7
+      type: git_branch
+      branch: swc_main_aei
+      path: https://github.com/StudioWildcard/tk-framework-qtwidgets
+      version: 96e8e8d
 
   # shotgunutils v4 - Shotgun Related Utilities
   tk-framework-shotgunutils_v4.x.x:
@@ -60,7 +64,7 @@ frameworks:
       #path: "S:/Projects/ShotgunConfig/tk-framework-shotgunutils"
       type: app_store
       name: tk-framework-shotgunutils
-      version: v5.8.7
+      version: v5.9.1
       #type: git_branch
       #branch: main
       #path: https://github.com/alaa-e-ibrahim/tk-framework-shotgunutils
@@ -72,7 +76,7 @@ frameworks:
       type: git_branch
       branch: swc_main_ai
       path: https://github.com/StudioWildcard/tk-swc-framework-shotgunutils
-      version: 6b3acd1dc2700ea8446db5bcf891c6bef8917d15
+      version: 4f3d845
   # widget v0 - QT Widget Framework for Tank Apps (qtwidgets fw predecessor)
   tk-framework-widget_v0.2.x:
     location:
