@@ -21,19 +21,19 @@ frameworks:
     location:
       type: app_store
       name: tk-framework-adobe
-      version: v1.1.9
+      version: v1.2.1
   # adminui - provides GUIs for administrative commands
   tk-framework-adminui_v0.x.x:
     location:
       type: app_store
       name: tk-framework-adminui
-      version: v0.7.5
+      version: v0.7.6
   # desktopserver - provides a server to run local commands.
   tk-framework-desktopserver_v1.x.x:
     location:
       type: app_store
       name: tk-framework-desktopserver
-      version: v1.6.4
+      version: v1.7.0
   # qtwidgets - collection of Toolkit related QT Widgets
   tk-framework-qtwidgets_v2.x.x:
     location:
@@ -65,10 +65,7 @@ frameworks:
       type: app_store
       name: tk-framework-shotgunutils
       version: v5.9.1
-      #type: git_branch
-      #branch: main
-      #path: https://github.com/alaa-e-ibrahim/tk-framework-shotgunutils
-      #version:
+
   tk-swc-framework-shotgunutils_v5.x.x:
     location:
       #type: dev
@@ -89,19 +86,19 @@ frameworks:
     location:
       type: app_store
       name: tk-framework-widget
-      version: v1.1.1
+      version: v1.2.0
   # desktopclient - A client for Shotgun Create
   tk-framework-desktopclient_v0.x.x:
     location:
       type: app_store
       name: tk-framework-desktopclient
-      version: v0.3.2
+      version: v0.3.3
   # lmv - provides LMV conversion tools
   tk-framework-lmv_v0.x.x:
     location:
       type: app_store
       name: tk-framework-lmv
-      version: v1.0.0
+      version: v1.1.0
 # ---- 3rd Party Frameworks
 
   # unrealqt - PySide build for Unreal (Windows-only)

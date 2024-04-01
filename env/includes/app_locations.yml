@@ -23,19 +23,19 @@ includes:
 apps.tk-multi-about.location:
   type: app_store
   name: tk-multi-about
-  version: v0.4.2
+  version: v0.5.0
 
 # demo
 apps.tk-multi-demo.location:
   type: app_store
   name: tk-multi-demo
-  version: v1.3.5
+  version: v1.4.0
 
 # launchapp
 apps.tk-multi-launchapp.location:
   type: app_store
   name: tk-multi-launchapp
-  version: v0.12.6
+  version: v0.13.0
 
 # loader2
 apps.tk-multi-loader2.location:
@@ -56,12 +56,12 @@ apps.tk-multi-loader2.location:
   version: cc83e0ac195765418a5f3f529fd727a1f6f84cee
 
 apps.tk-swc-perforce-sync.location:
-  type: dev
-  path: S:\Projects\ShotgunConfig\tk-swc-perforce-sync
-  #type: git_branch
-  #branch: swc_main_ai
-  #path: https://github.com/StudioWildcard/tk-swc-perforce-sync
-  #version: cbe6ecc
+  #type: dev
+  #path: S:\Projects\ShotgunConfig\tk-swc-perforce-sync
+  type: git_branch
+  branch: swc_main_ai
+  path: https://github.com/StudioWildcard/tk-swc-perforce-sync
+  version: 36760e5
 
 # publish2
 apps.tk-multi-publish2.location:
@@ -79,19 +79,19 @@ apps.tk-multi-publish2.location:
 apps.tk-multi-screeningroom.location:
   type: app_store
   name: tk-multi-screeningroom
-  version: v0.5.1
+  version: v0.6.0
 
 # pythonconsole
 apps.tk-multi-pythonconsole.location:
   type: app_store
   name: tk-multi-pythonconsole
-  version: v1.3.2
+  version: v1.4.0
 
 # reviewsubmission
 apps.tk-multi-reviewsubmission.location:
   type: app_store
   name: tk-multi-reviewsubmission
-  version: v1.2.1
+  version: v1.3.0
 
 # shotgun panel
 apps.tk-multi-shotgunpanel.location:
@@ -113,7 +113,7 @@ apps.tk-multi-shotgunpanel.location:
 apps.tk-multi-devutils.location:
   type: app_store
   name: tk-multi-devutils
-  version: v1.2.1
+  version: v1.3.0
 
 # ---- Houdini apps
 
@@ -121,13 +121,13 @@ apps.tk-multi-devutils.location:
 apps.tk-houdini-alembicnode.location:
   type: app_store
   name: tk-houdini-alembicnode
-  version: v0.5.2
+  version: v0.6.0
 
 # houdini mantranode
 apps.tk-houdini-mantranode.location:
   type: app_store
   name: tk-houdini-mantranode
-  version: v0.5.2
+  version: v0.6.0
 
 # ---- Shotgun app takeovers
 
@@ -141,7 +141,7 @@ apps.tk-multi-snapshot.location:
   type: github_release
   organization: nimbleheroes
   repository: tk-multi-snapshot
-  version: v0.8.1.2-swc
+  version: v0.10.0
   ### Dev
   # name: tk-multi-snapshot
   # type: dev
@@ -161,9 +161,9 @@ apps.tk-shotgun-folders.location:
   # version: v0.2.0-nx.1
   ### Github
   type: git_branch
-  branch: master
+  branch: swc_main_flow
   path: https://github.com/studiowildcard/tk-shotgun-folders.git
-  version: 5bab0c6aab13eb88366ab80f0fe3e89ef8a2cdf7
+  version: e79db5f
   # ### Dev
   # type: dev
   # path: S:/Projects/ShotgunConfig/tk-shotgun-folders
@@ -180,18 +180,14 @@ apps.tk-multi-workfiles2.location:
   # repository: tk-multi-workfiles2
   # version: v0.12.6.1
   ### Git Branch
-  type: git_branch
-  branch: master
-  path: https://github.com/studiowildcard/tk-multi-workfiles2.git
-  version: 1c3efe20a73231d6caecfde70fde84d09690c277
   #type: git_branch
-  #branch: beta-ai
+  #branch: master
   #path: https://github.com/studiowildcard/tk-multi-workfiles2.git
-  #version: 747e223
-  # ## Dev
-  # name: tk-multi-workfiles2
-  #type: dev
-  #path: S:\Projects\ShotgunConfig\tk-multi-workfiles2
+  #version: 1c3efe20a73231d6caecfde70fde84d09690c277
+  type: git_branch
+  branch: swc_main_flow
+  path: https://github.com/studiowildcard/tk-multi-workfiles2.git
+  version: 4891750
 
 # Perforce
 apps.tk-multi-perforce.location:
@@ -205,7 +201,7 @@ apps.tk-multi-perforce.location:
   type: git_branch
   branch: swc_main_ai
   path: https://gitlab.com/nexodus/consulting/swc/tk-multi-perforce.git
-  version: a16afa41a7ecafde5daa1aa8bbaf231b23ea6c41
+  version: 4855b08
 
 ################################################################################
 # reference all of the common frameworks
@@ -214,7 +210,7 @@ frameworks: '@frameworks'
 apps.tk-shotgun-launchfolder.location:
   type: app_store
   name: tk-shotgun-launchfolder
-  version: v0.3.1
+  version: v0.4.0
 
 # Copy from Playlist
 apps.tk-copyfromplaylist.location:
@@ -226,7 +222,7 @@ apps.tk-copyfromplaylist.location:
   #path: 'S:/Projects/ShotgunConfig/tk-copyfromplaylist'
   type: git
   path: https://github.com/studiowildcard/tk-copyfromplaylist.git
-  version: v0.4
+  version: v0.5
 
 apps.tk-unreal-launcher.location:
   #type: dev
