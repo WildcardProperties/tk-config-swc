@@ -19,6 +19,7 @@ includes:
 - ./tk-multi-workfiles2.yml
 - ./tk-multi-perforce.yml
 - ./tk-swc-perforce-sync.yml
+#- ./tk-multi-loader2.yml
 - ./tk-copyfromplaylist.yml
 - ./tk-unreal-launcher.yml
 - ./tk-multi-shotgunpanel.yml
@@ -155,7 +156,7 @@ settings.tk-desktop.project:
     tk-multi-launchapp: "@settings.tk-multi-launchapp"
     tk-multi-publish2: "@settings.tk-multi-publish2.standalone"
     tk-multi-perforce: "@settings.tk-multi-perforce.desktop"
-    # tk-multi-loader2: "@settings.tk-multi-loader2.desktop"
+    #tk-multi-loader2: "@settings.tk-multi-loader2.desktop"
     tk-swc-perforce-sync: "@settings.tk-swc-perforce-sync.desktop"
     tk-copyfromplaylist: "@settings.tk-copyfromplaylist"
     tk-unreal-launcher: "@settings.tk-unreal-launcher"
