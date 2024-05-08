@@ -12,6 +12,7 @@
 
 includes:
 - ../app_locations.yml
+- ./tk-multi-shotgunpanel.yml
 
 ################################################################################
 
@@ -138,6 +139,14 @@ entity_browser_settings: &shot_browser_settings
 
 # Desktop
 settings.tk-swc-perforce-sync.desktop:
+  #shotgun_panel:
+  #  type: panel
+  #  title: Shotgun Panel
+  #  app_instance: tk-multi-shotgunpanel
+  #  location: "@apps.tk-multi-shotgunpanel.location"
+  #apps:
+  #  tk-multi-shotgunpanel:
+  #   location: "@apps.tk-multi-shotgunpanel.location"
   actions_hook: "{config}/tk-swc-perforce-sync/tk-desktop/tk-desktop_actions.py:{config}/tk-swc-perforce-sync/perforce_actions.py"
   # actions_hook: "{config}/tk-swc-perforce-sync/perforce_actions.py"
   action_mappings:

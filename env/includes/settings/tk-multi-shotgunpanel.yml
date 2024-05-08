@@ -31,6 +31,27 @@ settings.tk-multi-shotgunpanel:
       filters: {}
   location: "@apps.tk-multi-shotgunpanel.location"
 
+settings.tk-multi-shotgunpanel.P4SG.OLD:
+  enable_context_switch: true
+  #shotgun_fields_hook: "{config}/tk-multi-shotgunpanel/shotgun_fields.py"
+  action_mappings:
+    PublishedFile:
+    - actions: [publish_clipboard]
+      filters: {}
+    Task:
+    - actions: [assign_task, task_to_ip]
+      filters: {}
+    Version:
+    - actions: [quicktime_clipboard, sequence_clipboard, add_to_playlist]
+      filters: {}
+  location: "@apps.tk-multi-shotgunpanel.location"
+
+settings.tk-multi-shotgunpanel.P4SG:
+  actions_hook: '{self}/general_actions.py:{engine}/tk-multi-shotgunpanel/tk-unreal_actions.py'
+  action_mappings: {}
+  enable_context_switch: true
+  location: "@apps.tk-multi-shotgunpanel.location"
+
 # 3dsmax
 settings.tk-multi-shotgunpanel.3dsmax:
   enable_context_switch: true
