@@ -61,7 +61,7 @@ apps.tk-swc-perforce-sync.location:
   type: git_branch
   branch: swc_main_ai
   path: https://github.com/StudioWildcard/tk-swc-perforce-sync
-  version: 1b334b0
+  version: 12ab58c
 
 # publish2
 apps.tk-multi-publish2.location:
@@ -107,7 +107,7 @@ apps.tk-multi-shotgunpanel.location:
   type: git_branch
   branch: swc_main_aei
   path: https://github.com/StudioWildcard/tk-multi-shotgunpanel
-  version: 80e0d54
+  version: 8589cb8
 
 # dev utils
 apps.tk-multi-devutils.location:
