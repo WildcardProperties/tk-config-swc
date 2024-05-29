@@ -176,8 +176,8 @@ settings.tk-desktop.project:
     tk-swc-perforce-sync: "@settings.tk-swc-perforce-sync.desktop"
     tk-copyfromplaylist: "@settings.tk-copyfromplaylist"
     tk-unreal-launcher: "@settings.tk-unreal-launcher"
-    #tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.P4SG"
-    tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.maya"
+    tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.P4SG"
+    #tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.maya"
   show_recents: false
   default_group: "Studio Tools"
   groups:
