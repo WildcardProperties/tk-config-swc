@@ -124,7 +124,7 @@ frameworks:
       branch: swc_beta_rb_ai
       path: https://gitlab.com/nexodus/consulting/swc/tk-framework-perforce.git
       # version: 89c9dc671c062ddd532e3ea3f932002de525d991
-      version: 03a3a877c7b4044b43cf535ae2ee1c47edf2c6bb
+      version: b51cd173972d7172bafa4bb20797b429a5acc87a
   # # Unreal Launcher
   # tk-framework-unreal-launcher_v0.x.x:
   #   hook_get_perforce_user: '{config}/tk-framework-perforce/get_perforce_user.py'
