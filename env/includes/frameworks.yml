@@ -21,7 +21,7 @@ frameworks:
     location:
       type: app_store
       name: tk-framework-adobe
-      version: v1.2.1
+      version: v1.2.2
   # adminui - provides GUIs for administrative commands
   tk-framework-adminui_v0.x.x:
     location:
@@ -33,7 +33,7 @@ frameworks:
     location:
       type: app_store
       name: tk-framework-desktopserver
-      version: v1.7.0
+      version: v1.7.1
   # qtwidgets - collection of Toolkit related QT Widgets
   tk-framework-qtwidgets_v2.x.x:
     location:
@@ -73,7 +73,7 @@ frameworks:
       type: git_branch
       branch: swc_main_ai
       path: https://github.com/StudioWildcard/tk-swc-framework-shotgunutils
-      version: ca1878e
+      version: ca1878e7fcb6a824c44027a6e2014ac66182e930
   # widget v0 - QT Widget Framework for Tank Apps (qtwidgets fw predecessor)
   tk-framework-widget_v0.2.x:
     location:
@@ -94,7 +94,7 @@ frameworks:
       name: tk-framework-desktopclient
       version: v0.3.3
   # lmv - provides LMV conversion tools
-  tk-framework-lmv_v0.x.x:
+  tk-framework-lmv_v1.x.x:
     location:
       type: app_store
       name: tk-framework-lmv

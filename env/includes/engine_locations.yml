@@ -19,7 +19,7 @@
 engines.tk-3dsmax.location:
   type: app_store
   name: tk-3dsmax
-  version: v1.3.0
+  version: v1.4.0
 
 # Desktop
 engines.tk-desktop.location:
@@ -39,7 +39,7 @@ engines.tk-desktop.location:
   branch: swc_main_ai
   path: https://github.com/StudioWildcard/tk-desktop
   # version: 841c22ac65c62955da9a47b3a9dc965ae8aaa1d1
-  version: 9c96343
+  version: 9c96343c1cb518dbb23142e003adad97de45e6e3
 
 
 
@@ -53,13 +53,13 @@ engines.tk-desktop2.location:
 engines.tk-houdini.location:
   type: app_store
   name: tk-houdini
-  version: v1.9.0
+  version: v1.9.1
 
 # Maya
 engines.tk-maya.location:
   type: app_store
   name: tk-maya
-  version: v0.12.0
+  version: v0.13.0
 
 # Photoshop
 engines.tk-photoshopcc.location:

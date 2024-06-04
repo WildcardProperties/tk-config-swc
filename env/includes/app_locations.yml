@@ -29,7 +29,7 @@ apps.tk-multi-about.location:
 apps.tk-multi-demo.location:
   type: app_store
   name: tk-multi-demo
-  version: v1.4.0
+  version: v1.5.0
 
 # launchapp
 apps.tk-multi-launchapp.location:
@@ -61,7 +61,7 @@ apps.tk-swc-perforce-sync.location:
   type: git_branch
   branch: swc_main_ai
   path: https://github.com/StudioWildcard/tk-swc-perforce-sync
-  version: 6248e9a
+  version: 6248e9a7bb5e7b02a70ea89313661db1c6df7579
 
 # publish2
 apps.tk-multi-publish2.location:
@@ -73,7 +73,7 @@ apps.tk-multi-publish2.location:
   type: git_branch
   branch: beta-ai
   path: https://github.com/StudioWildcard/tk-multi-publish2
-  version: affdc21
+  version: affdc21dd92430d9d0553c22527a0d9cf41ff7ff
 
 # screeningroom
 apps.tk-multi-screeningroom.location:
@@ -141,7 +141,7 @@ apps.tk-multi-snapshot.location:
   type: github_release
   organization: nimbleheroes
   repository: tk-multi-snapshot
-  version: v0.10.0
+  version: v0.8.1.2-swc
   ### Dev
   # name: tk-multi-snapshot
   # type: dev
@@ -163,7 +163,7 @@ apps.tk-shotgun-folders.location:
   type: git_branch
   branch: swc_main_flow
   path: https://github.com/studiowildcard/tk-shotgun-folders.git
-  version: e79db5f
+  version: e79db5f432e08d8d0bc6db1b5c89b03b62c0fba3
   # ### Dev
   # type: dev
   # path: S:/Projects/ShotgunConfig/tk-shotgun-folders
@@ -187,7 +187,7 @@ apps.tk-multi-workfiles2.location:
   type: git_branch
   branch: swc_main_flow
   path: https://github.com/studiowildcard/tk-multi-workfiles2.git
-  version: 4891750
+  version: 4891750b9c05762788eca14e580180b778dd009f
 
 # Perforce
 apps.tk-multi-perforce.location:
@@ -201,7 +201,7 @@ apps.tk-multi-perforce.location:
   type: git_branch
   branch: swc_main_ai
   path: https://gitlab.com/nexodus/consulting/swc/tk-multi-perforce.git
-  version: 4855b08
+  version: 4855b08b290058bef7dbcfa25e1bcf8c13e467c2
 
 ################################################################################
 # reference all of the common frameworks
