@@ -31,42 +31,13 @@ settings.tk-multi-shotgunpanel:
       filters: {}
   location: "@apps.tk-multi-shotgunpanel.location"
 
-settings.tk-multi-shotgunpanel.P4SG.OLD:
-  enable_context_switch: true
-  shotgun_fields_hook: "{config}/tk-multi-shotgunpanel/shotgun_fields.py"
-  action_mappings:
-    PublishedFile:
-    - actions: [publish_clipboard]
-      filters: {}
-    Task:
-    - actions: [assign_task, task_to_ip]
-      filters: {}
-    Version:
-    - actions: [quicktime_clipboard, sequence_clipboard, add_to_playlist]
-      filters: {}
-  location: "@apps.tk-multi-shotgunpanel.location"
 
 settings.tk-multi-shotgunpanel.P4SG:
   enable_context_switch: true
   shotgun_fields_hook: "{config}/tk-multi-shotgunpanel/shotgun_fields.py"
-  actions_hook: "{self}/tk-maya_actions.py:{config}/tk-multi-loader2/tk-maya/tk-maya_actions.py"
-  #actions_hook: "{engine}/tk-multi-shotgunpanel/basic/scene_actions.py"
+  actions_hook: "{self}/general_actions.py"
   action_mappings:
     PublishedFile:
-    - actions: [reference, import]
-      filters: {published_file_type: Alembic Cache}
-    - actions: [texture_node, image_plane]
-      filters: {published_file_type: Image}
-    - actions: [reference, import]
-      filters: {published_file_type: Maya Scene}
-    - actions: [texture_node, image_plane]
-      filters: {published_file_type: Photoshop Image}
-    - actions: [texture_node, image_plane]
-      filters: {published_file_type: Rendered Image}
-    - actions: [texture_node, image_plane]
-      filters: {published_file_type: Texture}
-    - actions: [udim_texture_node]
-      filters: {published_file_type: UDIM Image}
     - actions: [publish_clipboard]
       filters: {}
     Task:
