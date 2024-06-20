@@ -38,9 +38,7 @@ engines.tk-desktop.location:
   type: git_branch
   branch: swc_main_ai
   path: https://github.com/StudioWildcard/tk-desktop
-  # version: 841c22ac65c62955da9a47b3a9dc965ae8aaa1d1
-  version: 9c96343c1cb518dbb23142e003adad97de45e6e3
-
+  version: 368c52c
 
 
 # Desktop2

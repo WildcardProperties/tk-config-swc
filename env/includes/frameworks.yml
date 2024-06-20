@@ -120,11 +120,14 @@ frameworks:
       # type: dev
       # path: "S:/Projects/ShotgunConfig/tk-framework-perforce"
       # Gitlab
+      #type: git_branch
+      #branch: swc_beta_rb_ai
+      #path: https://gitlab.com/nexodus/consulting/swc/tk-framework-perforce.git
+      #version: b51cd173972d7172bafa4bb20797b429a5acc87a
       type: git_branch
       branch: swc_beta_rb_ai
-      path: https://gitlab.com/nexodus/consulting/swc/tk-framework-perforce.git
-      # version: 89c9dc671c062ddd532e3ea3f932002de525d991
-      version: b51cd173972d7172bafa4bb20797b429a5acc87a
+      path: https://github.com/StudioWildcard/tk-framework-perforce
+      version: 3752c7a
   # # Unreal Launcher
   # tk-framework-unreal-launcher_v0.x.x:
   #   hook_get_perforce_user: '{config}/tk-framework-perforce/get_perforce_user.py'
