@@ -174,20 +174,13 @@ apps.tk-multi-workfiles2.location:
   #type: app_store
   #name: tk-multi-workfiles2
   #version: v0.13.2
-  ### GitHub Release
-  # type: github_release
-  # organization: nimbleheroes
-  # repository: tk-multi-workfiles2
-  # version: v0.12.6.1
-  ### Git Branch
-  #type: git_branch
-  #branch: master
-  #path: https://github.com/studiowildcard/tk-multi-workfiles2.git
-  #version: 1c3efe20a73231d6caecfde70fde84d09690c277
   type: git_branch
   branch: swc_main_flow
   path: https://github.com/studiowildcard/tk-multi-workfiles2.git
-  version: 4891750b9c05762788eca14e580180b778dd009f
+  version: 73adba6f1476eed1e40938b1bb48840e9b4777d9
+  # ### Dev
+  # type: dev
+  # path: S:/Projects/ShotgunConfig/tk-multi-workfiles2
 
 # Perforce
 apps.tk-multi-perforce.location:
