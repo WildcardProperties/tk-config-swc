@@ -437,10 +437,10 @@ paths:
     anim_asset_filename: '@anim_asset_work_area/[{Asset}_]{Task}[_{name}]'
     anim_asset_snapshot_filename: '@anim_asset_work_area/snapshots/[{Asset}_]{Task}[_{name}].{timestamp}'     
 
-    pub_asset_filename: '@pub_asset_root/{task_step}/{Product}_{Campaign}_{CustomEntity03}_{Task}[_{width}x{height}][_{name}]'
-    pub_asset_snapshot_filename: '@pub_asset_root/{task_step}/snapshots/{Product}_{Campaign}_{CustomEntity03}_{Task}[_{width}x{height}][_{name}].{timestamp}'
-    prod_asset_filename: '@prod_asset_root/{task_step}/{Product}_{CustomEntity03}_{Task}[_{width}x{height}][_{name}]'
-    prod_asset_snapshot_filename: '@prod_asset_root/{task_step}/snapshots/{Product}_{CustomEntity03}_{Task}[_{width}x{height}][_{name}].{timestamp}'
+    pub_asset_filename: '@pub_asset_root/{task_step}/{CustomEntity03}_{Task}[_{width}x{height}][_{name}]'
+    pub_asset_snapshot_filename: '@pub_asset_root/{task_step}/snapshots/{CustomEntity03}_{Task}[_{width}x{height}][_{name}].{timestamp}'
+    prod_asset_filename: '@prod_asset_root/{task_step}/{CustomEntity03}_{Task}[_{width}x{height}][_{name}]'
+    prod_asset_snapshot_filename: '@prod_asset_root/{task_step}/snapshots/{CustomEntity03}_{Task}[_{width}x{height}][_{name}].{timestamp}'
 
 
     #
