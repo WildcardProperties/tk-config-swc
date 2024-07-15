@@ -529,19 +529,11 @@ class BasicSceneCollector(HookBaseClass):
 
         display_name = publisher.util.get_publish_name(path, sequence=is_sequence)
 
-        # Try to get the context more specifically from the path on disk
         context = None
-        try:
-            context = self.swc_fw.find_task_context(path)
-        except(AttributeError):
-            try:
-                self.swc_fw = self.load_framework(TK_FRAMEWORK_SWC_NAME)
-                context = self.swc_fw.find_task_context(path)
-            except:
-                # This probably isn't a valid folder
-                pass
-        except:
-            pass
+        # Try to get the context more specifically from the path on disk
+        swc_fw = self.load_framework(TK_FRAMEWORK_SWC_NAME)
+        swc_context_utils = swc_fw.import_module("Context_Utils")
+        context = swc_context_utils.find_task_context(path)
 
         # create and populate the item
         file_item = parent_item.create_item(item_type, type_display, display_name)

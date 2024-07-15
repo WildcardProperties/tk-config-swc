@@ -403,6 +403,10 @@ settings.tk-multi-publish2.photoshop.asset_step: &settings_publish_plugins_tk-mu
   help_url: *help_url
   location: "@apps.tk-multi-publish2.location"
 
+# asset
+settings.tk-multi-publish2.photoshop.asset:
+  <<: *settings_publish_plugins_tk-multi-publish2_photoshop
+
 # asset_child_step
 settings.tk-multi-publish2.photoshop.asset_child_step:
   <<: *settings_publish_plugins_tk-multi-publish2_photoshop

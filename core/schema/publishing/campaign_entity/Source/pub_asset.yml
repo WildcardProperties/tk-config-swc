@@ -5,7 +5,9 @@ type: "shotgun_entity"
 entity_type: "CustomEntity03"
 
 # the shotgun field to use for the folder name
-name: "{sg_asset_type}/{sg_campaign}/{sg_product.CustomNonProjectEntity01.sg_short_code}/{sg_use}/{code}"
+name: "code"
+
+create_with_parent: false
 
 # shotgun filters to apply when getting the list of items
 # this should be a list of dicts, each dict containing
@@ -13,5 +15,4 @@ name: "{sg_asset_type}/{sg_campaign}/{sg_product.CustomNonProjectEntity01.sg_sho
 # (this is std shotgun API syntax)
 # any values starting with $ are resolved into path objects
 filters:
-    - { "path": "project", "relation": "is", "values": [ "$publishing" ] }
-    - { "path": "sg_asset_type", "relation": "is", "values": [ "Campaigns" ] }
+    - { "path": "sg_campaign", "relation": "is", "values": [ "$campaign_entity" ] }

@@ -232,13 +232,11 @@ class PublishPlugin(HookBaseClass):
                 self.logger.error(f"This file path contains an illegal character, '{char}':")
                 self.logger.error(" %s" % (path,))                  
                 return False
+        # Try to get the context more specifically from the path on disk
+        swc_fw = self.load_framework(TK_FRAMEWORK_SWC_NAME)
+        swc_context_utils = swc_fw.import_module("Context_Utils")
+        target_context = swc_context_utils.find_task_context(path)            
 
-        try:
-            target_context = self.swc_fw.find_task_context(path)
-        except(AttributeError):
-            self.swc_fw = self.load_framework(TK_FRAMEWORK_SWC_NAME)
-            target_context = self.swc_fw.find_task_context(path)     
-        
         # ---- determine the information required to validate
         if not item.context.entity and not target_context.entity:
             self.logger.error("This file is not under a known Asset folder:")

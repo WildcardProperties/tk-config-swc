@@ -177,7 +177,7 @@ apps.tk-multi-workfiles2.location:
   type: git_branch
   branch: swc_main_flow
   path: https://github.com/studiowildcard/tk-multi-workfiles2.git
-  version: 73adba6f1476eed1e40938b1bb48840e9b4777d9
+  version: 2898ad4ebadb2c524ed08ccdcb29644f59726903
   # ### Dev
   # type: dev
   # path: S:/Projects/ShotgunConfig/tk-multi-workfiles2
