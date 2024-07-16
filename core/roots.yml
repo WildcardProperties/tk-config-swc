@@ -51,5 +51,8 @@ primary:
 publishing:
     description: A top-level root folder for publishing data. 
     shotgun_storage_id: 36     # S:\ Publishing, etc
+tools:
+    description: Common tools folder.
+    shotgun_storage_id: 168     # T:\ Tools
     
 
