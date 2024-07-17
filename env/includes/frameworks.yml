@@ -156,4 +156,4 @@ frameworks:
       # branch: main
       type: git
       path: https://github.com/StudioWildcard/tk-framework-swc
-      version: v1.4.2
+      version: v1.4.3
