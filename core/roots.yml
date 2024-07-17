@@ -48,11 +48,11 @@ primary:
     shotgun_storage_id: 135     # Z:\ ArkDepot 
     # shotgun_storage_id: 36     # S:\ Publishing, etc    
     default: true
-publishing:
-    description: A top-level root folder for publishing data. 
-    shotgun_storage_id: 36     # S:\ Publishing, etc
-tools:
-    description: Common tools folder.
-    shotgun_storage_id: 168     # T:\ Tools
+# publishing:
+#     description: A top-level root folder for publishing data. 
+#     shotgun_storage_id: 36     # S:\ Publishing, etc
+# tools:
+#     description: Common tools folder.
+#     shotgun_storage_id: 168     # T:\ Tools
     
 
