@@ -48,7 +48,7 @@ frameworks:
       type: git_branch
       branch: swc_main_aei
       path: https://github.com/StudioWildcard/tk-framework-qtwidgets
-      version: 96e8e8d
+      version: e33e1dd328b1541576685372b5ca24acee5fe656
 
   # shotgunutils v4 - Shotgun Related Utilities
   tk-framework-shotgunutils_v4.x.x:
@@ -64,8 +64,7 @@ frameworks:
       #path: "S:/Projects/ShotgunConfig/tk-framework-shotgunutils"
       type: app_store
       name: tk-framework-shotgunutils
-      version: v5.9.1
-
+      version: v5.10.0
   tk-swc-framework-shotgunutils_v5.x.x:
     location:
       #type: dev
@@ -107,8 +106,9 @@ frameworks:
     location:
       organization: ue4plugins
       repository: tk-framework-unrealqt
-      version: v1.2.3
+      version: v1.3.1
       type: github_release
+      private: false
 # ---- Custom Frameworks
 
   # perforce - provides connection to perforce
@@ -156,4 +156,4 @@ frameworks:
       # branch: main
       type: git
       path: https://github.com/StudioWildcard/tk-framework-swc
-      version: v1.4.4
+      version: v1.4.5

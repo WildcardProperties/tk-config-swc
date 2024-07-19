@@ -35,7 +35,7 @@ apps.tk-multi-demo.location:
 apps.tk-multi-launchapp.location:
   type: app_store
   name: tk-multi-launchapp
-  version: v0.13.0
+  version: v0.13.1
 
 # loader2
 apps.tk-multi-loader2.location:
@@ -61,7 +61,7 @@ apps.tk-swc-perforce-sync.location:
   type: git_branch
   branch: swc_main_ai
   path: https://github.com/StudioWildcard/tk-swc-perforce-sync
-  version: ce32141
+  version: ce3214147b28b48ef19541c709329696dc86323a
 
 # publish2
 apps.tk-multi-publish2.location:
@@ -85,7 +85,7 @@ apps.tk-multi-screeningroom.location:
 apps.tk-multi-pythonconsole.location:
   type: app_store
   name: tk-multi-pythonconsole
-  version: v1.4.0
+  version: v1.4.1
 
 # reviewsubmission
 apps.tk-multi-reviewsubmission.location:
@@ -107,7 +107,7 @@ apps.tk-multi-shotgunpanel.location:
   type: git_branch
   branch: swc_main_aei
   path: https://github.com/StudioWildcard/tk-multi-shotgunpanel
-  version: 8589cb8
+  version: 5a6cebb280e0fa78ff8003ef77432e082a2f678f
 
 # dev utils
 apps.tk-multi-devutils.location:
@@ -198,7 +198,7 @@ apps.tk-multi-perforce.location:
   type: git_branch
   branch: swc_main_ai
   path: https://github.com/StudioWildcard/tk-multi-perforce
-  version: 0eab96f
+  version: 0eab96f36c5b789ee328d1dc8042a46419b805fb
 
 ################################################################################
 # reference all of the common frameworks
