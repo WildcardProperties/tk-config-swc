@@ -107,7 +107,7 @@ apps.tk-multi-shotgunpanel.location:
   type: git_branch
   branch: swc_main_aei
   path: https://github.com/StudioWildcard/tk-multi-shotgunpanel
-  version: 5a6cebb280e0fa78ff8003ef77432e082a2f678f
+  version: c2c3e0730f27c19ef7704245a1055ade2ade927c
 
 # dev utils
 apps.tk-multi-devutils.location:

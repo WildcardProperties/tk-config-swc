@@ -31,14 +31,10 @@ engines.tk-desktop.location:
   # name: tk-desktop
   # version: v2.6.0
   ### Github
-  #type: git_branch
-  #branch: swc_beta
-  #path: https://github.com/nimbleheroes/tk-desktop
-  #version: 4e6170cc3b146c8c92b56427d9133ada29802fe4
   type: git_branch
   branch: swc_main_ai
   path: https://github.com/StudioWildcard/tk-desktop
-  version: 344630ed8544a24a3a9e6ec8434b6155bb6b49f5
+  version: 4ab0a0eaac97c3d2cdc88cdb0ac016499783cf2f
 
 
 # Desktop2
