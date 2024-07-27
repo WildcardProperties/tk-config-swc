@@ -312,7 +312,7 @@ class UploadVersionPlugin(HookBaseClass):
             # Try to get the context more specifically from the path on disk
             swc_fw = self.load_framework(TK_FRAMEWORK_SWC_NAME)
             swc_context_utils = swc_fw.import_module("Context_Utils")
-            context = swc_context_utils.find_task_context(path)                
+            context = swc_context_utils.find_task_context(original_path)                
 
             if context:
                 os.remove(original_path)
