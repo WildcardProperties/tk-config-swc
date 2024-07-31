@@ -33,7 +33,7 @@ entity_browser_settings: &entity_browser_settings
     filters:
       - [sg_asset_parent, is, [ null ]]
       - [project, is, '{context.project}']    
-      - [sg_asset_type, is_not, ["Animations"]]       
+      #- [sg_asset_type, is_not, ["Animations"]]
     publish_filters:
       - [task.Task.step.Step.short_name, is_not, 'Animations']
   - caption: Children

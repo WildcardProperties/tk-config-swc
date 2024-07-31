@@ -112,7 +112,7 @@ entity_browser_settings: &sequence_browser_settings
     filters:
       - [sg_asset_parent, is, [ null ]]
       - [project, is, '{context.project}']    
-      - [sg_asset_type, is_not, ["Animations"]]   
+      #- [sg_asset_type, is_not, ["Animations"]]
   - caption: Sequence Assets
     entity_type: Asset
     hierarchy: [project, sg_asset_type, code]
@@ -133,7 +133,7 @@ entity_browser_settings: &shot_browser_settings
     filters:
       - [sg_asset_parent, is, [ null ]]
       - [project, is, '{context.project}']    
-      - [sg_asset_type, is_not, ["Animations"]]  
+      #- [sg_asset_type, is_not, ["Animations"]]
   - caption: Sequence Assets
     entity_type: Asset
     hierarchy: [project, sg_asset_type, code]

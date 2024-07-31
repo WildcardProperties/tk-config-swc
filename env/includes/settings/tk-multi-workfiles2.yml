@@ -49,7 +49,7 @@ entity_browser_settings: &entity_browser_settings
     hierarchy: [sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.code, sg_folder_name]
     filters: 
       - [sg_asset_parent, is_not, [ null ]]  
-      - [sg_asset_type, is_not, [ "Animations" ]]      
+      #- [sg_asset_type, is_not, [ "Animations" ]]
     sub_hierarchy:
       entity_type: Task
       filters:
@@ -1144,7 +1144,7 @@ settings.tk-multi-workfiles2.unreal.asset_step:
         #hierarchy: []
         filters:
           - [ sg_asset_parent, is_not, [ null ] ]
-          - [ sg_asset_type, is_not, [ "Animations" ] ]
+          #- [ sg_asset_type, is_not, [ "Animations" ] ]
         sub_hierarchy:
           entity_type: Task
           filters:
@@ -1380,7 +1380,7 @@ settings.tk-multi-workfiles2.unreal.asset_child_step:
         hierarchy: [ sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.code, sg_folder_name ]
         filters:
           - [ sg_asset_parent, is_not, [ null ] ]
-          - [ sg_asset_type, is_not, [ "Animations" ] ]
+          #- [ sg_asset_type, is_not, [ "Animations" ] ]
         sub_hierarchy:
           entity_type: Task
           filters:
