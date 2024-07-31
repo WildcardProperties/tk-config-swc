@@ -30,17 +30,17 @@ entity_browser_settings: &entity_browser_settings
     hierarchy: [sg_asset_library.AssetLibrary.sg_asset_library_type, sg_asset_library, sg_asset_type, code]
     filters:
       - [project, is, '{context.project}']    
-      - [sg_asset_type, is_not, ["Animations"]]       
-    publish_filters:
-      - [task.Task.step.Step.short_name, is_not, 'Animations']
+    #  - [sg_asset_type, is_not, ["Animations"]]
+    #publish_filters:
+    #  - [task.Task.step.Step.short_name, is_not, 'Animations']
   - caption: Dinos
     entity_type: Asset
     hierarchy: [sg_asset_library.AssetLibrary.sg_asset_library_type, sg_asset_library, code]
     filters:
       - [project, is, '{context.project}']
       - [sg_asset_type, is, ["Dinos"]]
-    publish_filters:
-      - [task.Task.step.Step.short_name, is_not, 'Animations']
+    #publish_filters:
+    #  - [task.Task.step.Step.short_name, is_not, 'Animations']
   - caption: Structures
     entity_type: Asset
     hierarchy: [sg_asset_library.AssetLibrary.sg_asset_library_type, sg_asset_library, sg_folder_name, code]
@@ -48,8 +48,8 @@ entity_browser_settings: &entity_browser_settings
       - [project, is, '{context.project}']
       - [sg_asset_parent, is, [ null ]]
       - [tags, name_contains, "ASA - Structures"]
-    publish_filters:
-      - [task.Task.step.Step.short_name, is_not, 'Animations']
+    #publish_filters:
+    #  - [task.Task.step.Step.short_name, is_not, 'Animations']
   - caption: Weapons \ Tools
     entity_type: Asset
     hierarchy: [sg_asset_library.AssetLibrary.sg_asset_library_type, sg_asset_library, tags, code]
@@ -57,8 +57,8 @@ entity_browser_settings: &entity_browser_settings
       - [project, is, '{context.project}']
       - [sg_asset_parent, is, [ null ]]
       - [sg_asset_type, is, ["Weapons"]]
-    publish_filters:
-      - [task.Task.step.Step.short_name, is_not, 'Animations']
+    #publish_filters:
+    #  - [task.Task.step.Step.short_name, is_not, 'Animations']
   - caption: Outfits
     entity_type: Asset
     hierarchy: [sg_asset_library.AssetLibrary.sg_asset_library_type, sg_asset_library, sg_asset_type, sg_asset_section, sg_asset_category, code]
@@ -66,8 +66,8 @@ entity_browser_settings: &entity_browser_settings
       - [project, is, '{context.project}']  
       - [sg_asset_type, in, ["Human", "Outfits"]]
       - [parents, is_not, [ null ]]
-    publish_filters:
-      - [task.Task.step.Step.short_name, is_not, 'Animations']
+    #publish_filters:
+    #  - [task.Task.step.Step.short_name, is_not, 'Animations']
   - caption: Animations
     entity_type: Asset
     hierarchy: [project, sg_asset_parent.Asset.sg_asset_library, sg_asset_parent.Asset.sg_asset_type, sg_asset_parent.Asset.sg_asset_category, sg_asset_parent.Asset.code, sg_asset_category, code]
