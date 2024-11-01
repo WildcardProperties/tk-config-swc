@@ -21,19 +21,19 @@ frameworks:
     location:
       type: app_store
       name: tk-framework-adobe
-      version: v1.2.2
+      version: v1.2.4
   # adminui - provides GUIs for administrative commands
   tk-framework-adminui_v0.x.x:
     location:
       type: app_store
       name: tk-framework-adminui
-      version: v0.7.6
+      version: v0.7.7
   # desktopserver - provides a server to run local commands.
   tk-framework-desktopserver_v1.x.x:
     location:
       type: app_store
       name: tk-framework-desktopserver
-      version: v1.7.1
+      version: v1.7.3
   # qtwidgets - collection of Toolkit related QT Widgets
   tk-framework-qtwidgets_v2.x.x:
     location:
