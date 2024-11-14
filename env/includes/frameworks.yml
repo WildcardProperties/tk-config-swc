@@ -21,7 +21,7 @@ frameworks:
     location:
       type: app_store
       name: tk-framework-adobe
-      version: v1.2.4
+      version: v1.2.5
   # adminui - provides GUIs for administrative commands
   tk-framework-adminui_v0.x.x:
     location:
@@ -33,7 +33,7 @@ frameworks:
     location:
       type: app_store
       name: tk-framework-desktopserver
-      version: v1.7.3
+      version: v1.7.5
   # qtwidgets - collection of Toolkit related QT Widgets
   tk-framework-qtwidgets_v2.x.x:
     location:
@@ -48,7 +48,7 @@ frameworks:
       type: git_branch
       branch: swc_main_aei
       path: https://github.com/StudioWildcard/tk-framework-qtwidgets
-      version: e33e1dd328b1541576685372b5ca24acee5fe656
+      version: 5d81e430a8023953c75b8e4774f4d0a69ff3fc98
 
   # shotgunutils v4 - Shotgun Related Utilities
   tk-framework-shotgunutils_v4.x.x:
@@ -64,7 +64,7 @@ frameworks:
       #path: "S:/Projects/ShotgunConfig/tk-framework-shotgunutils"
       type: app_store
       name: tk-framework-shotgunutils
-      version: v5.10.0
+      version: v5.10.1
   tk-swc-framework-shotgunutils_v5.x.x:
     location:
       #type: dev
@@ -85,13 +85,13 @@ frameworks:
     location:
       type: app_store
       name: tk-framework-widget
-      version: v1.2.0
+      version: v1.2.1
   # desktopclient - A client for Shotgun Create
   tk-framework-desktopclient_v0.x.x:
     location:
       type: app_store
       name: tk-framework-desktopclient
-      version: v0.3.3
+      version: v0.3.4
   # lmv - provides LMV conversion tools
   tk-framework-lmv_v1.x.x:
     location:
@@ -127,7 +127,7 @@ frameworks:
       type: git_branch
       branch: swc_beta_rb_ai
       path: https://github.com/StudioWildcard/tk-framework-perforce
-      version: 781bfcbd32eb07390a2d1996b6eeb821ff491445
+      version: 47727b4829c79f9481fd5ce465438bcfdf26664d
   # # Unreal Launcher
   # tk-framework-unreal-launcher_v0.x.x:
   #   hook_get_perforce_user: '{config}/tk-framework-perforce/get_perforce_user.py'
