@@ -117,8 +117,8 @@ frameworks:
     hook_get_shotgun_user: '{config}/tk-framework-perforce/get_shotgun_user.py'
     location:
       # # Dev
-      # type: dev
-      # path: "S:/Projects/ShotgunConfig/tk-framework-perforce"
+      #type: dev
+      #path: "S:/Projects/ShotgunConfig/tk-framework-perforce"
       # Gitlab
       #type: git_branch
       #branch: swc_beta_rb_ai
@@ -128,6 +128,8 @@ frameworks:
       branch: swc_beta_rb_ai
       path: https://github.com/StudioWildcard/tk-framework-perforce
       version: 47727b4829c79f9481fd5ce465438bcfdf26664d
+      version: 8921a30
+
   # # Unreal Launcher
   # tk-framework-unreal-launcher_v0.x.x:
   #   hook_get_perforce_user: '{config}/tk-framework-perforce/get_perforce_user.py'
