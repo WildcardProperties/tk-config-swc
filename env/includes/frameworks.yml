@@ -127,7 +127,6 @@ frameworks:
       type: git_branch
       branch: swc_beta_rb_ai
       path: https://github.com/StudioWildcard/tk-framework-perforce
-      version: 47727b4829c79f9481fd5ce465438bcfdf26664d
       version: 8921a30
 
   # # Unreal Launcher

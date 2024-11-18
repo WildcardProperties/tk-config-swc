@@ -61,7 +61,6 @@ apps.tk-swc-perforce-sync.location:
   type: git_branch
   branch: swc_main_ai
   path: https://github.com/StudioWildcard/tk-swc-perforce-sync
-  #version: 23b3e1a94f4c5110c2c4c59217b6668e62a4666c
   version: b1ae75f534aa029db43b3042cf628a31ec2b0c30
 
 # publish2
@@ -186,8 +185,8 @@ apps.tk-multi-workfiles2.location:
 # Perforce
 apps.tk-multi-perforce.location:
   # ## Dev
-  # type: dev
-  # path: S:/Projects/ShotgunConfig/tk-multi-perforce
+  #type: dev
+  #path: S:/Projects/ShotgunConfig/tk-multi-perforce
   #type: git_branch
   #branch: swc_beta_rb_ai
   #path: https://gitlab.com/nexodus/consulting/swc/tk-multi-perforce.git
@@ -196,10 +195,14 @@ apps.tk-multi-perforce.location:
   #branch: swc_main_ai
   #path: https://gitlab.com/nexodus/consulting/swc/tk-multi-perforce.git
   #version: 4855b08b290058bef7dbcfa25e1bcf8c13e467c2
+  #type: git_branch
+  #branch: swc_main_ai
+  #path: https://github.com/StudioWildcard/tk-multi-perforce
+  #version: 0eab96f36c5b789ee328d1dc8042a46419b805fb
   type: git_branch
-  branch: swc_main_ai
+  branch: tester
   path: https://github.com/StudioWildcard/tk-multi-perforce
-  version: 0eab96f36c5b789ee328d1dc8042a46419b805fb
+  version: 6960a7a
 
 ################################################################################
 # reference all of the common frameworks
