@@ -39,7 +39,7 @@ frameworks:
     location:
       #type: app_store
       #name: tk-framework-qtwidgets
-      #version: v2.10.2
+      #version: v2.12.4
       #type: dev
       #path: "S:/Projects/ShotgunConfig/tk-framework-qtwidgets"
       #type: git
@@ -48,7 +48,8 @@ frameworks:
       type: git_branch
       branch: swc_main_aei
       path: https://github.com/StudioWildcard/tk-framework-qtwidgets
-      version: 5d81e430a8023953c75b8e4774f4d0a69ff3fc98
+      #version: 5d81e430a8023953c75b8e4774f4d0a69ff3fc98
+      version: 5c24bb1
 
   # shotgunutils v4 - Shotgun Related Utilities
   tk-framework-shotgunutils_v4.x.x:
