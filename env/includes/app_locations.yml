@@ -61,8 +61,7 @@ apps.tk-swc-perforce-sync.location:
   type: git_branch
   branch: swc_main_ai
   path: https://github.com/StudioWildcard/tk-swc-perforce-sync
-  #version: b1ae75f534aa029db43b3042cf628a31ec2b0c30
-  version: d03318b
+  version: 5c0dc42
 
 # publish2
 apps.tk-multi-publish2.location:
@@ -216,15 +215,21 @@ apps.tk-shotgun-launchfolder.location:
 
 # Copy from Playlist
 apps.tk-copyfromplaylist.location:
+  #type: dev
+  #path: 'S:/Projects/ShotgunConfig/tk-copyfromplaylist'
   # Github
   #type: git
   #path: https://github.com/studiowildcard/tk-copyfromplaylist.git
   #version: v0.3
   #type: dev
   #path: 'S:/Projects/ShotgunConfig/tk-copyfromplaylist'
-  type: git
-  path: https://github.com/studiowildcard/tk-copyfromplaylist.git
-  version: v0.5
+  #type: git
+  #path: https://github.com/studiowildcard/tk-copyfromplaylist.git
+  #version: v0.5
+  type: git_branch
+  branch: swc-main
+  path: https://github.com/StudioWildcard/tk-copyfromplaylist
+  version: 819dcf1
 
 apps.tk-unreal-launcher.location:
   #type: dev
@@ -232,7 +237,7 @@ apps.tk-unreal-launcher.location:
   type: git_branch
   branch: swc_main_aei
   path: https://github.com/StudioWildcard/tk-unreal-launcher
-  version: af31c970a6b373fcdc6ce60913d60a1d9e3ea21d
+  version: 3926356
 
 
 # Unreal
