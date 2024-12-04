@@ -49,7 +49,7 @@ frameworks:
       branch: swc_main_aei
       path: https://github.com/StudioWildcard/tk-framework-qtwidgets
       #version: 5d81e430a8023953c75b8e4774f4d0a69ff3fc98
-      version: 5c24bb1
+      version: 4af2487
 
   # shotgunutils v4 - Shotgun Related Utilities
   tk-framework-shotgunutils_v4.x.x:
